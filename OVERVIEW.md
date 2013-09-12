@@ -99,6 +99,13 @@ bowery.queue(function (bowery) {
 
 _Note: We're still working on supporting cron jobs._
 
+## Email
+Managing your own email servers is a pain and integrating with a third party can still be a pain. Bowery has a built in email service.
+
+```
+bowery.email(to, from, HTMLBody, TextBody)
+```
+Bowery will manage email provider rate limits 
 
 
 
