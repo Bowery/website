@@ -1,0 +1,21 @@
+@media only screen and (max-width: 780px) {
+  .content {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  .links {
+    display: none;
+  }
+
+  .desc {
+    width: auto;
+  }
+
+  .feature-list > li {
+    display: block;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}

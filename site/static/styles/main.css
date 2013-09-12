@@ -14,6 +14,129 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font: normal 24px "Helvetica Neue";
+  font: normal 24px 'Gotham SSm A', 'Gotham SSm B', Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
+}
+
+header,
+section,
+footer {}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -1px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+.content {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #1d9682;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.nav {
+  border-bottom: 1px solid black;
+  background-image: url(../images/header-bar.png);
+  background-repeat: repeat-x;
+  padding: 10px 0;
+}
+
+.logo,
+.name,
+.links {
+  display: inline-block;
+}
+
+.logo {
+  background-image: url(../images/bowery-logo.png);
+  background-size: contain;
+  height: 35px;
+  position: relative;
+  top: 2px;
+  width: 35px;
+}
+
+.name {
+  position: relative;
+  text-transform: uppercase;
+  top: 5px;
+  vertical-align: top;
+}
+
+.links {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+.links > li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.links > li > a {
+  color: #23323c;
+  font-weight: 700;
+  font-size: 0.75em;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.hero {
+  background: #23323c;
+}
+
+.hero > .content {
+  padding: 50px 0;
+}
+
+.desc {
+  width: 400px;
+}
+
+.desc > h1,
+.desc > p {
+  color: #fff;
+}
+
+.desc > .btn-primary {
+  border-bottom: 1px solid black;
+  border-radius: 3px;
+  margin-top: 25px;
+  padding: 10px 30px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 50px 0;
+}
+
+.feature-list > li {
+  display: inline-block;
+  margin-right: 3%;
+  vertical-align: top;
+  width: 30%;
+}
+
+.feature-list > li > h3 {
+  font-size: 1em;
+}
+
+.feature-list > li > p {
+  font-size: 0.75em;
 }
