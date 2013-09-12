@@ -105,7 +105,7 @@ Managing your own email servers is a pain and integrating with a third party can
 ```
 bowery.email(to, from, HTMLBody, TextBody)
 ```
-Bowery will manage email provider rate limits 
+Bowery will manage email provider rate limits
 
 
 
