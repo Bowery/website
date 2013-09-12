@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bowery Registration</title>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <span class="error">
+      {{ message }}
+    </span>
+    <form action='/signup' method='post'>
+      <div class='field'>
+        <input type='text' name='name' placeholder='Name'>
+      </div>
+      <div class='field'>
+        <input type='text' name='email' placeholder='Email'>
+      </div>
+      <div class='field'>
+        <input type='password' name='password' placeholder='Password'>
+      </div>
+      <div class='field'>
+        <input type='text' name='card' placeholder='Credit Card'>
+        <input type='text' name='cvv' placeholder='CVV'>
+      </div>
+      <div class='field'>
+        <input type='submit' value='Register'>
+      </div>
+    </form>
+  </body>
+</html>

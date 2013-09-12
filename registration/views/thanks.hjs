@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Complete</title>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css'>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Thanks!</h1>
+    <p>Bowery is currently over capacity. Don't worry, <strong>we will not charge you</strong> until you've been given access.</p>
+  </body>
+</html>
