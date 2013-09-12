@@ -61,7 +61,7 @@ bowery.db.user(id, {
 })
 ```
 
-### Search
+## Search
 The built in Bowery Database is simple key value store, so for more complex queries we suggest using the search service.
 
 You can search records by calling.
@@ -78,7 +78,7 @@ There's no reason to manually index records. Bowery knows when you have search c
 bowery.search('user', {name: 'Bob B'}) // searches for users with a name similiar to Bob B
 ```
 
-### Cache
+## Cache
 Bowery automatically moves db records between a shared cache, a per machine cache, & an in memory cache based on how the data is accessed. It can manage cache invalidation for models because data is only being changed inside of the bowery application.
 
 However, if you want to manually store data in the cache you can use
