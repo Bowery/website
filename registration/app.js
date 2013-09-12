@@ -31,7 +31,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 if ('development' == app.get('env'))
   app.use(express.errorHandler())
 
-//
+/**
+ * @param {string} name
+ * @return {boolean}
+ */
 function validName (name) {
   return !!name
 }
@@ -103,7 +106,6 @@ app.post('/signup', function (req, res) {
     req.flash('message', 'Missing Required Field.')
     res.redirect('/')
   }
-  
 })
 
 app.listen(3000)
