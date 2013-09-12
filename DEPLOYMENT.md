@@ -1,0 +1,5 @@
+# Development
+
+```
+$ bowery server
+```
