@@ -14,7 +14,7 @@ body {
 
 body {
   -webkit-font-smoothing: antialiased;
-  font: normal 24px 'Gotham SSm A', 'Gotham SSm B', Helvetica, sans-serif;
+  font: normal 24px "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
 }
 
@@ -49,7 +49,8 @@ p {
 }
 
 .nav {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
   background-image: url(../images/header-bar.png);
   background-repeat: repeat-x;
   padding: 10px 0;
@@ -106,7 +107,7 @@ p {
 }
 
 .desc {
-  width: 400px;
+  width: 410px;
 }
 
 .desc > h1,
@@ -134,9 +135,10 @@ p {
 }
 
 .feature-list > li > h3 {
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .feature-list > li > p {
-  font-size: 0.75em;
+  font-size: 0.65em;
+  margin-top: 15px;
 }
