@@ -107,5 +107,42 @@ bowery.email(to, from, HTMLBody, TextBody)
 ```
 Bowery will manage email provider rate limits.
 
+## Images
+Almost every web application has to handle and serve images. Bowery comes with a built in image handling library. No images are ever served from your application code, everything is served from the bowery image service and put behind a CDN in production.
 
+## Uploading
 
+```
+app.post('/upload', function (bowery, req, res) {
+  bowery.cdn.upload('imageName', req.files.logo)
+  .then(function () {
+    res.send("upload successful")
+  })
+  .fail(function () {
+    res.send("upload failed")
+  })
+})
+```
+
+### Rendering
+In your express templates you will have access to an `images` variable. If you're using Hogan tempaltes for example, rendering an image might look something like:
+
+```
+<img src="{{ images['imageName'] }}">
+```
+
+The rendered html will look something like:
+
+```
+<img src="//cdn.bowery.io/appName/imageName.jpg">
+```
+
+### CDN
+In production (`appname.bowery.io`), all images are served behind a CDN for better performance. This happens without any additional configuration.
+
+### Resizing
+If you would like to render an image at a specific size you can just add the `s` query parameter to the end of the path. For a 50px by 50px image
+
+```
+<img src="{{ images['imageName'] }}?s=50x50">
+```
