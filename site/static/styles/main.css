@@ -77,6 +77,8 @@ p {
   top: 5px;
   vertical-align: top;
   letter-spacing: -1px;
+  padding-left: 40px;
+  color: black;
 }
 
 .links {
@@ -148,7 +150,8 @@ p {
   border-bottom: 1px solid black;
   border-radius: 3px;
   margin-top: 25px;
-  padding: 10px 30px;
+  width: 100%;
+  text-align: center;
 }
 
 .feature-list {
