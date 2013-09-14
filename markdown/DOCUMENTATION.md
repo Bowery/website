@@ -10,7 +10,7 @@ When writing a Bowery application, you just write code and the rest takes care o
 
 ### Installation
 
-Once you've [registered online](http://bowerygroup.com) you can install the command line interface using NPM:
+Once you've [registered online](http://bowery.io) you can install the command line interface using NPM:
 
 ```
 $ (sudo) npm install bowery -g
