@@ -31,61 +31,10 @@ app.use(express.static(path.join(__dirname, 'public')))
 if ('development' == app.get('env'))
   app.use(express.errorHandler())
 
-/**
- * @param {string} name
- * @return {boolean}
- */
-function validName (name) {
-  return !!name
-}
+// Validation
 
-/**
- * @param {string} email
- * @return {boolean}
- */
-function validEmail (email) {
-  return /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(email)
-}
-
-/**
- * @param {string} password
- * @return {boolean}
- */
-function validPassword (password) {
-  return !!password
-}
-
-/**
- * @param {string} card Credit card number
- * @return {boolean}
- */
-function validCard (card) {
-  return !isNaN(parseInt(card, 10)) // TODO (thebyrd) real validation
-}
-
-/**
- * @param {string} cvv
- * @return {boolean}
- */
-function validCVV (cvv) {
-  return cvv.length == 3 && !isNaN(parseInt(cvv, 10))
-}
-
-/**
- * @param {string} month
- * @param {string} year
- * @return {boolean}
- */
-function validExpiration (month, year) {
-
-}
-
-/**
- * @param {object} body
- * @return {boolean}
- */
 function validBody (body) {
-  return validCVV(body.cvv) && validCard(body.card) && validPassword(body.password) && validEmail(body.email) && validName(body.name)
+  return body.name && body.email && body.password && body.stripeToken
 }
 
 // Handlers
