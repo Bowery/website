@@ -11,6 +11,8 @@ var path = require('path')
 var app = express()
 var db = require('monk')('localhost/bowerySignupDev')
 var Store = require('connect-redis')(express)
+var hipchat = (new require('hipchat')('348b9ece60d9bbb28ed67f1b700d3f')).Rooms
+
 // all environments
 app.set('views', __dirname + '/views')
 app.set('view engine', 'hjs')
@@ -32,9 +34,19 @@ if ('development' == app.get('env'))
   app.use(express.errorHandler())
 
 // Validation
-
 function validBody (body) {
   return body.name && body.email && body.password && body.stripeToken
+}
+
+// Error handling
+function errorHandler (error) {
+  console.error('ERROR:', error)
+  hipchat.message('Errors', 'Registration', error, {
+    color: 'red',
+    notify: true
+  }, function (err, res) {
+    if (err) console.error(err)
+  })
 }
 
 // Handlers
