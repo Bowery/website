@@ -21,13 +21,14 @@ var hipchat = (new require('hipchat')('348b9ece60d9bbb28ed67f1b700d3f')).Rooms
 // all environments
 app.set('views', __dirname + '/views')
 app.set('view engine', 'hjs')
+app.set('port', process.argv[2] || 3000);
 app.use(express.favicon())
 app.use(express.logger('dev'))
 app.use(express.bodyParser())
 app.use(express.methodOverride())
-app.use(express.cookieParser('We like Bond more than Bowery'))
+app.use(express.cookieParser('some secret that goes here and is long'))
 app.use(express.session({
-  secret: 'something actually secret',
+  secret: 'kljhsdflkjhasdf sadlkjh asdlkfjh salkjdfh',
   store: new Store()
 }))
 app.use(flash())
@@ -93,10 +94,5 @@ app.post('/signup', function (req, res) {
   }
 })
 
-<<<<<<< HEAD
-var port = 3000
-=======
-var port = 3001
->>>>>>> 94ecbdcbff39bbf0cd2616be533fb3d316c3d5d8
-app.listen(port)
-log.info('Starting on port ' + port)
+app.listen(app.get('port'))
+log.info('Starting on port ' + app.get('port'))
