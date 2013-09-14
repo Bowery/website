@@ -19,7 +19,8 @@
         data-amount="2000"
         data-name="Bowery Software LLC"
         data-description="1 developer license ($20.00/month)"
-        data-image="http://bowery.io/static/images/bowery-logo.png">
+        data-image="http://bowery.io/static/images/bowery-logo.png"
+        data-label="Sign Up">
       </script>
     </form>
   </body>

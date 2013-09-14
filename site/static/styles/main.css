@@ -41,7 +41,10 @@ p {
   margin-top: 50px;
 }
 
-.btn {
+
+.btn,
+.stripe-button-el,
+.stripe-button-el span {
   display: inline-block;
   text-decoration: none;
 }
@@ -194,6 +197,14 @@ p {
   padding: 10px 0;
   height: 50px;
   box-shadow: none;
+}
+
+.sign-up-form > .stripe-button-el span {
+  border: none;
+  font: normal 24px "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
+  height: 50px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 .feature-list {
