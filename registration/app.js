@@ -5,12 +5,16 @@
 
 var express = require('express')
 var flash = require('connect-flash')
+var fs = require('fs')
 var http = require('http')
 var path = require('path')
 
 var app = express()
 var db = require('monk')('localhost/bowerySignupDev')
 var Store = require('connect-redis')(express)
+
+var Logger = require('log')
+var log = new Logger('info', fs.createWriteStream(Date.now() + '.log'))
 var hipchat = (new require('hipchat')('348b9ece60d9bbb28ed67f1b700d3f')).Rooms
 
 // all environments
@@ -40,12 +44,12 @@ function validBody (body) {
 
 // Error handling
 function errorHandler (error) {
-  console.error('ERROR:', error)
+  log.error(error)
   hipchat.message('Errors', 'Registration', error, {
     color: 'red',
     notify: true
   }, function (err, res) {
-    if (err) console.error(err)
+    if (err) log.error(err)
   })
 }
 
@@ -69,4 +73,6 @@ app.post('/signup', function (req, res) {
   }
 })
 
-app.listen(3000)
+var port = 3000
+app.listen(port)
+log.info('Starting on port ' + port)
