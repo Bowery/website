@@ -130,13 +130,12 @@ p {
 }
 
 .sign-up {
-  margin-left: 100px;
+  margin-left: 173px;
 }
-
-.sign-up-form {}
 
 .sign-up-form > input {
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   display: block;
   font: normal 18px "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
   outline: none;
@@ -148,7 +147,7 @@ p {
 }
 
 .sign-up-form > .btn-primary {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   margin-top: 25px;
   width: 100%;
