@@ -52,6 +52,7 @@ function errorHandler (error) {
   }, function (err, res) {
     if (err) log.error(err)
   })
+}
 
 function hash (password, salt) {
   return crypto
@@ -92,6 +93,6 @@ app.post('/signup', function (req, res) {
   }
 })
 
-var port = 3000
+var port = 3001
 app.listen(port)
 log.info('Starting on port ' + port)
