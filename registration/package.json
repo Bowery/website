@@ -12,6 +12,7 @@
     "connect-flash": "~0.1.1",
     "connect-redis": "~1.4.5",
     "hipchat": "0.0.2",
-    "log": "~1.4.0"
+    "log": "~1.4.0",
+    "node-uuid": "~1.4.1"
   }
 }
