@@ -27,6 +27,15 @@
     width: 100%;
   }
 
+  .sign-up {
+    margin: 25px 0 0;
+    width: 100%;
+  }
+
+  .sign-up-form input {
+    width: 100%;
+  }
+
   .docs {
     padding: 25px 0;
   }
