@@ -173,11 +173,18 @@ bowery.queue(handler).every(3600).startAt(Date.now())
 
 ## Email
 
-Bowery has a built-in email service and will manage email provider rate limits.
+Bowery has a built-in email service that manages email provider rate limiting and other annoyances such as inline styles. To send an email:
 
 ```
-bowery.email(to, from, HTMLBody, TextBody)
+bowery.email
+      .to('foo@bar.com')
+      .from('david@bowery.io')
+      .cc(['concierge@bowery.io', 'help@bowery.io'])
+      .bcc('records@bowery.io')
+      .body('emails/hello.hjs', 'stylesheet/email.css', {name: 'Mr. Foo Bar'})
 ```
+
+`to`, `from`, `cc`, and `bcc` can either take a string or an array of strings. The order of these four function calls in the chain doesn't matter, but the `body` needs to come last. The `body` method will render the given template with the data passed to it and then inline the styles in the specified stylesheet to generate the email body.
 
 ## Static Assets
 
