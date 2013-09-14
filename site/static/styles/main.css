@@ -205,6 +205,8 @@ p {
   height: 50px;
   padding: 10px;
   font-weight: bold;
+  text-shadow: none;
+  box-shadow: none; 
 }
 
 .feature-list {
