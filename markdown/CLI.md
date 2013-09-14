@@ -24,9 +24,9 @@ Unlike most development environments, Bowery demands an internet connection. To 
 $ bowery connect
 ```
 
-If this is your first time, Bowery will ask you to login, and provide the key you received when registering. You can change this key later.
+If this is your first time, Bowery will ask you to login, and provide the key you received when registering. You can change this key later using the email and password you provided during registration.
 
-### Create A New Application
+### Creating A New Application
 
 First generate your application. This will register your application with Bowery and provide a base set of files.
 
@@ -34,11 +34,9 @@ First generate your application. This will register your application with Bowery
 $ bowery create APP_NAME
 > Creating new application
 > Registering application with Bowery
-> Opening new app at https://APP_NAME.ACCOUNT_NAME.bowery.io
+> Opening new app at https://BRANCH_NAME.APP_NAME.bowery.io
 ```
 Very promptly, your browser will open up to your new application, hosted at the domain listed above.
-
----
 
 ## Development
 
@@ -60,3 +58,23 @@ $ bowery merge BRANCH_NAME
 > Landing BRANCH_NAME onto MASTER
 > Opening production app at https://APP_NAME.ACCOUNT_NAME.bowery.io
 ```
+
+## Production
+
+### Use a Custom Domain
+
+Configure your DNS to point to `APP_NAME.bowery.io` and add the domain to your application in the terminal
+
+```
+$ bowery domains:add www.foo.com
+```
+
+You can also remove the domain from your application
+
+```
+$ bowery domains:remove www.foo.com
+```
+
+### Caching, CDN, Instance Scaling
+
+We manage caching, put assets on a cdn, scaling search, app, & database instances, as well as other performance optimizations for the `master` branch which can be accessed at `http://APP_NAME.bowery.io`.
