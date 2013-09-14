@@ -76,6 +76,7 @@ p {
   text-transform: uppercase;
   top: 5px;
   vertical-align: top;
+  letter-spacing: -1px;
 }
 
 .links {
@@ -87,7 +88,7 @@ p {
 
 .links > li {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .links > li > a {
@@ -100,6 +101,10 @@ p {
 
 .hero {
   background: #23323c;
+  background-image: url(../images/hero-background.png);
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: left center;
 }
 
 .hero > .content {
