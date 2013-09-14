@@ -8,9 +8,10 @@ var flash = require('connect-flash')
 var fs = require('fs')
 var http = require('http')
 var path = require('path')
+var crypto = require('crypto')
 
 var app = express()
-var db = require('monk')('localhost/bowerySignupDev')
+var db = require('monk')('jmoney:java$cript@paulo.mongohq.com:10028/bowery-registration')
 var Store = require('connect-redis')(express)
 
 var Logger = require('log')
@@ -24,9 +25,9 @@ app.use(express.favicon())
 app.use(express.logger('dev'))
 app.use(express.bodyParser())
 app.use(express.methodOverride())
-app.use(express.cookieParser('some secret that goes here and is long'))
+app.use(express.cookieParser('We like Bond more than Bowery'))
 app.use(express.session({
-  secret: 'kljhsdflkjhasdf sadlkjh asdlkfjh salkjdfh',
+  secret: 'something actually secret',
   store: new Store()
 }))
 app.use(flash())
@@ -42,7 +43,7 @@ function validBody (body) {
   return body.name && body.email && body.password && body.stripeToken
 }
 
-// Error handling
+// Helpers
 function errorHandler (error) {
   log.error(error)
   hipchat.message('Errors', 'Registration', error, {
@@ -51,6 +52,13 @@ function errorHandler (error) {
   }, function (err, res) {
     if (err) log.error(err)
   })
+}
+
+function hash (password, salt) {
+  return crypto
+        .createHmac('sha256', salt)
+        .update(password)
+        .digest('hex')
 }
 
 // Handlers
@@ -64,15 +72,31 @@ app.get('/thanks!', function (req, res) {
 
 app.post('/signup', function (req, res) {
   if (validBody(req.body)) {
-    db.get('users').insert(req.body).success(function () {
-      res.redirect('/thanks!')
-    })
+    var salt = require('node-uuid').v1()
+    var user = {
+      name: req.body.name,
+      email: req.body.email,
+      salt: salt,
+      password: hash(req.body.password, salt),
+      stripeToken: req.body.stripeToken
+    }
+
+    db.get('users')
+      .insert(user)
+      .success(function () {
+        res.redirect('/thanks!')
+      })
+      .error(errorHandler)
   } else {
     req.flash('message', 'Missing Required Field.')
     res.redirect('/')
   }
 })
 
+<<<<<<< HEAD
 var port = 3000
+=======
+var port = 3001
+>>>>>>> 94ecbdcbff39bbf0cd2616be533fb3d316c3d5d8
 app.listen(port)
 log.info('Starting on port ' + port)
