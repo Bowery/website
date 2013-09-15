@@ -173,6 +173,8 @@ p {
 .feature-list > li > p {
   font-size: 0.65em;
   margin-top: 15px;
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
+
 }
 
 footer .content {
