@@ -238,12 +238,12 @@ a {
   font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;\
 }
 
-.half {
+.philosophy .half {
   width: 47%;
   display: inline-block;
 }
 
-.half:last-child {
+.philosophy .half:last-child {
   margin-left: 5%;
 }
 
