@@ -81,7 +81,7 @@
   }
 
   .side-nav {
-    width: 100%;
+    display: none;
   }
 
   .docs-content {
