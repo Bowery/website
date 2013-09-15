@@ -17,7 +17,7 @@
         <li>
           <a href="/pricing">pricing</a>
         <li>
-          <a href="#">sign up</a>
+          <a href="/signup">sign up</a>
     </div>
   </header>
   <section class="hero">
@@ -28,9 +28,9 @@
       </div>
       <div class="sign-up">
         <form action="/signup" method="POST" class="sign-up-form">
-          <input type="text" name="name" placeholder="Name">
-          <input type="text" name="email" placeholder="Email">
-          <input type="password" name="password" placeholder="Password">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="text" name="email" placeholder="Email" required>
+          <input type="password" name="password" placeholder="Password" required>
           <script
            src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
            data-key="pk_test_czwzkTp2tactuLOEOqbMTRzG"

@@ -37,6 +37,10 @@ p {
   width: 960px;
 }
 
+.buffer {
+  margin-top: 50px;
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -139,6 +143,20 @@ p {
   margin-left: 173px;
 }
 
+.sign-up-standalone {
+  margin: 0 auto;
+  width: 249px;
+  display: block;
+}
+
+.sign-up-standalone h1 {
+  margin-bottom: 15px;
+}
+
+.sign-up-standalone .sign-up-form > input {
+  border: 1px solid #eee;
+}
+
 .sign-up-form > input {
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -177,7 +195,6 @@ p {
   height: 50px;
   box-shadow: none;
 }
-
 
 .feature-list {
   list-style: none;
