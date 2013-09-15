@@ -20,10 +20,6 @@ margin:1em 0;
 font-size: 0.75em;
 }
 
-.docs {
-  padding: 50px 0;
-}
-
 .side-nav,
 .docs-content {
   display: inline-block;
@@ -31,6 +27,7 @@ font-size: 0.75em;
 }
 
 .side-nav {
+  position: fixed;
   background: #fff;
   list-style: none;
   width: 225px;
@@ -54,7 +51,7 @@ font-size: 0.75em;
 }
 
 .docs-content {
-  margin-left: 60px;
+  margin-left: 298px;
   width: 665px;
 }
 
