@@ -31,6 +31,14 @@ p {
   font-weight: 300;
 }
 
+hr {
+  border: 1px solid #EEEEEE;
+}
+
+a {
+  color: black;
+}
+
 .content {
   margin: 0 auto;
   position: relative;
@@ -155,9 +163,21 @@ p {
   text-align: center;
 }
 
+.philosophy h1 {
+  padding-top: 50px;
+}
+
+.philosophy p {
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
+  padding-top: 30px;
+  font-size: 0.65em;
+  text-align: justify;
+
+}
+
 .feature-list {
   list-style: none;
-  padding: 50px 0;
+  padding: 40px 0;
 }
 
 .feature-list > li {
@@ -174,10 +194,21 @@ p {
 .feature-list > li > p {
   font-size: 0.65em;
   margin-top: 15px;
-  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
-
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;\
 }
 
-footer .content {
-  border-top: 1px solid #eee;
+.half {
+  width: 47%;
+  display: inline-block;
+}
+
+.half:last-child {
+  margin-left: 5%;
+}
+
+footer {
+  background-color: #EEEEEE;
+  padding: 30px 0;
+  margin-top: 50px;
+  font-size: 0.6em;
 }
