@@ -1,13 +1,30 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Registration Complete</title>
-    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.0/normalize.css'>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>Thanks!</h1>
-    <p>We couldn't be more excited to show you Bowery. Our team is small, and we want to make sure the Bowery experience to be as magical as possible—so we're letting people in slowly.</p>
-    <p><strong>We'll let you know when your account is ready, and we won't charge you until then.</strong> If you have any questions or want access sooner, email us at <a href="mailto:concierge@bowerygroup.com">concierge@bowerygroup.com</a>.</p>
-  </body>
-</html>
+<!doctype html>
+<meta charset="utf-8">
+<title>Bowery</title>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link href="http://bowery.io/static/styles/main.css" rel="stylesheet" />
+<link href="http://bowery.io/static/styles/thanks.css" rel="stylesheet" />
+<link href="http://bowery.io/static/styles/mobile.css" rel="stylesheet" />
+<link href="https://cloud.typography.com/7823052/643422/css/fonts.css" rel="stylesheet" />
+<body>
+  <header class="nav">
+    <div class="content">
+      <a href="/" class="logo">
+        <div class="name">Bowery</div>
+      </a>
+      <ul class="links">
+        <li>
+          <a href="http://bowery.io/docs">documentation</a>
+        <li>
+          <a href="http://bowery.io/pricing">pricing</a>
+        <li class="selected">
+          <a href="http://bowery.io/signup">sign up</a>
+    </div>
+  </header>
+  <section class="buffer">
+    <div class="content thanks-content">
+      <h1>Thanks!</h1>
+      <p>We couldn't be more excited to show you Bowery. Our team is small, and we want to make sure the Bowery experience to be as magical as possible—so we're letting people in slowly.</p>
+      <p><strong>We'll let you know when your account is ready, and we won't charge you until then.</strong> If you have any questions or want access sooner, email us at <a href="mailto:concierge@bowerygroup.com">concierge@bowerygroup.com</a>.</p>
+    </div>
+  </section>
