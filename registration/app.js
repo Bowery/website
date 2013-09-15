@@ -15,14 +15,14 @@ var db = require('monk')('jmoney:java$cript@paulo.mongohq.com:10028/bowery-regis
 var Store = require('connect-redis')(express)
 
 var Logger = require('log')
-var log = new Logger('info', fs.createWriteStream(Date.now() + '.log'))
+var log = new Logger('info', fs.createWriteStream(__dirname + '/logs/' + Date.now() + '.log'))
 var hipchat = (new require('hipchat')('348b9ece60d9bbb28ed67f1b700d3f')).Rooms
 
 // all environments
 app.set('views', __dirname + '/views')
 app.set('view engine', 'hjs')
-app.set('port', process.argv[2] || 3000);
-app.use(express.favicon())
+app.set('port', process.argv[2] || 3000)
+app.use(express.favicon(__dirname + '/public/favicon.ico'))
 app.use(express.logger('dev'))
 app.use(express.bodyParser())
 app.use(express.methodOverride())
