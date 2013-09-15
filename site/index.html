@@ -33,6 +33,19 @@
           <input type="password" name="password" placeholder="Password" />
           <a href="#" class="btn btn-primary">Sign Up</a>
         </form>
+        <form action="/signup" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="text" name="email" placeholder="Email">
+          <input type="password" name="password" placeholder="Password">
+          <script
+            src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+            data-key="pk_test_czwzkTp2tactuLOEOqbMTRzG"
+            data-amount="2000"
+            data-name="Bowery Software LLC"
+            data-description="1 developer license ($20.00/month)"
+            data-image="http://bowery.io/static/images/bowery-logo.png">
+          </script>
+        </form>
       </div>
     </div>
   </section>
