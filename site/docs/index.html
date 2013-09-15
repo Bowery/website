@@ -24,29 +24,23 @@
   <section class="buffer">
     <div class="content">
       <ul class="side-nav">
-        <li><a href="#overview">Philosophy</a></li>
         <li><a href="#getting-started">Getting Started</a></li>
-        <li><a href="#getting-started">Core</a></li>
-        <li><a href="#getting-started">Database</a></li>
-        <li><a href="#getting-started">Search</a></li>
-        <li><a href="#getting-started">Cache</a></li>
-        <li><a href="#getting-started">Queue</a></li>
-        <li><a href="#getting-started">Email</a></li>
-        <li><a href="#getting-started">Static Assets</a></li>
-        <li><a href="#getting-started">Production</a></li>
+        <li><a href="#core">Core</a></li>
+        <li><a href="#database">Database</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#cache">Cache</a></li>
+        <li><a href="#queue">Queue</a></li>
+        <li><a href="#email">Email</a></li>
+        <li><a href="#static-assets">Static Assets</a></li>
+        <li><a href="#production">Production</a></li>
+        <li><a href="#overview">Philosophy</a></li>
       </ul>
       <div class="docs-content">
 <h1>Introducing Bowery</h1>
 
 <p class="tagline"><em>Welcome to the future of web development.</em></p>
 
-<h2>Philosophy</h2>
-
-<p>Web development is terrible—it's filled with convoluted abstrations that have little to do with building a product. Today we care about users, but most of our time is spent worrying about server and database management.</p>
-
-<p>When writing a Bowery application, you just write code and the rest takes care of itself—there isn't even a local development environment. Common services that developers set up for each application (database, caching, email, search, CDN, etc.) are already built into Bowery. Implementation details and performance optimizations are made behind the scenes so that you can focus all of your energy on the product.</p>
-
-<h2>Getting Started</h2>
+<h2 id="getting-started">Getting Started</h2>
 
 <h3>Installation</h3>
 
@@ -90,7 +84,7 @@ $ bowery branch NEW_FEATURE
 &gt; Opening production app at https://APP_NAME.ACCOUNT_NAME.bowery.io
 </code></pre>
 
-<h2>Core</h2>
+<h2 id="core">Core</h2>
 
 <p>Instead of building a web framework from scratch, we've just written middleware for <a href="http://expressjs.com">express</a>. You add the middleware to your application with:</p>
 
@@ -104,7 +98,7 @@ $ bowery branch NEW_FEATURE
 })
 </code></pre>
 
-<h2>Database</h2>
+<h2 id="database">Database</h2>
 
 <p>BoweryDB is more of a data management application then a database. It analyses access paterns to cache frequently-used data, and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.</p>
 
@@ -142,7 +136,7 @@ $ bowery branch NEW_FEATURE
 })
 </code></pre>
 
-<h2>Search</h2>
+<h2 id="search">Search</h2>
 
 <p>BoweryDB is a simple key-value store, so for more complex queries we suggest using the search service.</p>
 
@@ -164,7 +158,7 @@ bowery.search('user', {name: 'Bob B'})
 <pre><code>bowery.index('domainName', {username: 'Bob', dogsName: 'Rosco'})
 </code></pre>
 
-<h2>Cache</h2>
+<h2 id="cache">Cache</h2>
 
 <p>BoweryDB automatically moves db documents between a shared cache, a per machine cache, and an in-memory cache based on how the data is accessed. It can manage cache invalidation for models because data is only being changed inside of the Bowery application.</p>
 
@@ -175,7 +169,7 @@ bowery.search('user', {name: 'Bob B'})
 
 <p>where the key is a string and the value can be a string or set of strings.</p>
 
-<h2>Queue</h2>
+<h2 id="queue">Queue</h2>
 
 <p>Some tasks are best done in the background.</p>
 
@@ -194,7 +188,7 @@ bowery.search('user', {name: 'Bob B'})
 <pre><code>bowery.queue(handler).every(3600).startAt(Date.now())
 </code></pre>
 
-<h2>Email</h2>
+<h2 id="email">Email</h2>
 
 <p>Bowery has a built-in email service that manages email provider rate limiting and other annoyances such as inline styles. To send an email:</p>
 
@@ -208,7 +202,7 @@ bowery.search('user', {name: 'Bob B'})
 
 <p><code>to</code>, <code>from</code>, <code>cc</code>, and <code>bcc</code> can either take a string or an array of strings. The order of these four function calls in the chain doesn't matter, but the <code>body</code> needs to come last. The <code>body</code> method will render the given template with the data passed to it and then inline the styles in the specified stylesheet to generate the email body.</p>
 
-<h2>Static Assets</h2>
+<h2 id="static-assets">Static Assets</h2>
 
 <p>Almost every web application has to handle and serve static assets. Bowery overrides the default express static middleware so that whatever folder you mount with will be served from a special static file server and put behind a CDN in production:</p>
 
@@ -251,7 +245,7 @@ bowery.search('user', {name: 'Bob B'})
 <pre><code>&lt;img src="{{ images['imageName'] }}?s=50x50"&gt;
 </code></pre>
 
-<h2>Production</h2>
+<h2 id="production">Production</h2>
 
 <h3>Use a Custom Domain</h3>
 
@@ -265,6 +259,11 @@ bowery.search('user', {name: 'Bob B'})
 <pre><code>$ bowery domains:remove www.foo.com
 </code></pre>
 
+<h2 id="philosophy">Philosophy</h2>
+
+<p>Web development is terrible—it's filled with convoluted abstrations that have little to do with building a product. Today we care about users, but most of our time is spent worrying about server and database management.</p>
+
+<p>When writing a Bowery application, you just write code and the rest takes care of itself—there isn't even a local development environment. Common services that developers set up for each application (database, caching, email, search, CDN, etc.) are already built into Bowery. Implementation details and performance optimizations are made behind the scenes so that you can focus all of your energy on the product.</p>
 
       </div>
     </div>
