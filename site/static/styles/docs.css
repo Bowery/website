@@ -31,6 +31,7 @@ font-size: 0.75em;
 }
 
 .side-nav {
+  position: fixed;
   background: #fff;
   list-style: none;
   width: 225px;
@@ -54,7 +55,7 @@ font-size: 0.75em;
 }
 
 .docs-content {
-  margin-left: 60px;
+  margin-left: 298px;
   width: 665px;
 }
 

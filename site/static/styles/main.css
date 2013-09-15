@@ -131,6 +131,10 @@ p {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
 }
 
+.site-nav {
+  position: fixed;
+}
+
 .sign-up {
   margin-left: 173px;
 }
