@@ -111,4 +111,7 @@
     margin-left: 0;
   }
 
+  footer {
+    position: relative;
+  }
 }
