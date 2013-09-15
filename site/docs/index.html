@@ -120,7 +120,7 @@ $ bowery branch NEW_FEATURE
 <p>You can access the database driver in an express route handler.</p>
 
 <pre><code>app.get('/user/:id', function (bowery, req, res, next) {
-  bowery.db.user(req.params.id) // gets the user with the id from the path
+  bowery.db.user(req.params.id)
   .then(function (user) {
     res.render('user/show', {user: user})
   })
@@ -197,7 +197,7 @@ bowery.search('user', {name: 'Bob B'})
       .from('david@bowery.io')
       .cc(['concierge@bowery.io', 'help@bowery.io'])
       .bcc('records@bowery.io')
-      .body('emails/hello.hjs', 'stylesheet/email.css', {name: 'Mr. Foo Bar'})
+      .body('hello.hjs', 'email.css', {name: 'Mr. Foo Bar'})
 </code></pre>
 
 <p><code>to</code>, <code>from</code>, <code>cc</code>, and <code>bcc</code> can either take a string or an array of strings. The order of these four function calls in the chain doesn't matter, but the <code>body</code> needs to come last. The <code>body</code> method will render the given template with the data passed to it and then inline the styles in the specified stylesheet to generate the email body.</p>
