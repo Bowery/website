@@ -245,12 +245,16 @@ a {
   margin-left: 5%;
 }
 
-footer {
+footer.footer {
   background-color: #eee;
   bottom: 0;
-  font-size: 14px;
   padding: 30px 0;
   position: absolute;
   margin-top: 50px;
   width: 100%;
+}
+
+.footer p {
+  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
+  font-size: 12px;
 }
