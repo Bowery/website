@@ -17,6 +17,10 @@
     margin: 10px
   }
 
+  .buffer {
+    margin-top: 20px;
+  }
+
   .links {
     border-top: 1px solid #eee;
     display: block;
