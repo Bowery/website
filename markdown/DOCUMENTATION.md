@@ -16,17 +16,17 @@ Once you've [registered online](http://bowery.io) you can install the command li
 $ (sudo) npm install bowery -g
 ```
 
-or you can install Bowery and it's dependencies in one go.
+or you can install Bowery and its dependencies in one go.
 
 ```
 $ curl https://download.bowery.io/latest
 ```
 
-This is really convenient for setting up and running Bowery on any computer.
+This is particularly convenient for setting up and running Bowery on any computer.
 
 ### Connect
 
-Unlike most development environments, Bowery demands an internet connection. To get started, simply connect to Bowery.
+Unlike most development environments, Bowery requires an internet connection. To get started, simply connect to Bowery.
 
 ```
 $ bowery connect
@@ -45,7 +45,7 @@ $ bowery branch NEW_FEATURE
 > Opening new branch at https://NEW_FEATURE.APP_NAME.ACCOUNT_NAME.bowery.io
 ```
 
-This URL is only accessible by you. If you're working in a team environment, they will have access if they are currently logged into Bowery.
+This URL is only accessible by you. If you're working with a team, they will have access if they are currently logged into Bowery.
 
 When you're ready to merge to master:
 
@@ -73,7 +73,7 @@ app.get('/home', function (bowery, req, res, next) {
 
 ## Database
 
-BoweryDB is more of a data management application then a database. It analyses access paterns to cache commonly used data and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.
+BoweryDB is more of a data management application then a database. It analyses access paterns to cache frequently-used data, and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.
 
 ### Schemas
 
@@ -87,7 +87,7 @@ exports.User = {
 }
 ```
 
-Values that are a single element array indicate a set of the type given as the only element. `friends: [User]` is an array of User objects. The supported types are the built-in javascript types & schemas defined by the user in the schemas directory.
+Values that are a single element array indicate a set of the type given as the only element. `friends: [User]` is an array of `User` objects. The supported types are the built-in javascript types & schemas defined by the user in the schemas directory.
 
 ### Queries
 
