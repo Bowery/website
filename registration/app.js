@@ -15,7 +15,7 @@ var db = require('monk')('jmoney:java$cript@paulo.mongohq.com:10028/bowery-regis
 var Store = require('connect-redis')(express)
 
 var Logger = require('log')
-var log = new Logger('info', fs.createWriteStream(__dirname + '/logs/' + Date.now() + '.log'))
+var log = new Logger('info', fs.createWriteStream(Date.now() + '.log'))
 var hipchat = (new require('hipchat')('348b9ece60d9bbb28ed67f1b700d3f')).Rooms
 
 // all environments
