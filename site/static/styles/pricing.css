@@ -1,9 +1,10 @@
 body {
   background: #f7f7f7;
+  min-height: 750px;
 }
 
 p {
-    font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
 }
 
 .tagline {
