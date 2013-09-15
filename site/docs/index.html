@@ -55,16 +55,16 @@
 <pre><code>$ (sudo) npm install bowery -g
 </code></pre>
 
-<p>or you can install Bowery and it's dependencies in one go.</p>
+<p>or you can install Bowery and its dependencies in one go.</p>
 
 <pre><code>$ curl https://download.bowery.io/latest
 </code></pre>
 
-<p>This is really convenient for setting up and running Bowery on any computer.</p>
+<p>This is particularly convenient for setting up and running Bowery on any computer.</p>
 
 <h3>Connect</h3>
 
-<p>Unlike most development environments, Bowery demands an internet connection. To get started, simply connect to Bowery.</p>
+<p>Unlike most development environments, Bowery requires an internet connection. To get started, simply connect to Bowery.</p>
 
 <pre><code>$ bowery connect
 </code></pre>
@@ -81,7 +81,7 @@ $ bowery branch NEW_FEATURE
 &gt; Opening new branch at https://NEW_FEATURE.APP_NAME.ACCOUNT_NAME.bowery.io
 </code></pre>
 
-<p>This URL is only accessible by you. If you're working in a team environment, they will have access if they are currently logged into Bowery.</p>
+<p>This URL is only accessible by you. If you're working with a team, they will have access if they are currently logged into Bowery.</p>
 
 <p>When you're ready to merge to master:</p>
 
@@ -106,7 +106,7 @@ $ bowery branch NEW_FEATURE
 
 <h2>Database</h2>
 
-<p>BoweryDB is more of a data management application then a database. It analyses access paterns to cache commonly used data and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.</p>
+<p>BoweryDB is more of a data management application then a database. It analyses access paterns to cache frequently-used data, and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.</p>
 
 <h3>Schemas</h3>
 
@@ -119,7 +119,7 @@ $ bowery branch NEW_FEATURE
 }
 </code></pre>
 
-<p>Values that are a single element array indicate a set of the type given as the only element. <code>friends: [User]</code> is an array of User objects. The supported types are the built-in javascript types &amp; schemas defined by the user in the schemas directory.</p>
+<p>Values that are a single element array indicate a set of the type given as the only element. <code>friends: [User]</code> is an array of <code>User</code> objects. The supported types are the built-in javascript types &amp; schemas defined by the user in the schemas directory.</p>
 
 <h3>Queries</h3>
 

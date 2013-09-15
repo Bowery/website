@@ -17,7 +17,7 @@ h6{ font-size:0.5em; }
 
 p{
 margin:1em 0;
-font-size: 0.9em;
+font-size: 0.75em;
 }
 
 .docs {
@@ -68,6 +68,7 @@ font-size: 0.9em;
 
 .tagline {
   margin-top: 0.2em;
+  font-size: 0.9em;
 }
 
 a:-webkit-any-link {

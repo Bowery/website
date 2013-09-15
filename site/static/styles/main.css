@@ -28,6 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 1.5em;
+  font-weight: 300;
 }
 
 .content {
@@ -120,7 +121,7 @@ p {
 }
 
 .desc {
-  width: 410px;
+  width: 430px;
 }
 
 .desc > h1,
