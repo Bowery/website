@@ -39,6 +39,9 @@ p {
 .pricing-list > li > p {
   font-size: 0.65em;
   padding: 15px;
+  vertical-align: middle;
+  display: table-cell;
+  height: 80px;
 }
 
 .pricing-header {
