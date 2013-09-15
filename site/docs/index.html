@@ -47,7 +47,7 @@
 
 <h3>Installation</h3>
 
-<p>Once you've <a href="http://bowery.io">registered online</a> you can install the command line interface using NPM:</p>
+<p>Once you've <a href="http://bowery.io/signup">registered online</a>, you can install the command line interface using NPM:</p>
 
 <pre><code>$ (sudo) npm install bowery -g
 </code></pre>
@@ -70,7 +70,7 @@
 
 <h3>Git Workflow</h3>
 
-<p>Bowery "branches" retain the same structure as git branches, but are also accessible online. When you connect to Bowery, you'll get a friendly reminder of the application and branch you're working on. It's <strong>highly</strong> recommended you don't work on the master branch. To change branches:</p>
+<p>Bowery &ldquo;branches&rdquo; retain the same structure as git branches, but are also accessible online. When you connect to Bowery, you'll get a friendly reminder of the application and branch you're working on. It's highly recommended you don't work on the master branch. To change branches:</p>
 
 <pre><code>$ bowery connect
 &gt; Hey Steve, you're currently working on APP_NAME, developing on the MASTER branch.
@@ -89,7 +89,7 @@ $ bowery branch NEW_FEATURE
 
 <h2 id="core">Core</h2>
 
-<p>Instead of building a web framework from scratch, we've just written middleware for <a href="http://expressjs.com">express</a>. You add the middleware to your application with:</p>
+<p>Instead of building a web framework from scratch, we've just written middleware for <a href="http://expressjs.com" target="_blank">express</a>. You add the middleware to your application with:</p>
 
 <pre><code>app.use(require('bowery'))
 </code></pre>
@@ -103,7 +103,7 @@ $ bowery branch NEW_FEATURE
 
 <h2 id="database">Database</h2>
 
-<p>BoweryDB is more of a data management application then a database. It analyses access paterns to cache frequently-used data, and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.</p>
+<p>BoweryDB is more of a data management application then a database. It analyzes access paterns to cache frequently-used data, and knows when you make updates in your code to make sure the cache is never stale. All that matters from the developers' point of view is the code they use to interact with it.</p>
 
 <h3>Schemas</h3>
 
