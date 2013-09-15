@@ -77,7 +77,7 @@ BoweryDB is more of a data management application then a database. It analyses a
 
 ### Schemas
 
-In a `/schemas` directory you can add schemas:
+You can add schemas in the `/schemas` directory:
 
 ```
 exports.User = {

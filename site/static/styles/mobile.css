@@ -48,4 +48,14 @@
     margin: 25px 0;
     width: 100%;
   }
+
+  .tagline {
+    font-size: 0.85em;
+  }
+
+  .pricing-list > li {
+    width: 98%;
+    margin: 2% 1%;
+  }
+
 }
