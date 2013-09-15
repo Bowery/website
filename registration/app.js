@@ -31,7 +31,6 @@ app.use(express.session({
   secret: 'kljhsdflkjhasdf sadlkjh asdlkfjh salkjdfh',
   store: new Store()
 }))
-app.use(flash())
 app.use(app.router)
 app.use(express.static(path.join(__dirname, 'public')))
 
@@ -89,8 +88,7 @@ app.post('/signup', function (req, res) {
       })
       .error(errorHandler)
   } else {
-    req.flash('message', 'Missing Required Field.')
-    res.redirect('/')
+    res.redirect('http://bowery.io/signup')
   }
 })
 
