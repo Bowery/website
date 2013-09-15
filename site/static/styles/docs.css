@@ -28,10 +28,22 @@ font-size: 0.75em;
 }
 
 .side-nav {
-  position: fixed;
   background: #fff;
   list-style: none;
   width: 225px;
+}
+
+.side-nav-container {
+   position: fixed;
+   width: 225px;
+}
+
+.side-nav-container .btn {
+  width: 100%;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .side-nav > li > a {
