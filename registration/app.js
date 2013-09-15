@@ -94,5 +94,9 @@ app.post('/signup', function (req, res) {
   }
 })
 
+app.get('/healthz', function (req, res) {
+  res.end('ok')
+})
+
 app.listen(app.get('port'))
 log.info('Starting on port ' + app.get('port'))
