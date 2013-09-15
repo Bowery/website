@@ -16,11 +16,9 @@ body {
   -webkit-font-smoothing: antialiased;
   font: normal 24px "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
   text-rendering: optimizeLegibility;
+  min-height: 1050px;
+  position: relative;
 }
-
-header,
-section,
-footer {}
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: -1px;
@@ -248,8 +246,11 @@ a {
 }
 
 footer {
-  background-color: #EEEEEE;
+  background-color: #eee;
+  bottom: 0;
+  font-size: 14px;
   padding: 30px 0;
+  position: absolute;
   margin-top: 50px;
-  font-size: 0.6em;
+  width: 100%;
 }
