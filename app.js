@@ -27,28 +27,142 @@ if ('development' == app.get('env')) {
   API_ENDPOINT = 'http://bowery2.apiary.io'
 }
 
+/**
+ * Static pages.
+ */
 ['/', '/docs', '/pricing', '/signup'].forEach(function (v) {
   app.get(v, function (req, res) {
     res.render(v == '/' ? 'index' : v.slice(1))
   })
 })
 
-app.post('/developers', function (req, res) {})
-
-app.put('/developers/:token', function (req, res) {})
-
-app.get('/me/:token', function (req, res) {
-  res.end('token')
+/**
+ * Create new developer. Requires a name, email, and password.
+ * If any parameters are missing, error returned. On successful
+ * creation, developer & organization objects returned.
+ */
+app.post('/developers', function (req, res) {
+  var body = req.body
+  if (!body.name || !body.email || !body.password) res.end('Missing fields')
+  
+  request({
+    url: API_ENDPOINT + req.url,
+    json: body,
+    method: 'POST'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
 })
 
-app.post('/organizations/:name/exists', function (req, res) {})
+/**
+ * Update a developer. Requires token.
+ */
+app.put('/developers/:token', function (req, res) {
+  var body = req.body
 
-app.put('/organizations/:id', function (req, res) {})
+  request({
+    url: API_ENDPOINT + req.url,
+    json: body,
+    method: 'PUT'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
 
-app.post('/organizations/developer', function (req, res) {})
+/**
+ * Create new developer token.
+ */
+app.post('/developers/token', function (req, res) {
+  var body = req.body
+  if (!body.license) res.end('Missing license')
 
+  request({
+    url: API_ENDPOINT + req.url,
+    json: body,
+    method: 'POST',
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
+
+/**
+ * Get active developer.
+ */
+app.get('/me', function (req, res) {
+  var token = req.query.token
+  if (!token) res.end('Missing token')
+
+  request({
+    url: API_ENDPOINT + req.url,
+    method: 'GET'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
+
+/**
+ * Check if organization name exists. Returns boolean.
+ */
+app.post('/organizations/:name/exists', function (req, res) {
+  request({
+    url: API_ENDPOINT + req.url,
+    method: 'POST'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
+
+/**
+ * Update an organization.
+ */
+app.put('/organizations/:id', function (req, res) {
+  var body = req.body
+  if (!body.token) res.end('Missing fields')
+
+  request({
+    url: API_ENDPOINT + req.url,
+    json: body,
+    method: 'POST'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
+
+/**
+ * Adds a developer to an organization. If the developer does not exist it
+ * create the developer and generate a sign up link.
+ */
+app.post('/organizations/developer', function (req, res) {
+  var body = req.body
+  if (!body.token || !body.organizationId || !body.email) res.end('Missing fields')
+
+  request({
+    url: API_ENDPOINT + req.url,
+    json: body,
+    method: 'POST'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
+})
+
+/**
+ * Get sign up page, pre-filled with known developer information.
+ */
 app.get('/organizations/invite/:token', function (req, res) {
-  res.end('token')
+  request({
+    url: API_ENDPOINT + req.url,
+    method: 'GET'
+  }, function (err, response, body) {
+    if (err) res.end('Error')
+    res.json(body)
+  })
 })
 
 app.listen(app.get('port'), function(){
