@@ -22,20 +22,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', function (req, res) {
-  res.render('index')
-})
-
-app.get('/docs', function (req, res) {
-  res.render('docs')
-})
-
-app.get('/pricing', function (req, res) {
-  res.render('pricing')
-})
-
-app.get('/signup', function (req, res) {
-  res.render('signup')
+['/', '/docs', '/pricing', '/signup'].forEach(function (v) {
+  app.get(v, function (req, res) {
+    res.render(v == '/' ? 'index' : v.slice(1))
+  })
 })
 
 app.listen(app.get('port'), function(){
