@@ -15,11 +15,11 @@ app.use(express.methodOverride())
 app.use(express.cookieParser('some secret that goes here and is long'))
 app.use(app.router)
 app.use(require('less-middleware')({ src: __dirname + '/public' }))
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+  app.use(express.errorHandler())
 }
 
 ['/', '/docs', '/pricing', '/signup'].forEach(function (v) {
@@ -29,5 +29,5 @@ if ('development' == app.get('env')) {
 })
 
 app.listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
+  console.log('Express server listening on port ' + app.get('port'))
+})
