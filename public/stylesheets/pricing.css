@@ -1,0 +1,43 @@
+body {
+  background: #f7f7f7;
+  min-height: 750px;
+}
+p {
+  font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", Times, serif;
+}
+.tagline {
+  padding-bottom: 20px;
+}
+.pricing-list {
+  list-style: none;
+  padding-bottom: 20px;
+}
+.pricing-list > li {
+  display: inline-block;
+  margin-right: 3%;
+  vertical-align: top;
+  border: 1px solid #e5e5e5;
+}
+.pricing-list > li:last-child {
+  margin-right: 0%;
+}
+.half > li {
+  width: 48.5%;
+}
+.third > li {
+  width: 30.75%;
+}
+.pricing-list > li > p {
+  font-size: 0.65em;
+  padding: 15px;
+  vertical-align: middle;
+  display: table-cell;
+  height: 80px;
+}
+.pricing-header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 15px;
+  background: #fff;
+  font-size: 0.65em;
+  text-transform: uppercase;
+}
