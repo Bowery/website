@@ -15,7 +15,12 @@ app.use(express.bodyParser())
 app.use(express.methodOverride())
 app.use(express.cookieParser('some secret that goes here and is long'))
 app.use(app.router)
-app.use(require('less-middleware')({ src: __dirname + '/public' }))
+app.use(require('less-middleware')({
+  src: __dirname + '/public',
+  compress: 'auto',
+  yuicompress: true,
+  once: app.get('env') == 'production'
+}))
 app.use(express.static(path.join(__dirname, 'public')))
 
 // TODO(steve): Replace this with propellant.
@@ -34,6 +39,32 @@ if ('development' == app.get('env')) {
   app.get(v, function (req, res) {
     res.render(v == '/' ? 'index' : v.slice(1))
   })
+})
+
+
+// TODO(steve) put this in a better order
+app.get('/developers/new', function (req, res) {
+  res.render('developers/create')
+})
+
+app.get('/developers/:id', function (req, res) {
+  res.render('developers/show')
+})
+
+app.get('/developers/:id/edit', function (req, res) {
+  res.render('developers/edit')
+})
+
+app.get('/organizations/new', function (req, res) {
+  res.render('organizations/create')
+})
+
+app.get('/organizations/:id', function (req, res) {
+  res.render('organizations/show')
+})
+
+app.get('/organizations/:id/edit', function (req, res) {
+  res.render('organizations/edit')
 })
 
 /**

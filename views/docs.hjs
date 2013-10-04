@@ -2,9 +2,9 @@
 <meta charset="utf-8">
 <title>Bowery</title>
 <meta name="viewport" content="width=device-width, user-scalable=no">
-<link href="/stylesheets/main.css" rel="stylesheet" />
-<link href="/stylesheets/docs.css" rel="stylesheet" />
-<link href="/stylesheets/mobile.css" rel="stylesheet" />
+<link href="/stylesheets/main.min.css" rel="stylesheet" />
+<link href="/stylesheets/docs.min.css" rel="stylesheet" />
+<link href="/stylesheets/mobile.min.css" rel="stylesheet" />
 <link href="https://cloud.typography.com/7823052/643422/css/fonts.css" rel="stylesheet" />
 <body>
   <header class="nav">
