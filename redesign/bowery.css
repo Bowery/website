@@ -179,6 +179,7 @@ body {
   float: left;
   margin-right: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 .content-container.right {
   overflow: hidden;
@@ -187,19 +188,20 @@ body {
   height: 480px;
   float: right;
   margin-left: 0;
+  padding-right: 0;
   padding-left: 0;
 }
 .content-container.left .content {
   float: right;
-  padding-right: 52px;
+  padding: 0 52px;
   width: 100%;
-  max-width: 512px;
+  max-width: 600px;
 }
 .content-container.right .content {
   float: left;
-  padding-left: 52px;
+  padding: 0 52px;
   width: 100%;
-  max-width: 548px;
+  max-width: 600px;
 }
 
 .content {
@@ -302,6 +304,20 @@ body {
     width: 100%;
   }
   .content {
+    width: 100%;
     margin: 0 auto;
+    max-width: 807px !important;
+  }
+}
+
+@media (max-width: 440px) {
+  /* Hide button accents*/
+  .btn .accent {
+    display: none;
+  }
+
+  /* Make button text centered*/
+  .btn {
+    text-align: center;
   }
 }
