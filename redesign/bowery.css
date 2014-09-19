@@ -1,0 +1,307 @@
+:root {
+  --white: white;
+  --grey: rgb(245, 245, 245);
+  --turquoise: rgb(55, 212, 213);
+
+  --type: rgb(25, 25, 25);
+  --type-light: white;
+
+  --nav-border-color: rgb(174, 176, 179);
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, button {
+  font-family:"Monosten A", Courier, monospace;
+  font-size-adjust:0.5;
+  font-weight:normal;
+  font-style:normal;
+  line-height: 1;
+  color: var(--type);
+}
+h2 {
+  font-family:"Monosten E", Courier, monospace;
+  text-transform: uppercase;
+  font-size: 22px;
+  letter-spacing: 6px;
+}
+body, input, textarea, option, select {
+  font-family:"Monosten E", Courier, monospace;
+  font-size-adjust:0.5;
+  font-weight:200;
+  font-style:normal;
+  color: var(--type);
+}
+a, p, span, li {
+  font-family: Helvetica;
+  /*letter-spacing: 1px;*/
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}
+a:visited,
+a:active,
+a:focus {
+  color: var(--type);
+}
+
+ol li {
+  margin-left: 22px;
+}
+
+body {
+  background-color: var(--turquoise);
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * Navigation
+ */
+.navigation-container {
+  width: 100%;
+  background: var(--white);
+  border-bottom: 1px solid var(--nav-border-color);
+}
+.navigation {
+  margin: 0 auto;
+  height: 80px;
+  max-width: 1200px;
+  /*border-left: 1px solid var(--nav-border-color);*/
+  border-right: 1px solid var(--nav-border-color);
+}
+
+.nav-logo-container {
+  margin: 0;
+  padding: 0 20px;
+  width: 200px;
+  float: left;
+  border-right: 1px solid var(--nav-border-color);
+}
+
+.nav-logo {
+  margin: 15px 0;
+  background: url('logo.png') no-repeat;
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+.nav-page-title {
+  float: left;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 31px 20px;
+}
+.nav-search-container {
+  float: left;
+  display: inline-block;
+  max-width: 482px;
+  height: 80px;
+  padding: 28px;
+}
+.nav-search-icon {
+  float: left;
+  background: url('search-icon.png') no-repeat;
+  width: 25px;
+  height: 25px;
+}
+.nav-search-input {
+  float: left;
+  display: inline-block;
+  max-width: 365px;
+  overflow: auto;
+  padding: 0 10px;
+  height: 100%;
+  border: none;
+  background: white;
+  outline: none !important;
+}
+.nav-item-container {
+  position: relative;
+  float: right;
+  border-left: 1px solid var(--nav-border-color);
+}
+.nav-item {
+  display: block;
+  padding: 33px 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 2px;
+  font-family:"Monosten A", Courier, monospace;
+}
+.nav-bullet {
+  font-size: 32px;
+  line-height: 16px;
+  margin: 0 auto;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+.nav-item-container:hover .nav-item,
+.nav-item-container:hover .nav-bullet {
+  color: var(--turquoise);
+  opacity: 1;
+  /*TODO (thebyrd) dot on hover*/
+}
+
+
+/**
+ * Content
+ */
+.content-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 440px;
+  padding: 80px 52px;
+  overflow: hidden;
+}
+.content-container.left {
+  overflow: hidden;
+  background: white;
+  width: 50%;
+  height: 480px;
+  float: left;
+  margin-right: 0;
+  padding-right: 0;
+}
+.content-container.right {
+  overflow: hidden;
+  background: var(--grey);
+  width: 50%;
+  height: 480px;
+  float: right;
+  margin-left: 0;
+  padding-left: 0;
+}
+.content-container.left .content {
+  float: right;
+  padding-right: 52px;
+  width: 100%;
+  max-width: 512px;
+}
+.content-container.right .content {
+  float: left;
+  padding-left: 52px;
+  width: 100%;
+  max-width: 548px;
+}
+
+.content {
+  display: inline-block;
+  /*max-width: 548px;*/
+  min-width: 353px;
+  width: 50%;
+  float: left;
+  padding: 0;
+  overflow: hidden;
+}
+.subcontent {
+  margin-top: 30px;
+  display: inline-block;
+  width: 100%;
+  min-width: 353px;
+}
+
+
+/**
+ * Header? TODO (thebyrd) make these general
+ */
+.header {
+  background: var(--turquoise);
+  color: var(--white);
+}
+.header h1 {
+  color: var(--white);
+  font-size: 62px;
+  line-height: 72px;
+  font-family:"Monosten E", Courier, monospace;
+  letter-spacing: 11px;
+}
+
+.header a,
+.header p {
+  color: var(--white);
+  text-decoration: none;
+}
+.header a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Buttons
+ */
+.btn {
+  background: none;
+  border: 0;
+  appearance: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 5px;
+  outline: none !important;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+}
+.btn:hover {
+  color: var(--type);
+}
+.btn.download {
+  color: white;
+  background: var(--turquoise);
+  padding: 24px;
+}
+
+.btn .accent {
+  font-family:"Monosten A", Courier, monospace;
+  float: right;
+  color: var(--type);
+  font-size: 16px;
+  line-height: 16px;
+  opacity: 0.5;
+  text-transform: none;
+}
+
+/**
+ * Ghetto Responsiveness
+ */
+@media (max-width: 985px) {
+  /*Hide search & remove logo container's right border*/
+  .nav-search-container {
+    display: none;
+  }
+  .nav-logo-container {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 807px) { /*744px*/
+  /* TODO (thebyrd) hide items & enable drawer*/
+  .nav-item-container {
+    display: none;
+  }
+  /* have split content stack*/
+  .content-container.right,
+  .content-container.left {
+    width: 100%;
+  }
+  .content {
+    margin: 0 auto;
+  }
+}
