@@ -34,14 +34,14 @@ h2 {
 body, input, textarea, option, select {
   font-family:"Monosten E", Courier, monospace;
   font-size-adjust:0.5;
-  font-weight:200;
+  font-weight:300;
   font-style:normal;
   color: var(--type);
 }
 a, p, span, li {
   font-family: Helvetica;
   /*letter-spacing: 1px;*/
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
@@ -175,7 +175,7 @@ body {
   overflow: hidden;
   background: white;
   width: 50%;
-  height: 480px;
+  height: 630px;
   float: left;
   margin-right: 0;
   padding-right: 0;
@@ -185,7 +185,7 @@ body {
   overflow: hidden;
   background: var(--grey);
   width: 50%;
-  height: 480px;
+  height: 650px;
   float: right;
   margin-left: 0;
   padding-right: 0;
@@ -278,6 +278,10 @@ body {
   line-height: 16px;
   opacity: 0.5;
   text-transform: none;
+}
+
+.screenshot {
+  width: 100%;
 }
 
 /**
