@@ -80,7 +80,7 @@ body {
 .nav-logo-container {
   margin: 0;
   padding: 0 20px;
-  width: 200px;
+  width: 203px;
   float: left;
   border-right: 1px solid var(--nav-border-color);
 }
@@ -291,6 +291,16 @@ body {
   .nav-logo-container {
     border-right: 0;
   }
+
+  /* Hide button accents*/
+  .btn .accent {
+    display: none;
+  }
+
+  /* Make button text centered*/
+  .btn {
+    text-align: center;
+  }
 }
 
 @media (max-width: 807px) { /*744px*/
@@ -307,17 +317,5 @@ body {
     width: 100%;
     margin: 0 auto;
     max-width: 807px !important;
-  }
-}
-
-@media (max-width: 440px) {
-  /* Hide button accents*/
-  .btn .accent {
-    display: none;
-  }
-
-  /* Make button text centered*/
-  .btn {
-    text-align: center;
   }
 }
