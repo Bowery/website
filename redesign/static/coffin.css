@@ -34,7 +34,7 @@ body {
   display: none;
   z-index: 5;
   /*background: #222;*/
-  /*background: url('drawer-background.png') repeat;*/
+  background: url('/static/drawer-background.png') repeat;
   position: fixed;
   top: 0;
   bottom: 0;
