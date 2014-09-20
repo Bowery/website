@@ -55,7 +55,7 @@ ol li {
   margin-left: 22px;
 }
 
-body {
+body, .page {
   background-color: var(--turquoise);
   margin: 0;
   padding: 0;

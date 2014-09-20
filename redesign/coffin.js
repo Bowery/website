@@ -31,6 +31,9 @@
     // window size cache
     var windowSize = window.innerWidth;
 
+    // coffin size
+    var coffinSize = 416;
+
     // is coffin open
     var isOpen = false;
 
@@ -125,7 +128,7 @@
         direction = '';
 
         // reset xMovement to left/right position
-        xMovement = isOpen ? 270 : 0;
+        xMovement = isOpen ? coffinSize : 0;
 
         // set touch start position for x axis
         xStart = e.touches[0].screenX;
@@ -164,7 +167,7 @@
         xMovement = e.touches[0].screenX - xStart + xEnd;
 
         // if xmovement is within valid range, scroll page
-        if (xMovement <= 270 && xMovement >= 0) {
+        if (xMovement <= coffinSize && xMovement >= 0) {
             translate3d(xMovement);
         }
 
@@ -194,10 +197,10 @@
         };
 
         // calculate which side to transition to
-        xEnd = xMovement <= (isOpen ? (270 - (fraction * 270)) : fraction * 270) ? 0 : 270;
+        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 0 : coffinSize;
 
         // check if transitioned open
-        isOpen = xEnd === 270;
+        isOpen = xEnd === coffinSize;
 
         // set transition property for animation
         page.style[transitionProperty] = transformCSSProperty + ' .1s linear';
@@ -209,12 +212,14 @@
         page.addEventListener(transitionEndEventName, transitionEnd);
 
         // if exit is at edge, force transitionEnd because transition won't be fired anyways
-        if (xMovement == 270) transitionEnd();
+        if (xMovement == coffinSize) transitionEnd();
 
     }));
 
     window.addEventListener('click', function (e) {
         if (!direction && closest(e.target, '[data-coffin=toggle]')) toggleCoffin()
+        else if (isOpen && closest(e.target, '.page')) toggleCoffin()
+
         return direction = '';
     })
 
