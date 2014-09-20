@@ -32,7 +32,7 @@
     var windowSize = window.innerWidth;
 
     // coffin size
-    var coffinSize = 416;
+    var coffinSize = 270;
 
     // is coffin open
     var isOpen = false;

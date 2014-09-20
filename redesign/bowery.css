@@ -61,6 +61,10 @@ body, .page {
   padding: 0;
 }
 
+p {
+   max-height: 999999px; /*disable mobile text auto resizing*/
+}
+
 /**
  * Navigation
  */
@@ -153,10 +157,11 @@ body, .page {
   cursor: pointer;
 }
 .nav-item-container:hover .nav-item,
-.nav-item-container:hover .nav-bullet {
+.nav-item-container:hover .nav-bullet,
+.nav-item-container.active .nav-item,
+.nav-item-container.active .nav-bullet {
   color: var(--turquoise);
   opacity: 1;
-  /*TODO (thebyrd) dot on hover*/
 }
 
 
@@ -168,7 +173,6 @@ body, .page {
   max-width: 1200px;
   width: 100%;
   min-height: 440px;
-  padding: 80px 52px;
   overflow: hidden;
 }
 .content-container.left {
@@ -193,13 +197,13 @@ body, .page {
 }
 .content-container.left .content {
   float: right;
-  padding: 0 52px;
+  padding: 80px 52px;
   width: 100%;
   max-width: 600px;
 }
 .content-container.right .content {
   float: left;
-  padding: 0 52px;
+  padding: 80px 52px;
   width: 100%;
   max-width: 600px;
 }
@@ -227,6 +231,7 @@ body, .page {
 .header {
   background: var(--turquoise);
   color: var(--white);
+  padding: 80px 52px;
 }
 .header h1 {
   color: var(--white);
@@ -234,6 +239,7 @@ body, .page {
   line-height: 72px;
   font-family:"Monosten E", Courier, monospace;
   letter-spacing: 11px;
+  margin-bottom: 20px;
 }
 
 .header a,
@@ -287,7 +293,7 @@ body, .page {
 /**
  * Ghetto Responsiveness
  */
-@media (max-width: 985px) {
+@media screen and (max-width: 985px), screen and (max-device-width: 985px) {
   /*Hide search & remove logo container's right border*/
   .nav-search-container {
     display: none;
@@ -307,7 +313,7 @@ body, .page {
   }
 }
 
-@media (max-width: 807px) { /*744px*/
+@media screen and (max-width: 807px), screen and (max-device-width: 807px) { /*744px*/
   /* TODO (thebyrd) hide items & enable drawer*/
   .nav-item-container {
     display: none;
@@ -316,10 +322,25 @@ body, .page {
   .content-container.right,
   .content-container.left {
     width: 100%;
+    min-height: 0;
+    height: auto;
   }
   .content {
     width: 100%;
     margin: 0 auto;
     max-width: 807px !important;
+  }
+}
+
+@media screen and (max-width: 407px), screen and (max-device-width: 407px) {
+  .header h1 {
+    letter-spacing: 0;
+  }
+  .content,
+  .subcontent {
+    min-width: 0;
+  }
+  .btn {
+    width: auto;
   }
 }
