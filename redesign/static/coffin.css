@@ -1,0 +1,136 @@
+/*
+ * Coffin.css V1.0.0
+ * Copyright 2012, @fat
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+/* Table of Contents
+==================================================
+    #Core   (Coffin)
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape) */
+
+/*  #Core (Coffin)
+================================================== */
+
+html,
+body {
+  overflow-x: hidden;
+}
+.page {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  width: auto;
+  /*border-radius: 5px;*/
+  box-shadow: -4px 0 10px -5px rgba(0, 0, 0, 0.8);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  overflow: hidden;
+}
+.coffin {
+  display: none;
+  z-index: 5;
+  /*background: #222;*/
+  background: url('/static/drawer-background.png') repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 470px;
+  margin-left: 0;
+  overflow: auto;
+}
+.coffin-open,
+.coffin-pulling {
+  display: block;
+}
+.coffin .pillow {
+  padding-left: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 30px;
+  color: #CCC;
+  background: #111;
+  border-bottom: 1px solid black;
+}
+.coffin .nav li {
+  margin-bottom: 0;
+}
+.coffin .nav li a {
+  display: block;
+  padding-left: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 50px;
+  color: #fff;
+  text-decoration: none;
+  /*text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #111;
+  box-shadow: 0 1px 1px #333;*/
+}
+.coffin .nav li a:hover,
+.coffin .nav li a.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.coffin-remote:hover,
+.coffin-remote {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 0;
+  padding: 7px 10px;
+  background: #fff;
+  opacity: 1;
+        transition: opacity .4s;
+     -o-transition: opacity .4s; /* Opera */
+   -moz-transition: opacity .4s; /* Firefox 4 */
+-webkit-transition: opacity .4s; /* Safari and Chrome */
+
+}
+.coffin-remote:hover {
+  opacity: .8;
+}
+.coffin-remote-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin-top: 4px;
+  background-color: #ddd;
+}
+
+/* #Tablet (Portrait)
+================================================== */
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (max-width: 959px) {
+  .container {
+    width: 556px;
+  }
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+/* Note: Design for a width of 320px */
+
+@media only screen and (max-width: 767px) {
+  .container {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 420px;
+  }
+}
