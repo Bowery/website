@@ -1,31 +1,101 @@
 <!doctype html>
 <html>
 <head>
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <link rel="stylesheet" href="/static/coffin.css">
-  <link rel="stylesheet" href="/static/out.css">
-  <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
-  <script src="/static/coffin.js" async></script>
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="/static/coffin.css" />
+<link rel="stylesheet" href="/static/out.css" />
+<link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
+<script src="/static/coffin.js" async></script>
 </head>
 <body>
-  <div class="coffin">
+  <div class="coffin" data-coffin="toggle">
+    <a href="#" class="logo"></a>
+    <div class="padding"></div>
     <ul class="nav">
-      <li>
-        <a data-coffin="click" href="/">Home</a>
-      </li>
       <li>
         <a data-coffin="click" href="/start">Get Started</a>
       </li>
       <li>
-        <a data-coffin="click" href="/learn">Learn More</a>
+        <a data-coffin="click" href="/images">Images</a>
       </li>
       <li>
-        <a data-coffin="click" href="/images">Images</a>
+        <a data-coffin="click" href="/learn">Learn More</a>
       </li>
     </ul>
   </div>
   <div class="page home">
-    <h1>Hello Work-Bench!</h1>
+    <div class="container-inner container-inner-intro">
+      <aside>
+        <ul class="step-list">
+          <li class="active scroll-to-add">1</li>
+          <li class="scroll-to-choose">2</li>
+          <li class="scroll-to-share">3</li>
+        </ul>
+      </aside>
+      <section id="intro" class="wrapper visible">
+        <div class="step-content intro-step-content">
+          <div class="intro-step-inner-wrapper">
+            <h1>Set up your development environment in 30 seconds flat.</h1>
+            <ul>
+              <li>Start coding without installing or configuring software.</li>
+              <li>No more bloated VMs, staging servers, or local installations.</li>
+              <li>Keep your engineering workflow while making onboarding easy.</li>
+            </ul>
+            <a href="#add" class="scroll-to-add">how does it work?</a>
+          </div>
+        </div>
+      </section>
+      <section id="add" class="wrapper">
+        <div class="step-content add-step-content">
+          <span class="step-item step-description">
+            <h3>Add an Application</h3>
+            <p>Tell us where your code is now, and where you want your code to run - locally, on an existing server, or on a new server (we'll spin one up for you).</p>
+          </span>
+          <span class="step-item app-view"></span>
+        </div>
+      </section>
+      <section id="choose" class="wrapper">
+        <div class="step-content choose-step-content">
+          <span class="step-item step-description">
+            <h3>Choose your Software</h3>
+            <p>Choose what software you'll ened for your code to run. Rails app w/ Mongo Backend w/ New Relic Monitoring? PHP with MySQL? One click and you're all set up.</p>
+            <ul>
+              <li>node.js</li>
+              <li>python</li>
+              <li>java</li>
+              <li>php</li>
+              <li>mysql</li>
+              <li>git</li>
+              <li>apache</li>
+              <li>ruby</li>
+              <li>rails</li>
+              <li>new relic</li>
+            </ul>
+            <a href="#">see all -></a>
+          </span>
+          <span class="step-item app-view"></span>
+        </div>
+      </section>
+      <section id="share" class="wrapper">
+        <div class="step-content share-step-content">
+          <span class="step-item step-description">
+            <h3>Share &amp; Collaborate</h3>
+            <p>Once you've set up your perfect dev environment, share it with your team so they can get up and running.</p>
+          </span>
+          <span class="step-item app-view"></span>
+        </div>
+      </section>
+      <section id="try" class="wrapper">
+        <div class="step-content try-step-content">
+          <div class="get-started-wrapper">
+            <a href="/start">get started</a>
+          </div>
+          <a href="/learn" class="learn-more">learn more</a>
+        </div>
+      </section>
+    </div>
   </div>
 </body>
+<script src="/static/jquery.min.js"></script>
+<script src="/static/home.js"></script>
 </html>
