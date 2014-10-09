@@ -159,7 +159,7 @@
         direction = '';
 
         // reset xMovement to left/right position
-        xMovement = isOpen ? coffinSize : 0;
+        xMovement = isOpen ? coffinSize : 1;
 
         // set touch start position for x axis
         xStart = e.touches[0].screenX;
@@ -198,7 +198,7 @@
         xMovement = e.touches[0].screenX - xStart + xEnd;
 
         // if xmovement is within valid range, scroll page
-        if (xMovement <= coffinSize && xMovement >= 0) {
+        if (xMovement <= coffinSize && xMovement >= 1) {
             translate3d(xMovement);
         }
 
@@ -228,7 +228,7 @@
         };
 
         // calculate which side to transition to
-        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 0 : coffinSize;
+        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 1 : coffinSize;
 
         // check if transitioned open
         isOpen = xEnd === coffinSize;

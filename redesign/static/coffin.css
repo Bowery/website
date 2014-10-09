@@ -18,14 +18,17 @@
 html,
 body {
   overflow-x: hidden;
+  /*background: rgb(46, 152, 159) repeat;*/
+}
+.padding {
+  height: 50%;
+  margin-top: -135px
 }
 .page {
   position: relative;
   z-index: 10;
   background: #fff;
   width: auto;
-  /*border-radius: 5px;*/
-  box-shadow: -4px 0 10px -5px rgba(0, 0, 0, 0.8);
   -webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   overflow: hidden;
@@ -33,13 +36,12 @@ body {
 .coffin {
   display: none;
   z-index: 5;
-  /*background: #222;*/
-  background: url('/static/drawer-background.png') repeat;
+  background: rgb(46, 152, 159) repeat;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  width: 470px;
+  width: 270px;
   margin-left: 0;
   overflow: auto;
 }
@@ -60,6 +62,9 @@ body {
   margin-bottom: 0;
 }
 .coffin .nav li a {
+  font-family:"Monosten A", Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 5px;
   display: block;
   padding-left: 25px;
   font-weight: bold;
@@ -67,9 +72,6 @@ body {
   line-height: 50px;
   color: #fff;
   text-decoration: none;
-  /*text-shadow: 0 -1px rgba(0, 0, 0, 0.8);
-  border-bottom: 1px solid #111;
-  box-shadow: 0 1px 1px #333;*/
 }
 .coffin .nav li a:hover,
 .coffin .nav li a.active {
