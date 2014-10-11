@@ -29,8 +29,6 @@ body {
   z-index: 10;
   background: #fff;
   width: auto;
-  -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000;
   overflow: hidden;
 }
 .coffin {
@@ -44,6 +42,7 @@ body {
   width: 270px;
   margin-left: 0;
   overflow: auto;
+  display: block;
 }
 .coffin-open,
 .coffin-pulling {
