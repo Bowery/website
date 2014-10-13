@@ -39,6 +39,8 @@ body {
   display: block;
   margin: 13px;
   background-size: contain;
+  outline: none;
+  border: 0;
 }
 .coffin {
   display: none;
