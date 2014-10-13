@@ -73,10 +73,16 @@ p {
 .page.start {
   background: var(--turquoise);
 }
+.coffin.start {
+  background: rgb(46, 152, 159) repeat;
+}
 
 /**
  * Images Page
  */
+.coffin.images {
+  background: rgb(5, 32, 107) repeat;
+}
 .images-list {
   list-style: none;
 }
@@ -227,6 +233,14 @@ p {
 .nav-item-container.active .nav-bullet {
   color: var(--turquoise);
   opacity: 1;
+}
+
+/**
+ * Learn More Page
+ */
+
+.learn.coffin {
+  background: rgb(53, 29, 77) repeat;
 }
 
 

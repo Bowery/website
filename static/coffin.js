@@ -20,7 +20,7 @@
     var direction;
 
     // movement offset
-    var xMovement = 0;
+    var xMovement = 80;
 
     // end scroll position
     var xEnd = 0;
@@ -159,7 +159,7 @@
         direction = '';
 
         // reset xMovement to left/right position
-        xMovement = isOpen ? coffinSize : 1;
+        xMovement = isOpen ? coffinSize : 80;
 
         // set touch start position for x axis
         xStart = e.touches[0].screenX;
@@ -197,8 +197,10 @@
         // calcuate movement based on last scroll pos
         xMovement = e.touches[0].screenX - xStart + xEnd;
 
+        console.log('$$$$ xMovement', xMovement)
+
         // if xmovement is within valid range, scroll page
-        if (xMovement <= coffinSize && xMovement >= 0) {
+        if (xMovement <= coffinSize && xMovement >= 80) {
             translate3d(xMovement);
         }
 
@@ -228,7 +230,7 @@
         };
 
         // calculate which side to transition to
-        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 0 : coffinSize;
+        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 80 : coffinSize;
 
         // check if transitioned open
         isOpen = xEnd === coffinSize;
