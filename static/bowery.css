@@ -8,6 +8,8 @@
   --dark-turquoise: rgb(45, 183, 182);
   --light-blue: rgb(109, 171, 207);
   --red: rgb(253, 106, 87);
+  --images-blue: rgb(23, 52, 153);
+  --images-light-blue: rgb(90, 113, 183);
 
   --type: rgb(25, 25, 25);
   --type-light: white;
@@ -145,6 +147,20 @@ p {
   color: white;
 }
 
+.search-box {
+  width: 100%;
+  height: 97px;
+}
+.search-input {
+  border: 0;
+  width: 100%;
+  height: 100%;
+  padding: 24px 35px;
+  background: var(--images-light-blue);
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
 /**
  * Navigation
  */
@@ -316,10 +332,19 @@ p {
 /**
  * Header? TODO (thebyrd) make these general
  */
+.images .outer-header {
+  background: var(--images-blue);
+}
 .header {
   background: var(--turquoise);
   color: var(--white);
   padding: 80px 52px;
+}
+.images .header {
+  background: var(--images-blue);
+  height: auto;
+  padding: 100px 52px;
+  min-height: 0;
 }
 .header h1 {
   color: var(--white);
@@ -645,7 +670,7 @@ li.active:last-child {
   text-align: center;
   top: 50%;
   transform: translateY(-50%);
-  position: relative; 
+  position: relative;
 }
 
 .get-started-wrapper > a:hover {
