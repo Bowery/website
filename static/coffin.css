@@ -22,7 +22,7 @@ body {
 }
 .padding {
   height: 50%;
-  margin-top: -135px
+  margin-top: 0;
 }
 .page {
   position: relative;
@@ -30,11 +30,20 @@ body {
   background: #fff;
   width: auto;
   overflow: hidden;
+  transform: translate3d(80px, 0, 0);
+}
+.logo {
+  width: 52px;
+  height: 54px;
+  background: url('/static/transparent-logo.png');
+  display: block;
+  margin: 13px;
+  background-size: contain;
 }
 .coffin {
   display: none;
   z-index: 5;
-  background: rgb(46, 152, 159) repeat;
+  background: rgb(10, 32, 57) repeat;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -56,6 +65,17 @@ body {
   color: #CCC;
   background: #111;
   border-bottom: 1px solid black;
+}
+.coffin .nav {
+  margin-top: -135px;
+  opacity: 0;
+          transition: opacity .1s;
+       -o-transition: opacity .1s; /* Opera */
+     -moz-transition: opacity .1s; /* Firefox 4 */
+  -webkit-transition: opacity .1s; /* Safari and Chrome */
+}
+.coffin-open .nav {
+  opacity: 1;
 }
 .coffin .nav li {
   margin-bottom: 0;
