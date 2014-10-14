@@ -1,0 +1,9 @@
+test:
+  override:
+    - echo "No Tests.."
+deployment:
+  production:
+    branch: master
+    commands:
+      - cd deploy && npm install
+      - node deploy/index.js
