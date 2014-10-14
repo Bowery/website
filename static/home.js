@@ -20,9 +20,9 @@ var newActiveFrame
 // Current distance from top of page (in pixels).
 var scrollTop = 0
 
-// Inner container. All events happen within this element.
+// Container. All events happen within this element.
 // It also defines the background color.
-var innerContainerEl = document.getElementsByClassName('container-inner')[0]
+var containerEl = document.getElementsByClassName('container')[0]
 
 // Step list.
 var $stepListEl
@@ -238,7 +238,7 @@ $(document).ready(function() {
 
   function updateBackground(num) {
     var selectorName = frames[num].selector.split('#')[1]
-    innerContainerEl.className = 'container-inner container-inner-' + selectorName
+    containerEl.className = 'container container-' + selectorName
     $('.wrapper').removeClass('visible')
     $(frames[num].selector).addClass('visible')
   }
