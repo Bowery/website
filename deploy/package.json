@@ -1,0 +1,14 @@
+{
+  "name": "site-publish",
+  "description": "Publish site to s3",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=0.10"
+  },
+  "dependencies": {
+    "knox": "~0.8.6",
+    "kew": "~0.3.4",
+    "walk": "^2.3.1"
+  }
+}
