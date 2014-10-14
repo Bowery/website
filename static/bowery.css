@@ -493,7 +493,7 @@ section.visible {
 
 .intro-step-content {
   background-image: url(/static/bgnd-logo.png);
-  background-size: 500px;
+  background-size: 515px;
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -505,9 +505,9 @@ section.visible {
 }
 
 .intro-step-inner-wrapper > h1 {
-  font-size: 50px;
+  font-size: 70px;
   line-height: 1.2em;
-  width: 410px;
+  width: 600px;
   color: white;
 }
 
@@ -519,6 +519,7 @@ section.visible {
   position: relative;
   left: 300px;
   top: -25px;
+  font-size: 20px;
 }
 
 .intro-step-inner-wrapper > ul > li {
@@ -543,7 +544,7 @@ section.visible {
 
 .step-content {
   position: relative;
-  width: 900px;
+  width: 960px;
   height: 100%;
   margin: 0 auto;
 }
@@ -557,7 +558,7 @@ section.visible {
 }
 
 .step-description {
-  width: 300px;
+  width: 400px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
@@ -568,9 +569,13 @@ section.visible {
   color: white;
 }
 
+.step-description > h3 {
+  font-size: 32px;
+}
+
 .step-description > p {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 24px;
   margin-top: 20px;
 }
 
@@ -646,13 +651,23 @@ li.active:last-child {
   padding-top: 20px;
   margin-top: 20px;
   border-top: 1px solid white;
+  list-style: none;
   column-count: 2;
 }
 
 .choose-step-content > .step-description > ul > li {
-  font: 12px normal "Monosten E", Courier, monospace;
+  font: 16px normal "Monosten E", Courier, monospace;
   letter-spacing: 1px;
-  padding: 2px 0;
+  padding: 7px 0;
+}
+
+a.see-all-images {
+  font: 16px normal "Monosten E", Courier, monospace;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  top: 20px;
 }
 
 .try-step-content {
@@ -660,8 +675,8 @@ li.active:last-child {
 }
 
 .get-started-wrapper {
-  height: 240px;
-  width: 500px;
+  height: 300px;
+  width: 600px;
   margin: 0 auto;
   color: white;
   background-color: rgb(70, 218, 220);
@@ -680,6 +695,8 @@ li.active:last-child {
   top: 50%;
   transform: translateY(-50%);
   position: relative;
+  font-size: 28px;
+  letter-spacing: 5px;
 }
 
 .get-started-wrapper > a:hover {
@@ -693,6 +710,7 @@ a.learn-more {
   text-transform: uppercase;
   position: fixed;
   bottom: 0;
+  font-size: 16px;
 }
 a.learn-more:hover {
   text-decoration: underline;
