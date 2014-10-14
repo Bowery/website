@@ -431,6 +431,11 @@ p {
 }
 
 /* home page */
+.coffin.home,
+.container-inner {
+  transition: background var(--long-transition-duration);
+}
+
 .page.home {
   position: fixed;
   width: 100%;
@@ -441,26 +446,30 @@ p {
   width: 100%;
   height: 100%;
   position: fixed;
-  transition: background var(--long-transition-duration);
 }
 
-.container-inner-intro {
+.container-intro > .coffin.home,
+.container-intro > .page.home > .container-inner {
   background: var(--blue);
 }
 
-.container-inner-add {
+.container-add > .coffin.home,
+.container-add > .page.home > .container-inner  {
   background: var(--medium-blue);
 }
 
-.container-inner-choose {
+.container-choose > .coffin.home,
+.container-choose > .page.home > .container-inner {
   background: var(--medium-turquoise);
 }
 
-.container-inner-share {
+.container-share > .coffin.home,
+.container-share > .page.home > .container-inner  {
   background: var(--light-blue);
 }
 
-.container-inner-try {
+.container-try > .coffin.home,
+.container-try > .page.home > .container-inner  {
   background: var(--dark-turquoise);
 }
 
@@ -484,7 +493,7 @@ section.visible {
 
 .intro-step-content {
   background-image: url(/static/bgnd-logo.png);
-  background-size: 300px;
+  background-size: 500px;
   background-repeat: no-repeat;
   background-position: right top;
 }
@@ -761,6 +770,10 @@ a.learn-more:hover {
     position: relative;
   }
 
+  .page.home {
+    position: relative;
+  }
+
   section,
   section.wrapper,
   section.visible {
@@ -856,6 +869,7 @@ a.learn-more:hover {
     font-size: 24px;
   }
   a.learn-more {
+    position: relative;
     display: block;
     font-size: 18px;
     padding: 40px 0;
