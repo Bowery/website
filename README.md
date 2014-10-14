@@ -6,7 +6,7 @@ We use a modified version of [coffin](https://github.com/fat/coffin) for the sid
 
 ```
 <div class="coffin" data-coffin="toggle">
-  <a href="#" class="logo"></a>
+  <button href="#" class="logo"></button>
   <div class="padding"></div>
   <ul class="nav">
     <li>
