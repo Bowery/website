@@ -5,7 +5,7 @@ deployment:
   production:
     branch: master
     commands:
-      - npm install myth
+      - npm install myth -g
       - myth static/bowery.css static/out.css
       - cd deploy && npm install
       - node deploy/index.js
