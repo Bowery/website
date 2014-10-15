@@ -398,6 +398,9 @@ p {
   opacity: 0.5;
   text-transform: none;
 }
+.btn.download:hover {
+  background: rgb(46, 152, 159) repeat;
+}
 
 .screenshot {
   width: 100%;
