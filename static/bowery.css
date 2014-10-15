@@ -3,10 +3,14 @@
   --grey: rgb(245, 245, 245);
   --turquoise: rgb(55, 212, 213);
   --blue: rgb(15, 39, 67);
+  --blue-secondary: rgb(10, 32, 57);
   --medium-blue: rgb(79, 113, 193);
+  --medium-blue-secondary: rgb(74, 101, 163);
   --medium-turquoise: rgb(34, 179, 195);
+  --medium-turqouise-secondary: rgb(35, 163, 177);
   --dark-turquoise: rgb(45, 183, 182);
   --light-blue: rgb(109, 171, 207);
+  --light-blue-secondary: rgb(100, 156, 188);
   --red: rgb(253, 106, 87);
   --images-blue: rgb(23, 52, 153);
   --images-light-blue: rgb(90, 113, 183);
@@ -448,22 +452,30 @@ p {
   position: fixed;
 }
 
-.container-intro > .coffin.home,
+.container-intro > .coffin.home {
+  background: var(--blue-secondary)
+}
 .container-intro > .page.home > .container-inner {
   background: var(--blue);
 }
 
-.container-add > .coffin.home,
+.container-add > .coffin.home {
+  background: var(--medium-blue-secondary);
+}
 .container-add > .page.home > .container-inner  {
   background: var(--medium-blue);
 }
 
-.container-choose > .coffin.home,
+.container-choose > .coffin.home {
+  background: var(--medium-turqouise-secondary);
+}
 .container-choose > .page.home > .container-inner {
   background: var(--medium-turquoise);
 }
 
-.container-share > .coffin.home,
+.container-share > .coffin.home {
+  background: var(--light-blue-secondary);
+}
 .container-share > .page.home > .container-inner  {
   background: var(--light-blue);
 }
