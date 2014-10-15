@@ -52,15 +52,15 @@
 
     <div class="content-container left">
       <div class="content">
-        <h2>Install</h2>
+        <h2>Setup</h2>
         <div class="subcontent">
-          <p>To Install the OS X Application you should:</p>
+          <p>To start using Bowery:</p>
         </div>
         <div class="subcontent">
           <ol>
-            <li>Download the bundle</li>
-            <li>Unzip it</li>
-            <li>Open by right clicking</li>
+            <li>Download the app by clicking on the button below</li>
+            <li>Unzip it and move it into your prefered directory (ie /Applications)</li>
+            <li>Sign in with your existing Bowery credentials or signup</li>
           </ol>
         </div>
         <div class="subcontent">
@@ -76,32 +76,125 @@
 
     <div class="content-container left">
       <div class="content">
-        <h2>Add An Application</h2>
+        <h2>Connect AWS</h2>
         <div class="subcontent">
-          <p>To start, let's put this thing inside the app and hope it works. Hopefully it'll work. I'm going to keep on talking because I need atleast three lines of text that look natural.</p>
+          <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct">here</a>.</p>
+        </div>
+        <div class="subcontent">
+          <p>Bowery will run your applications on instances in your AWS account, so you’re the only one who has access to them. Keep in mind, AWS will charge 3 cents / hour for each Bowery app.</p>
         </div>
       </div>
     </div>
     <div class="content-container right">
-      <div class="content"></div>
+      <div class="content">
+        <img src="/static/aws-screen.png" class="screenshot">
+      </div>
     </div>
 
     <div class="content-container left">
       <div class="content">
-        <h2>Next Step</h2>
+        <h2>Add An App</h2>
         <div class="subcontent">
-          <p>Now you're off to the races so you should give us lots of money and stuff. Please tell everyone how amazing this is.</p>
+          <p>The first step in creating an app is choose an image. You can search for various images both on the <a href=“http://bowery.io/images”>images page</a>and in the app.</p>
+        </div>
+        <div class="subcontent">
+          <p>Once you click on an image it will provision your app using that image. This may take a minute depending on how busy AWS is.</p>
         </div>
       </div>
     </div>
     <div class="content-container right">
-      <div class="content"></div>
+      <div class="content">
+        <img src="/static/images-screen.png" class="screenshot">
+      </div>
     </div>
+
+    <div class="content-container left">
+      <div class="content">
+        <h2>Update Info</h2>
+        <div class="subcontent">
+          <p>Bowery will restart your app on file changes, so we need to know what command to run. Where your code should be placed on the AWS instance, and where the code is on your computer.</p>
+        </div>
+        <div class="subcontent">
+          <p>Once you’ve updated this information you’ll be able to edit your code and instantly see the changes.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-container right">
+      <div class="content">
+        <img src="/static/create-app.png" class="screenshot">
+      </div>
+    </div>
+
+    <div class="content-container left">
+      <div class="content">
+        <h2>Execute Commands</h2>
+        <div class="subcontent">
+          <p>You can run commands on the AWS instance directly from Bowery. At the bottom of the edit app page click on the 'Run Commands' button.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-container right">
+      <div class="content">
+        <img src="/static/exec-screen.png" class="screenshot">
+      </div>
+    </div>
+
+    <div class="content-container left">
+      <div class="content">
+        <h2>Next Steps</h2>
+        <div class="subcontent">
+          <p>You can see the app at the IP address under the app name in the apps view. It's public so you can share it with anyone.</p>
+        </div>
+        <div class="subcontent">
+          <p>If you give your image a name then other people will be able to create apps identical to your environment, including all changes you've made through the exec screen.</p>
+        </div>
+      </div>
+    </div>
+    <div class="content-container right">
+      <div class="content">
+        <img src="/static/apps-screen.png" class="screenshot">
+      </div>
+    </div>
+
     <div class="footer">
       <h2>and you&rsquo;re setup!</h2>
       <a href="/learn"><h3>learn more &rarr;</h3></a>
     </div>
   </div>
+  <script>
+    // try a native matchesSelector on a selector with an element
+    function matchesSelector(element, selector) {
+        var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector
+        return matcher && matcher.call(element, selector);
+    }
+
+    // detect the closest element based on a selector. For simple delegation.
+    function closest (element, selector) {
+      while (element && !matchesSelector(element, selector)) {
+          element = element.parentNode;
+      }
+      return element;
+    }
+
+    document.addEventListener('click', function (e) {
+      var l
+      var v = "3.2.7"
+      if (closest(e.target, '.btn.download')) {
+        var version = window.navigator.appVersion.toLowerCase()
+        if (~version.indexOf('mac')) {
+          l = v + "_darwin_amd64.tar.gz"
+        } else if (~version.indexOf('windows')) {
+          l = v + "_windows_386.tar.gz"
+        } else if (~version.indexOf('linux')) {
+          l = v + "_linux_amd64.tar.gz"
+        } else {
+          l = v + "_SHA256SUMS"
+        }
+
+        window.location = "http://desktop.bowery.io/" + l
+      }
+    })
+  </script>
 </body>
 <script type="text/javascript">
 (function(i, s, o, g, r, a, m) {

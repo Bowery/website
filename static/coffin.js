@@ -124,34 +124,6 @@
       return element;
     }
 
-    // Unrelated to coffin. Opens image info modal
-    function openImageModal (id) {
-      var overlay = document.querySelector('.modal-overlay')
-      overlay.style.display = 'block'
-      overlay.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
-
-      modalIsOpen = true
-
-      // TODO (thebyrd) ajax call for image with ID
-      var image = {
-        name: 'Zend PHP',
-        author: 'Jacob Heftmann',
-        version: '5.5',
-        size: '200mb',
-        lastUpdated: '5 min',
-        downloads: '157',
-        description: 'Zend Framework version 1.7 requires PHP 5.2.4 or later. Previous versions required PHP 5.1.4 or later, although the ZF Programmer\'s Reference Guide strongly recommended PHP 5.2.3 or later for security and performance improvements included in these versions of PHP. Zend Framework 2.0 requires PHP 5.3.3 or later. PHPUnit 3.0 or later is required to run the unit tests shipped with Zend Framework. Many components also require PHP extensions.'
-      }
-    }
-
-    // Unrelated to coffin. Closes image info modal
-    function closeImageModal () {
-      var overlay = document.querySelector('.modal-overlay')
-      overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
-      overlay.style.display = 'none'
-      modalIsOpen = false
-    }
-
     // handle touch start event
     window.addEventListener('touchstart', function (e) {
 
@@ -250,12 +222,6 @@
     }));
 
     window.addEventListener('click', function (e) {
-        // Opening Modals (totally unrelated)
-        if (!isOpen && !modalIsOpen && closest(e.target, '.image-btn')) return openImageModal(e.target.dataset.image)
-
-        // Closes Modal (totally unrelated)
-        if (!isOpen && modalIsOpen && closest(e.target, '.modal-overlay')) return closeImageModal()
-
         // Toggling Window
         if (!direction && closest(e.target, '[data-coffin=toggle]')) toggleCoffin()
         else if (isOpen && closest(e.target, '.page')) toggleCoffin()
