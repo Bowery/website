@@ -15,6 +15,21 @@
   <link rel="stylesheet" href="/static/out.css">
   <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
   <script src="/static/coffin.js" async></script>
+  <script type="text/javascript">
+  (function(i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r;
+    i[r] = i[r] || function() {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+    m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+  ga('create', 'UA-46274466-1', 'bowery.io');
+  ga('send', 'pageview');
+  </script>
 </head>
 <body>
   <div class="coffin images" data-coffin="toggle">
@@ -44,7 +59,7 @@
       </div>
     </div>
     <div class="search-box">
-      <input type="text" class="search-input">
+      <input type="text" class="search-input" id="search">
     </div>
     <div class="content-container">
       <ul class="images-list">
@@ -149,26 +164,92 @@
       </ul>
     </div>
   </div>
-  <div class="modal-overlay">
+  <div class="modal-overlay" id="modal">
     <div class="modal-content">
       <h1>Zend PHP</h1>
     </div>
   </div>
+  <script>
+    // Global like Wayne Enterprises
+    var xhr = new XMLHttpRequest()
+    var list = document.querySelector('.images-list')
+    var environments
 
+    // try a native matchesSelector on a selector with an element
+    function matchesSelector(element, selector) {
+        var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector
+        return matcher && matcher.call(element, selector);
+    }
+
+    // detect the closest element based on a selector. For simple delegation.
+    function closest (element, selector) {
+      while (element && !matchesSelector(element, selector)) {
+          element = element.parentNode;
+      }
+      return element;
+    }
+
+    // Unrelated to coffin. Opens image info modal
+    function openImageModal (id) {
+      var overlay = document.querySelector('.modal-overlay')
+      overlay.style.display = 'block'
+      overlay.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
+
+      modalIsOpen = true
+
+      // TODO (thebyrd) ajax call for image with ID
+      var image = {
+        name: 'Zend PHP',
+        author: 'Jacob Heftmann',
+        version: '5.5',
+        size: '200mb',
+        lastUpdated: '5 min',
+        downloads: '157',
+        description: 'Zend Framework version 1.7 requires PHP 5.2.4 or later. Previous versions required PHP 5.1.4 or later, although the ZF Programmer\'s Reference Guide strongly recommended PHP 5.2.3 or later for security and performance improvements included in these versions of PHP. Zend Framework 2.0 requires PHP 5.3.3 or later. PHPUnit 3.0 or later is required to run the unit tests shipped with Zend Framework. Many components also require PHP extensions.'
+      }
+    }
+
+    // Unrelated to coffin. Closes image info modal
+    function closeImageModal () {
+      var overlay = document.querySelector('.modal-overlay')
+      overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
+      overlay.style.display = 'none'
+      modalIsOpen = false
+    }
+
+    // Renders images html
+    function renderImages(images) {
+      return images.map(function (img) {
+        if (!img.name) return ""
+
+        return ['<li class="image-container">',
+                   '<button class="btn image-btn" data-image="{id}">',
+                     '<img class="image-logo" src="/static/image-logo.png">',
+                     '<h4 class="image-title">{name}</h4>',
+                     '<p class="image-description">{description}</p>',
+                   '</button>',
+                 '</li>'].join('')
+                         .replace('{id}', img.id)
+                         .replace('{name}', img.name)
+                         .replace('{description}', img.description)
+      }).join('')
+    }
+
+    document.getElementById('search').addEventListener('keyup', function (e) {
+      console.log('$$$$$', e.target.value)
+      xhr.abort()
+      var query = e.target.value
+      xhr.onload = function () {
+        list.innerHTML = ""
+        var response = JSON.parse(this.responseText)
+        if (response.status == "found")
+          list.innerHTML = renderImages(response.environments)
+
+        console.log('$$#$$', response.environments)
+      }
+      xhr.open("get", "http://kenmare.io/environments?query=" + query, true)
+      xhr.send()
+    })
+  </script>
 </body>
-<script type="text/javascript">
-(function(i, s, o, g, r, a, m) {
-  i['GoogleAnalyticsObject'] = r;
-  i[r] = i[r] || function() {
-    (i[r].q = i[r].q || []).push(arguments)
-  }, i[r].l = 1 * new Date();
-  a = s.createElement(o),
-  m = s.getElementsByTagName(o)[0];
-  a.async = 1;
-  a.src = g;
-  m.parentNode.insertBefore(a, m)
-})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-ga('create', 'UA-46274466-1', 'bowery.io');
-ga('send', 'pageview');
-</script>
 </html>
