@@ -68,7 +68,8 @@ body {
   background: #111;
   border-bottom: 1px solid black;
 }
-.coffin .nav {
+.coffin .nav,
+.coffin .nav-footer {
   margin-top: -135px;
   opacity: 0;
           transition: opacity .1s;
@@ -76,7 +77,8 @@ body {
      -moz-transition: opacity .1s; /* Firefox 4 */
   -webkit-transition: opacity .1s; /* Safari and Chrome */
 }
-.coffin-open .nav {
+.coffin-open .nav,
+.coffin-open .nav-footer {
   opacity: 1;
 }
 .coffin .nav li {
@@ -96,6 +98,32 @@ body {
 }
 .coffin .nav li a:hover,
 .coffin .nav li a.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.coffin .nav-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 25px 0;
+}
+.coffin .nav-footer ul {
+  list-style: none;
+  position: relative;
+}
+.coffin .nav-footer li a {
+  font-family:"Monosten A", Courier, monospace;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  display: block;
+  padding: 0 25px;
+}
+.coffin .nav-footer ul li:hover,
+.coffin .nav-footer ul li:hover a.active {
   background: rgba(0, 0, 0, 0.1);
 }
 .coffin-remote:hover,
