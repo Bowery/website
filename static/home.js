@@ -193,7 +193,7 @@ $(document).ready(function() {
   }
 
   function update() {
-    window.requestAnimationFrame(function() {
+    window.requestAnimFrame(function() {
       setScroll()
       var frame
       var animation
@@ -267,3 +267,12 @@ $(document).ready(function() {
 
   init()
 })
+
+window.requestAnimFrame = (function(){
+  return  window.requestAnimationFrame       ||
+          window.webkitRequestAnimationFrame ||
+          window.mozRequestAnimationFrame    ||
+          function(callback){
+            window.setTimeout(callback, 1000 / 60);
+          };
+})();
