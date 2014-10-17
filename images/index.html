@@ -15,21 +15,6 @@
   <link rel="stylesheet" href="/static/out.css">
   <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
   <script src="/static/coffin.js" async></script>
-  <script type="text/javascript">
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments)
-    }, i[r].l = 1 * new Date();
-    a = s.createElement(o),
-    m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-  ga('create', 'UA-46274466-1', 'bowery.io');
-  ga('send', 'pageview');
-  </script>
 </head>
 <body>
   <div class="coffin images" data-coffin="toggle">
@@ -210,8 +195,22 @@
       var image = environments.filter(function (e) {
         return e.id == id
       })[0]
-      modal.innerHTML = '<h1>{name}</h1>'.replace('{name}', image.name)
-
+      modal.innerHTML = [
+        '<h1>{name}</h1>',
+        '<div class="description">',
+          '<p>{description}</p>',
+        '</div>',
+        '<div class="data">',
+          '<h3>Data</h3>',
+          '<dl>',
+            '<dt>Downloads</dt>',
+            '<dd>{downloadCount}</dd>',
+          '</dl>',
+        '</div>'
+      ].join('')
+       .replace('{name}', image.name)
+       .replace('{description}', image.description)
+       .replace('{downloadCount}', image.downloadCount)
 
       var overlay = document.querySelector('.modal-overlay')
       overlay.style.display = 'block'
@@ -272,4 +271,19 @@
     })
   </script>
 </body>
+<script type="text/javascript">
+(function(i, s, o, g, r, a, m) {
+  i['GoogleAnalyticsObject'] = r;
+  i[r] = i[r] || function() {
+    (i[r].q = i[r].q || []).push(arguments)
+  }, i[r].l = 1 * new Date();
+  a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0];
+  a.async = 1;
+  a.src = g;
+  m.parentNode.insertBefore(a, m)
+})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+ga('create', 'UA-46274466-1', 'bowery.io');
+ga('send', 'pageview');
+</script>
 </html>

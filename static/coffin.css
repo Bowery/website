@@ -30,6 +30,7 @@ body {
   background: #fff;
   width: auto;
   overflow: hidden;
+  -webkit-transform: translate3d(80px, 0, 0);
   transform: translate3d(80px, 0, 0);
 }
 .logo {

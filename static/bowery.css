@@ -150,6 +150,32 @@ p {
 .modal-content h1 {
   color: white;
 }
+.modal-content .description {
+  border-top: 1px solid white;
+  margin: 15px 0;
+  padding: 25px 0;
+}
+.modal-content .data h3 {
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+.modal-content .data dl {
+  width: 100%;
+  overflow: hidden;
+}
+.modal-content .data dt,
+.modal-content .data dd {
+  font-size: 14px;
+  float: left;
+  width: 50%;
+}
+.modal-content .data dd {
+  text-align: right;
+}
 
 .search-box {
   width: 100%;
