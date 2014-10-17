@@ -99,7 +99,14 @@ var frames = [
   {
     selector: '#share',
     duration: 0.5,
-    animations: [],
+    animations: [
+      {
+        selector: '.chat-window',
+        translateX: [-300, -500],
+        translateY: [0, -140],
+        opacity: [0, 1]
+      }
+    ],
     step: 3,
     isStable: true
   },
