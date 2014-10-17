@@ -474,7 +474,7 @@ section.visible {
   text-transform: uppercase;
   color: white;
   position: relative;
-  top: -95px;
+  top: -125px;
   display: block;
   text-decoration: none;
   width: 100px;
@@ -483,6 +483,17 @@ section.visible {
 
 .intro-step-inner-wrapper > a:hover {
   text-decoration: underline;
+}
+
+.intro-step-inner-wrapper .arrow-down {
+  background-image: url(/static/arrow-down.png);
+  width: 28px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  left: calc(50% - 21px);
+  top: 10px;
 }
 
 .step-content {
@@ -564,7 +575,7 @@ aside {
   font-family: "Monosten A", Courier, monospace;
   margin: 15px 0;
   text-align: center;
-  line-height: 30px;
+  line-height: 32px;
 }
 
 .step-list > li:hover {
@@ -611,6 +622,14 @@ a.see-all-images {
   color: white;
   position: relative;
   top: 20px;
+}
+
+.step-content > .step-item.chat-window {
+  background-image: url(/static/chat-window.png);
+  width: 300px;
+  height: 374px;
+  background-size: contain;
+  position: fixed;
 }
 
 .try-step-content {
