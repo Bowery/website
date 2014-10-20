@@ -812,7 +812,7 @@ a.learn-more:hover {
   }
 
   .intro-step-inner-wrapper {
-    top: 0;
+    top: 55px;
     transform: none;
   }
   .intro-step-inner-wrapper > h1 {

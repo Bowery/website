@@ -19,8 +19,11 @@
     // direction of scroll
     var direction;
 
+    // is Palm Pre
+    var isMobile = ('ontouchstart' in window);
+
     // movement offset
-    var xMovement = 80;
+    var xMovement = isMobile ? 0 : 80;
 
     // end scroll position
     var xEnd = 0;
@@ -131,7 +134,7 @@
         direction = '';
 
         // reset xMovement to left/right position
-        xMovement = isOpen ? coffinSize : 80;
+        xMovement = isOpen ? coffinSize : (isMobile ? 0 : 80);
 
         // set touch start position for x axis
         xStart = e.touches[0].screenX;
@@ -172,7 +175,7 @@
         console.log('$$$$ xMovement', xMovement)
 
         // if xmovement is within valid range, scroll page
-        if (xMovement <= coffinSize && xMovement >= 80) {
+        if (xMovement <= coffinSize && xMovement >= 0) {
             translate3d(xMovement);
         }
 
@@ -202,7 +205,7 @@
         };
 
         // calculate which side to transition to
-        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? 80 : coffinSize;
+        xEnd = xMovement <= (isOpen ? (coffinSize - (fraction * coffinSize)) : fraction * coffinSize) ? (isMobile ? 0 : 80) : coffinSize;
 
         // check if transitioned open
         isOpen = xEnd === coffinSize;
@@ -228,5 +231,4 @@
 
         return direction = '';
     })
-
 }();
