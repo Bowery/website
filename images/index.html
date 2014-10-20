@@ -63,106 +63,7 @@
       <input type="text" class="search-input" id="search">
     </div>
     <div class="content-container">
-      <ul class="images-list">
-        <li class="image-container">
-          <button class="btn image-btn" data-image="fake-id">
-            <img class="image-logo" src="/static/image-logo.png">
-            <h4 class="image-title">Zend PHP</h4>
-            <p class="image-description">Short description about what the image is</p>
-          </button>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">Short description about what the image is</p>
-        </li>
-        <li class="image-container">
-          <img class="image-logo" src="/static/image-logo.png">
-          <h4 class="image-title">Zend PHP</h4>
-          <p class="image-description">The illest php framework alive. Long live zend.</p>
-        </li>
-      </ul>
+      <ul class="images-list"></ul>
     </div>
   </div>
   <div class="modal-overlay">
@@ -250,10 +151,8 @@
       }).join('')
     }
 
-    document.getElementById('search').addEventListener('keyup', function (e) {
-      console.log('$$$$$', e.target.value)
+    function searchImages(query) {
       xhr.abort()
-      var query = e.target.value
       xhr.onload = function () {
         list.innerHTML = ""
         var response = JSON.parse(this.responseText)
@@ -265,6 +164,17 @@
       }
       xhr.open("get", "http://kenmare.io/environments?query=" + query, true)
       xhr.send()
+    }
+
+    function loadDefault() {
+      searchImages('default')
+    }
+
+    document.getElementById('search').addEventListener('keyup', function (e) {
+      console.log('$$$$$', e.target.value)
+      var query = e.target.value
+      if (query == '') query = 'default'
+      searchImages(query)
     })
 
     document.addEventListener('click', function (e) {
@@ -275,6 +185,8 @@
       if (modalIsOpen && closest(e.target, '.modal-overlay'))
         return closeImageModal()
     })
+
+    loadDefault()
   </script>
 </body>
 <script type="text/javascript">
