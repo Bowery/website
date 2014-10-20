@@ -183,10 +183,16 @@ p {
 }
 .search-input {
   border: 0;
-  width: 100%;
+  width: calc(100% - 30px);
   height: 100%;
   padding: 24px 35px;
   background: var(--images-light-blue);
+  background: url(/static/search-icon.png);
+  background-color: var(--images-light-blue);
+  background-size: 30px;
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  text-indent: 30px;
   outline: none;
   color: white;
   font-size: 16px;
