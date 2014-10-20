@@ -174,6 +174,11 @@ body {
     width: 300px;
     margin: 0 auto;
   }
+
+  .page {
+    transform: none;
+    -webkit-transform: none;
+  }
 }
 
 /* #Mobile (Landscape)
@@ -184,5 +189,10 @@ body {
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .container {
     width: 420px;
+  }
+
+  .page {
+    transform: none;
+    -webkit-transform: none;
   }
 }

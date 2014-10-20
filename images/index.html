@@ -196,6 +196,7 @@
         return e.id == id
       })[0]
       modal.innerHTML = [
+        '<span class="modal-exit"></span>',
         '<h1>{name}</h1>',
         '<div class="description">',
           '<p>{description}</p>',
@@ -216,6 +217,11 @@
       overlay.style.display = 'block'
       overlay.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
       modalIsOpen = true
+
+      var exit = document.getElementsByClassName('modal-exit')[0]
+      exit.onclick = function(e) {
+        closeImageModal()
+      }
     }
 
     // Unrelated to coffin. Closes image info modal
