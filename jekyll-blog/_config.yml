@@ -1,0 +1,16 @@
+# Site settings
+title: Bowery
+email: support@bowery.io
+description: Enterprise grade software development environments.
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
+url: "http://bowery.io" # the base hostname & protocol for your site
+twitter_username: boweryio
+github_username:  Bowery
+
+# Build settings
+markdown: kramdown
+
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-46274466-1'

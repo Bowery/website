@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="post">
+    <h1>Building Bowery</h1>
+    <p class="blog-description">Thoughts, Updates, and Annoucements</p>
+  </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <p>{{ post.content | strip_html | truncatewords:75 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
