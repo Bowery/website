@@ -59,6 +59,9 @@ strong {
   margin: 0;
   list-style: none;
 }
+.coffin a, .coffin a:hover {
+  text-decoration: none !important;
+}
 
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
   h1, h2, .post-meta, .blog-description {
