@@ -685,6 +685,32 @@ a.learn-more:hover {
   text-decoration: underline;
 }
 
+.subscribe {
+  position: fixed;
+  bottom: 25px;
+  right: 100px;
+}
+.subscribe input[type="email"] {
+  font-size: 15px;
+  line-height: 40px;
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.subscribe input[type="email"]::placeholder {
+  color: white;
+}
+.subscribe input[type="submit"] {
+  padding: 15px 15px;
+  background: #fff;
+  border: 0 none;
+  outline: none;
+  opacity: 0.7;
+  vertical-align: bottom;
+}
+
 /**
  * Ghetto Responsiveness
  */
@@ -734,6 +760,10 @@ a.learn-more:hover {
 }
 
 @media screen and (max-width: 477px), screen and (max-device-width: 477px) {
+  .subscribe {
+    display: none;
+  }
+
   .header h1 {
     letter-spacing: 0;
   }
