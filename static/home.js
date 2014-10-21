@@ -137,7 +137,7 @@ var frames = [
         selector: '.learn-more',
         opacity: [0, 1],
         translateY: [0, -60],
-        translateX: [-50, -50]
+        translateX: [-85, -85]
       }
     ],
     step: 4,
