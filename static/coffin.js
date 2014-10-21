@@ -169,8 +169,6 @@
         // calcuate movement based on last scroll pos
         xMovement = e.touches[0].screenX - xStart + xEnd;
 
-        console.log('$$$$ xMovement', xMovement)
-
         // if xmovement is within valid range, scroll page
         if (xMovement <= coffinSize && xMovement >= 0) {
             translate3d(xMovement);
@@ -180,9 +178,13 @@
 
     // listen for touchend event
     window.addEventListener('touchend', (touchEnd = function (e) {
-
         // if direction isn't horizontal than exit (w maybe toggle)
-        if (direction != 'horizontal') return;
+        if (direction != 'horizontal') {
+            if (isOpen && isMobile() && closest(e.target, '.page')) {
+                toggleCoffin()
+            }
+            return;
+        }
 
         var transitionEnd = function () {
 
