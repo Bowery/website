@@ -13,7 +13,7 @@ As in our other articles about using Bowery with your own projects, you'll need 
 
 ### Create Your App
 
-![Create app](http://bowery-blog.s3.amazonaws.com/desktop/wordpress/wordpress_app_screen.png "Example Node.js/Express app configuration")
+![Create app](http://bowery-blog.s3.amazonaws.com/desktop/wordpress/wordpress_app_screen.png "Example Wordpress app configuration")
 
 You can click `New App` and [browse for the Wordpress image](http://bowery.io/images/), we created this image to already have php, nginx, mysql and a default database ready for you. The Wordpress installer requires a database to be created in advance which we've done (the information is later in this article).
 
