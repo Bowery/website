@@ -33,6 +33,6 @@ Alongside our desktop app launch, we're taking our new brand live. Bowery is a h
 
 
 ### Bowery 2
-What happens to Bowery 2? All the features in the Bowery commandline version will be present in Bowery 3. Because Bowery 2 only synced your code from your local machine, you should still have a local copy of your codebase. Your code will be available on Bowery’s servers until the end of the year, and we can help with any migration from our servers to another provider.
+What happens to Bowery 2? All the features in the Bowery command-line version will be present in Bowery 3. Because Bowery 2 only synced your code from your local machine, you should still have a local copy of your codebase. Your code will be available on Bowery’s servers until the end of the year, and we can help with any migration from our servers to another provider.
 
 ![Logo variations](http://i.imgur.com/dcCdrM7.png)
