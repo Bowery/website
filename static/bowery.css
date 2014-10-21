@@ -110,6 +110,7 @@ p {
   width: 155px;
   margin: 42px;
   float: left;
+  min-height: 220px;
 }
 .image-title {
   text-align: center;
