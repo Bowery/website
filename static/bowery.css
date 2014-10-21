@@ -704,6 +704,7 @@ a.learn-more:hover {
   color: white;
 }
 .subscribe input[type="submit"] {
+  cursor: pointer;
   padding: 15px 15px;
   background: #fff;
   border: 0 none;
