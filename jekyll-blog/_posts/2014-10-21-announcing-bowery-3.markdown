@@ -14,6 +14,10 @@ So a few months ago, we took a step back and asked a few questions. What are use
 
 The result is Bowery 3. Install our desktop application on Windows, Mac, or Linux and tell us (1) where you code is on your local computer and (2) what software you need on the server for that code to run. We'll take care of provisioning the server with your AWS credentials and then sync your code whenever you make changes locally.
 
+> “As a developer, the Bowery app is simple and lets me focus on coding instead of the headache of configuring my environment. Everyone from designers to web developers, startups to large enterprises can benefit from Bowery. Its simple interface eliminates the need for other unnecessarily complicated infrastructure solutions.” 
+
+—Alex Garrett, creator of phpacademy, one of the largest YouTube communities for PHP developers with 100,000+ subscribers and millions of total views.
+
 Our singular goal is to help you write better code, faster. Bowery 3 moves us ten times closer to that goal, and we hope you agree.
 
 <br />
@@ -22,6 +26,11 @@ Our singular goal is to help you write better code, faster. Bowery 3 moves us te
 We're also announcing we've raised a $1.5 million seed round from a list of fantastic investors. SV Angel, Google Ventures, Bloomberg Beta, RRE, Homebrew, Betaworks,  BOLDstart Ventures, Magnet Agency, Deep Fork Capital, and angel investors Naveen Selvadurai and Ryan Holmes participated in the round, adding to our existing investors of General Catalyst’s Rough Draft Ventures and First Round Capital’s Dorm Room Fund.
 
 We chose these investors because they're bought into our vision of better developer tools for everyone, and we can't wait to work with them to achieve that vision.
+
+> “Bowery changes the way developers work. Engineering time is one of the largest expenses for companies today, and every second saved measurably affects profit margins. Engineers love Bowery because it makes their lives easier, and everyone else in the company loves it because it makes it easier to build amazing products and services. It’s one of the best dev tools companies we’ve seen.”
+
+—Kevin Carter, Partner, SV Angel
+
 
 <br />
 
