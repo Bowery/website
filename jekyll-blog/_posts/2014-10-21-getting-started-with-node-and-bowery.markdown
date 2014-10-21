@@ -7,11 +7,13 @@ categories: posts
 
 Ever wanted to kick the tires with Node.js without installing a ton of stuff on your local machine? This is exactly how it is done.
 
+### Install Bowery
+
 > First walk through [getting your AWS credentials](http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html) and [Bowery.io account setup](/start/ "Click to read Getting Started"), and then come back when you are ready to get your Node groove on.
 
-### Got Node?
+### Configure Your App
 
-First to start this off right you'll be needing a local node app. One of the easiest ways to do this is with an [example app like the one we provide](https://github.com/Bowery/node-example). This particular app is a Node.js app using the Express web framework. This is an extremely common stack to base web development on.
+You'll be needing a local node app. One of the easiest ways to do this is with an [example app like the one we provide](https://github.com/Bowery/node-example). This particular app is a Node.js app using the Express web framework. This is an extremely common stack to base web development on.
 
 ![Create app](http://bowery-blog.s3.amazonaws.com/desktop/node/node_app_screen.png "Example Node.js/Express app configuration")
 
@@ -33,7 +35,7 @@ What really needs to be understood is that first you'll need to always call `npm
 
 For your local directory, that is where you are storing the code on your local machine.
 
-### Up and running
+### Try It Out
 
 By this point you should have your Node.js/Express app up and running on your own EC2 instance, which is really when the fun starts. You can now make changes to any of the files on your local machine, and when you save those are synced to the EC2 instance, then your command gets run again to restart the app.
 
