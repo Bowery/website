@@ -55,7 +55,7 @@ strong {
   font-size: 54px;
   font-family: "Monosten E", Courier, monospace;
 }
-.nav, .nav-footer {
+.nav, .nav-footer ul {
   margin: 0;
   list-style: none;
 }
