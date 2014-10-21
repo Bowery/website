@@ -199,11 +199,11 @@
       if (closest(e.target, '.btn.download')) {
         var version = window.navigator.appVersion.toLowerCase()
         if (~version.indexOf('mac')) {
-          l = v + "_darwin_amd64.tar.gz"
+          l = v + "_darwin_amd64.zip"
         } else if (~version.indexOf('windows')) {
-          l = v + "_windows_386.tar.gz"
+          l = v + "_windows_386.zip"
         } else if (~version.indexOf('linux')) {
-          l = v + "_linux_amd64.tar.gz"
+          l = v + "_linux_amd64.zip"
         } else {
           l = v + "_SHA256SUMS"
         }
