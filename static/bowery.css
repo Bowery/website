@@ -688,6 +688,12 @@ a.learn-more:hover {
 /**
  * Ghetto Responsiveness
  */
+@media screen and (max-width: 1100px), screen and (max-device-width: 1100px) {
+  aside {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 985px), screen and (max-device-width: 985px) {
   /*Hide search & remove logo container's right border*/
   .nav-search-container {
