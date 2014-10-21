@@ -78,9 +78,17 @@ body {
      -moz-transition: opacity .1s; /* Firefox 4 */
   -webkit-transition: opacity .1s; /* Safari and Chrome */
 }
+.coffin .nav a,
+.coffin .nav-footer a {
+  pointer-events: none;
+}
 .coffin-open .nav,
 .coffin-open .nav-footer {
   opacity: 1;
+}
+.coffin-open .nav a,
+.coffin-open .nav-footer a {
+  pointer-events: auto;
 }
 .coffin .nav li {
   margin-bottom: 0;
