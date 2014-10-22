@@ -1,228 +1,168 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta name="description" content="Bowery is the web development environment you've always wanted. Set up your development environment in 30 seconds flat.">
-  <meta name="keywords" content="Bowery, software, dev, development, automatic, node, ruby, php, mysql, environment, software, programming">
-  <meta name="author" content="Bowery">
-  <meta property="og:image" content="">
-  <meta property="og:site_name" content="Bowery">
-  <meta property="og:title" content="Bowery">
-  <meta property="twitter:site" content="@boweryio">
-  <title>Bowery - Get Started</title>
-  <link rel="stylesheet" href="/static/coffin.css">
-  <link rel="stylesheet" href="/static/out.css">
-  <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
-  <script src="/static/coffin.js" async></script>
-</head>
-<body>
-  <div class="coffin start" data-coffin="toggle">
-    <button href="#" class="logo" data-coffin="toggle"></button>
-    <div class="padding"></div>
-    <ul class="nav">
-      <li>
-        <a data-coffin="click" href="/">Home</a>
-      </li>
-      <li>
-        <a data-coffin="click" href="/images">Images</a>
-      </li>
-      <li>
-        <a data-coffin="click" href="/start">Get Started</a>
-      </li>
-    </ul>
-    <div class="nav-footer">
-      <ul>
-        <li>
-          <a data-coffin="click" href="/blog/">Blog</a>
-        </li>
-        <li>
-          <a data-coffin="click" href="/faq">FAQs</a>
-        </li>
-        <li>
-          <a data-coffin="click" href="mailto:team@bowery.io">Contact</a>
-        </li>
-      </ul>
+---
+layout: default
+title: Bowery - Start
+name: start
+---
+
+<button href="#" class="logo" data-coffin="toggle"></button>
+<div class="content-container header">
+  <div class="content">
+    <h1>Let&rsquo;s <br/> Get <br/> Started</h1>
+  </div>
+  <div class="content">
+    <p>Bowery is a limitless development environment. Run your application in seconds no matter the operating system, programming language, database, or other dependencies. We're dedicated to making every stack easy to use.</p>
+    <div class="subcontent">
+      <p>Before we get going, you'll need:</p>
+      <ol>
+        <li>Internet</li>
+        <li><a href="http://aws.amazon.com/" target="_blank">AWS Account</a></li>
+        <li><a href="http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html" target="_blank">AWS Security Credentials</a></li>
+      </ol>
     </div>
   </div>
-  <div class="page start">
-    <button href="#" class="logo" data-coffin="toggle"></button>
-    <div class="content-container header">
-      <div class="content">
-        <h1>Let&rsquo;s <br/> Get <br/> Started</h1>
-      </div>
-      <div class="content">
-        <p>Bowery is a limitless development environment. Run your application in seconds no matter the operating system, programming language, database, or other dependencies. We're dedicated to making every stack easy to use.</p>
-        <div class="subcontent">
-          <p>Before we get going, you'll need:</p>
-          <ol>
-            <li>Internet</li>
-            <li><a href="http://aws.amazon.com/" target="_blank">AWS Account</a></li>
-            <li><a href="http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html" target="_blank">AWS Security Credentials</a></li>
-          </ol>
-        </div>
-      </div>
-    </div>
+</div>
 
-    <div class="content-container left">
-      <div class="content">
-        <h2>Setup</h2>
-        <div class="subcontent">
-          <p>To start using Bowery:</p>
-        </div>
-        <div class="subcontent">
-          <ol>
-            <li>Download the app by clicking on the button below.</li>
-            <li>Unzip it and run the installer. It will put Bowery in /Applications (Mac) or on your desktop (Windows/Linux)</li>
-            <li>Sign in with your existing Bowery credentials or sign up.</li>
-          </ol>
-        </div>
-        <div class="subcontent">
-          <button class="btn download">Download Bowery <span class="accent">v3.2.7</span></button>
-        </div>
-      </div>
+<div class="content-container left">
+  <div class="content">
+    <h2>Setup</h2>
+    <div class="subcontent">
+      <p>To start using Bowery:</p>
     </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/install-screen.png" class="screenshot">
-      </div>
+    <div class="subcontent">
+      <ol>
+        <li>Download the app by clicking on the button below.</li>
+        <li>Unzip it and run the installer. It will put Bowery in /Applications (Mac) or on your desktop (Windows/Linux)</li>
+        <li>Sign in with your existing Bowery credentials or sign up.</li>
+      </ol>
     </div>
-
-    <div class="content-container left">
-      <div class="content">
-        <h2>Connect AWS</h2>
-        <div class="subcontent">
-          <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct">here</a>.</p>
-        </div>
-        <div class="subcontent">
-          <p>Bowery will run your applications on instances in your AWS account, so you’re the only one who has access to them. AWS will charge you for the machines you create at an m3.medium rate. Bowery is free for 30 days and 3 cents per hour after that.</p>
-        </div>
-      </div>
-    </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/aws-screen.png" class="screenshot">
-      </div>
-    </div>
-
-    <div class="content-container left">
-      <div class="content">
-        <h2>Add An App</h2>
-        <div class="subcontent">
-          <p>The first step in creating an app is choose an image. You can search for various images both on the <a href="http://bowery.io/images">images page</a> and in the app.</p>
-        </div>
-        <div class="subcontent">
-          <p>Once you click on an image, it will provision your app using that image. This may take a minute depending on how busy AWS is.</p>
-        </div>
-      </div>
-    </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/images-screen.png" class="screenshot">
-      </div>
-    </div>
-
-    <div class="content-container left">
-      <div class="content">
-        <h2>Update Info</h2>
-        <div class="subcontent">
-          <p>Bowery will restart your app on file changes, so we need to know (1) what commands to run, (2) where your code should be placed on the AWS instance, and (3) where the code is on your computer.</p>
-        </div>
-        <div class="subcontent">
-          <p>Once you’ve updated this information you’ll be able to edit your code and instantly see changes reflected at your server's IP address.</p>
-        </div>
-      </div>
-    </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/create-app.png" class="screenshot">
-      </div>
-    </div>
-
-    <div class="content-container left">
-      <div class="content">
-        <h2>Execute Commands</h2>
-        <div class="subcontent">
-          <p>You can run commands on the AWS instance directly from Bowery. At the bottom of the edit app page, click on the 'Run Commands' button.</p>
-        </div>
-      </div>
-    </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/exec-screen.png" class="screenshot">
-      </div>
-    </div>
-
-    <div class="content-container left">
-      <div class="content">
-        <h2>Next Steps</h2>
-        <div class="subcontent">
-          <p>You can see the app at the IP address listed under your app's name in the apps view. It's public so you can share it with anyone.</p>
-        </div>
-        <div class="subcontent">
-          <p>If you give your image a name, other people will be able to create apps identical to your environment, including all changes you've made through the exec screen.</p>
-        </div>
-      </div>
-    </div>
-    <div class="content-container right">
-      <div class="content">
-        <img src="/static/apps-screen.png" class="screenshot">
-      </div>
-    </div>
-
-    <div class="footer">
-      <h2>and you&rsquo;re setup!</h2>
-      <a href="/blog"><h3>Check out our blog &rarr;</h3></a>
+    <div class="subcontent">
+      <button class="btn download">Download Bowery <span class="accent">v3.2.7</span></button>
     </div>
   </div>
-  <script>
-    // try a native matchesSelector on a selector with an element
-    function matchesSelector(element, selector) {
-        var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector
-        return matcher && matcher.call(element, selector);
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/install-screen.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Connect AWS</h2>
+    <div class="subcontent">
+      <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct">here</a>.</p>
+    </div>
+    <div class="subcontent">
+      <p>Bowery will run your applications on instances in your AWS account, so you’re the only one who has access to them. AWS will charge you for the machines you create at an m3.medium rate. Bowery is free for 30 days and 3 cents per hour after that.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/aws-screen.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Add An App</h2>
+    <div class="subcontent">
+      <p>The first step in creating an app is choose an image. You can search for various images both on the <a href="http://bowery.io/images">images page</a> and in the app.</p>
+    </div>
+    <div class="subcontent">
+      <p>Once you click on an image, it will provision your app using that image. This may take a minute depending on how busy AWS is.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/images-screen.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Update Info</h2>
+    <div class="subcontent">
+      <p>Bowery will restart your app on file changes, so we need to know (1) what commands to run, (2) where your code should be placed on the AWS instance, and (3) where the code is on your computer.</p>
+    </div>
+    <div class="subcontent">
+      <p>Once you’ve updated this information you’ll be able to edit your code and instantly see changes reflected at your server's IP address.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/create-app.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Execute Commands</h2>
+    <div class="subcontent">
+      <p>You can run commands on the AWS instance directly from Bowery. At the bottom of the edit app page, click on the 'Run Commands' button.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/exec-screen.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Next Steps</h2>
+    <div class="subcontent">
+      <p>You can see the app at the IP address listed under your app's name in the apps view. It's public so you can share it with anyone.</p>
+    </div>
+    <div class="subcontent">
+      <p>If you give your image a name, other people will be able to create apps identical to your environment, including all changes you've made through the exec screen.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/apps-screen.png" class="screenshot">
+  </div>
+</div>
+
+<div class="footer">
+  <h2>and you&rsquo;re setup!</h2>
+  <a href="/blog"><h3>Check out our blog &rarr;</h3></a>
+</div>
+<script>
+  // try a native matchesSelector on a selector with an element
+  function matchesSelector(element, selector) {
+      var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector
+      return matcher && matcher.call(element, selector);
+  }
+
+  // detect the closest element based on a selector. For simple delegation.
+  function closest (element, selector) {
+    while (element && !matchesSelector(element, selector)) {
+        element = element.parentNode;
     }
+    return element;
+  }
 
-    // detect the closest element based on a selector. For simple delegation.
-    function closest (element, selector) {
-      while (element && !matchesSelector(element, selector)) {
-          element = element.parentNode;
+  document.addEventListener('click', function (e) {
+    var l
+    var v = "3.2.7"
+    if (closest(e.target, '.btn.download')) {
+      var version = window.navigator.appVersion.toLowerCase()
+      if (~version.indexOf('mac')) {
+        l = v + "_darwin_amd64.zip"
+      } else if (~version.indexOf('windows')) {
+        l = v + "_windows_386.zip"
+      } else if (~version.indexOf('linux')) {
+        l = v + "_linux_amd64.zip"
+      } else {
+        l = v + "_SHA256SUMS"
       }
-      return element;
+
+      window.location = "http://desktop.bowery.io/" + l
     }
-
-    document.addEventListener('click', function (e) {
-      var l
-      var v = "3.2.7"
-      if (closest(e.target, '.btn.download')) {
-        var version = window.navigator.appVersion.toLowerCase()
-        if (~version.indexOf('mac')) {
-          l = v + "_darwin_amd64.zip"
-        } else if (~version.indexOf('windows')) {
-          l = v + "_windows_386.zip"
-        } else if (~version.indexOf('linux')) {
-          l = v + "_linux_amd64.zip"
-        } else {
-          l = v + "_SHA256SUMS"
-        }
-
-        window.location = "http://desktop.bowery.io/" + l
-      }
-    })
-  </script>
-</body>
-<script type="text/javascript">
-(function(i, s, o, g, r, a, m) {
-  i['GoogleAnalyticsObject'] = r;
-  i[r] = i[r] || function() {
-    (i[r].q = i[r].q || []).push(arguments)
-  }, i[r].l = 1 * new Date();
-  a = s.createElement(o),
-  m = s.getElementsByTagName(o)[0];
-  a.async = 1;
-  a.src = g;
-  m.parentNode.insertBefore(a, m)
-})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-ga('create', 'UA-46274466-1', 'bowery.io');
-ga('send', 'pageview');
+  })
 </script>
-</html>

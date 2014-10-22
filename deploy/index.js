@@ -15,7 +15,7 @@ var knox = require('knox').createClient({
 
 var promises = []
 var files = []
-var siteAbsoluteDir = path.join(__dirname, '..')
+var siteAbsoluteDir = path.join(__dirname, '..', '_site')
 var siteRelativeDir = siteAbsoluteDir.split(siteAbsoluteDir)[1]
 var w = walk.walk(siteAbsoluteDir)
 

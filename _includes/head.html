@@ -1,8 +1,7 @@
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
     <meta content="{{ site.title }}" property="og:site_name">
@@ -28,10 +27,13 @@
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="{{ site.url }}/about/" property="article:author">
     {% endif %}
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/coffin.css" | prepend: site.baseurl }}">
-    <link rel="stylesheet" href="{{ "/css/bowery.css" | prepend: site.baseurl }}">
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="stylesheet" href="/static/coffin.css">
+    {% if page.name == "blog" %}
+    <link rel="stylesheet" href="/static/main.css">
+    <link rel="stylesheet" href="/static/blog.css">
+    {% else %}
+    <link rel="stylesheet" href="/static/out.css">
+    {% endif %}
     <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
     <script type="text/javascript">
     (function(i, s, o, g, r, a, m) {
@@ -48,5 +50,8 @@
     ga('create', 'UA-46274466-1', 'bowery.io');
     ga('send', 'pageview');
     </script>
+    {% if page.name == "blog" %}
     <script src="//load.sumome.com/" data-sumo-site-id="be5a159e26ac3d40903f2b722ba7144f037fdce9984bb70582645daa4e5a71f8" async></script>
+    {% endif %}
+
 </head>
