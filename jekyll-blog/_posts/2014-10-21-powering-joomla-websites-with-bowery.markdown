@@ -3,6 +3,7 @@ layout: post
 title:  "Getting started with Bowery and Joomla"
 date:   2014-10-21 15:11:54
 categories: posts
+description: "Step by step guide on setting up a Joomla app using Bowery."
 ---
 
 Now we start the fun stuff, working with full-stack applications like Wordpress, Drupal and Ghost. This post will focus on [Joomla](http://joomla.org/), a leading content management system known for a huge third party developer community and powerful tools for skinning your sites.

@@ -3,6 +3,7 @@ layout: post
 title:  "Getting started with Node and Bowery"
 date:   2014-10-21 15:11:54
 categories: posts
+description: "Step by step guide on setting up a Node.js app using Bowery."
 ---
 
 Ever wanted to kick the tires with Node.js without installing a ton of stuff on your local machine? This is exactly how it is done.
