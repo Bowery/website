@@ -3,6 +3,7 @@ layout: post
 title:  "Getting started with Drupal and Bowery"
 date:   2014-10-21 23:25:16
 categories: posts
+description: "Step by step guide on setting up a Drupal project using Bowery."
 ---
 
 Follow this guide for getting a Drupal project up and running with Bowery.
