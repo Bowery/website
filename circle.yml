@@ -5,10 +5,10 @@ deployment:
   production:
     branch: master
     commands:
-      - gem install jekyll
-      - cd jekyll-blog && jekyll build
-      - mkdir blog && cp -rf jekyll-blog/_site/* blog
       - npm install myth -g
       - myth static/bowery.css static/out.css
+      - gem install jekyll
+      - jekyll build
+      - cp -rf _site/posts/* _site/blog/
       - cd deploy && npm install
       - node deploy/index.js

@@ -104,4 +104,110 @@ strong {
     line-height: 36px;
     font-size: 24px;
   }
+}body {
+  background: rgb(245, 245, 245);
+}
+strong {
+  font-weight: bold;
+}
+.coffin.blog {
+  background: rgb(184, 184, 184);
+}
+.post {
+  max-width: 775px;
+  margin: 100px auto 0 auto;
+}
+.post-list li {
+  max-width: 775px;
+  margin: 0 auto;
+}
+.post-content, .post-list p {
+  max-width: 475px;
+  margin: 0 auto;
+}
+.post h1 {
+  color: rgb(13, 0, 9);
+  font-size: 75px;
+  line-height: 100px;
+  font-family: "Monosten E", Courier, monospace;
+  max-width: 475px;
+}
+.post h2, .post-list h2, .post-link, .post-link:visited, .post-link:active, .post-link:hover {
+  color: rgb(13, 0, 9);
+  font-size: 34px;
+  line-height: 68px;
+  font-family: "Monosten E", Courier, monospace;
+  max-width: 475px;
+  text-decoration: none;
+}
+.post-list li {
+  border-bottom: 1px solid rgb(184, 184, 184);
+  padding: 68px;
+}
+.post-list li:last-child {
+  border-bottom: 0;
+}
+.post-meta {
+  color: #FF6656;
+}
+.site-footer {
+  background: rgb(0, 218, 220);
+  color: white;
+  width: 100%;
+  padding: 68px;
+  margin-top: 54px;
+}
+.site-footer .learn-more {
+  color: white;
+  font-size: 54px;
+  font-family: "Monosten E", Courier, monospace;
+}
+.nav, .nav-footer ul {
+  margin: 0;
+  list-style: none;
+}
+.coffin a, .coffin a:hover {
+  text-decoration: none !important;
+}
+
+@media screen and (max-width: 800px), screen and (max-device-width: 800px) {
+  h1, h2, .post-meta, .blog-description {
+    text-align: center;
+  }
+  .post-content {
+    margin: 0;
+    padding: 10px;
+  }
+  .post-meta, .blog-description {
+    display: block;
+  }
+  .blog.coffin {
+    display: none;
+  }
+  .blog.page {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+  }
+  h1, h2, .post-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .post h1 {
+    font-size: 54px;
+    line-height: 64px;
+  }
+  .post h2, .post-list h2, .post-link, .post-link:visited, .post-link:active, .post-link:hover {
+    line-height: 54px;
+  }
+  .post-list li {
+    padding: 48px 10px
+  }
+  .site-footer {
+    padding: 24px;
+  }
+  .site-footer .learn-more {
+    line-height: 36px;
+    font-size: 24px;
+  }
 }

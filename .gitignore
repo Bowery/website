@@ -5,3 +5,4 @@ node_modules/
 *.log
 static/out.css
 blog/
+_site/

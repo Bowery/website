@@ -1,4 +1,6 @@
-<script type="text/javascript" src="{{ "/js/coffin.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="/static/coffin.js"></script>
+{% if page.name == "blog" %}
 <footer class="site-footer">
   <a class="learn-more" href="/start">Get Started with Bowery!</a>
 </footer>
+{% endif %}

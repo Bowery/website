@@ -10,12 +10,12 @@ var Q = require('kew')
 var knox = require('knox').createClient({
   key: 'AKIAJKTSTYBSHPKQTMPQ',
   secret: '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',
-  bucket: 'bowery.io'
+  bucket: 'testnewsite.bowery.io'
 })
 
 var promises = []
 var files = []
-var siteAbsoluteDir = path.join(__dirname, '..')
+var siteAbsoluteDir = path.join(__dirname, '..', '_site')
 var siteRelativeDir = siteAbsoluteDir.split(siteAbsoluteDir)[1]
 var w = walk.walk(siteAbsoluteDir)
 
