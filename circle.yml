@@ -9,6 +9,7 @@ deployment:
       - myth static/bowery.css static/out.css
       - gem install jekyll
       - jekyll build
-      - cp -rf _site/posts/* _site/blog/
+      - mkdir _site/blog/posts
+      - cp -rf _site/posts/* _site/blog/posts
       - cd deploy && npm install
       - node deploy/index.js
