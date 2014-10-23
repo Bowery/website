@@ -78,6 +78,7 @@ category: images
     exit.onclick = function(e) {
       closeImageModal()
     }
+    mixpanel.track("opened image modal")
   }
 
   // Unrelated to coffin. Closes image info modal
@@ -86,6 +87,7 @@ category: images
     overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
     overlay.style.display = 'none'
     modalIsOpen = false
+    mixpanel.track("closed image modal")
   }
 
   // Renders images html

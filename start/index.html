@@ -15,8 +15,8 @@ category: start
       <p>Before we get going, you'll need:</p>
       <ol>
         <li>Internet</li>
-        <li><a href="http://aws.amazon.com/" target="_blank">AWS Account</a></li>
-        <li><a href="http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html" target="_blank">AWS Security Credentials</a></li>
+        <li><a href="http://aws.amazon.com/" target="_blank" class="aws-link">AWS Account</a></li>
+        <li><a href="http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html" target="_blank" class="aws-sec-creds-link">AWS Security Credentials</a></li>
       </ol>
     </div>
   </div>
@@ -50,7 +50,7 @@ category: start
   <div class="content">
     <h2>Connect AWS</h2>
     <div class="subcontent">
-      <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct">here</a>.</p>
+      <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html" class="aws-sec-creds-link">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct" class="aws-register-link">here</a>.</p>
     </div>
     <div class="subcontent">
       <p>Bowery will run your applications on instances in your AWS account, so you’re the only one who has access to them. AWS will charge you for the machines you create at an m3.medium rate. Bowery is free for 30 days and 3 cents per hour after that.</p>
@@ -164,5 +164,11 @@ category: start
 
       window.location = "http://desktop.bowery.io/" + l
     }
+
+    mixpanel.track("click download button", {"version": l})
   })
+
+  mixpanel.track_links(".aws-link", "click aws link", {"referrer": document.referrer});
+  mixpanel.track_links(".aws-sec-creds-link", "click aws security creds link", {"referrer": document.referrer});
+  mixpanel.track_links(".aws-register-link", "click aws register link", {"referrer": document.referrer});
 </script>

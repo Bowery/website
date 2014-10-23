@@ -1,7 +1,18 @@
-<script type="text/javascript" src="/static/coffin.js"></script>
 {% if page.category == "blog" %}
 <script type="text/javascript" src="/static/email-form.js"></script>
 <footer class="site-footer">
   <a class="learn-more" href="/start">Get started with Bowery!</a>
 </footer>
+<script type="text/javascript">
+mixpanel.track_links(".learn_more", "click blog footer learn more link", {"referrer": document.referrer})
+</script>
 {% endif %}
+<script type="text/javascript" src="/static/coffin.js"></script>
+<script>
+mixpanel.track_links(".home-link", "click nav home link", {"referrer": document.referrer});
+mixpanel.track_links(".images-link", "click nav images link", {"referrer": document.referrer});
+mixpanel.track_links(".start-link", "click nav start link", {"referrer": document.referrer});
+mixpanel.track_links(".blog-link", "click nav blog link", {"referrer": document.referrer});
+mixpanel.track_links(".faq-link", "click nav faq link", {"referrer": document.referrer});
+mixpanel.track_links(".contact-link", "click nav contact link", {"referrer": document.referrer});
+</script>
