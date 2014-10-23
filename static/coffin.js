@@ -100,12 +100,14 @@
 
     // simple helper to force coffin open
     function openCoffin () {
+        mixpanel.track("coffin opened")
         xMovement = Infinity;
         touchEnd();
     }
 
     // simple helper to force coffin close
     function closeCoffin () {
+        mixpanel.track("coffin closed")
         xMovement = -Infinity;
         touchEnd();
     }
