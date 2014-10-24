@@ -21,9 +21,6 @@ category: images
 <div class="content-container">
   <ul class="images-list"></ul>
 </div>
-<div class="modal-overlay">
-  <div class="modal-content" id="modal"></div>
-</div>
 <script>
   // Global like Wayne Enterprises
   var xhr = new XMLHttpRequest()
@@ -51,27 +48,29 @@ category: images
     var image = environments.filter(function (e) {
       return e.id == id
     })[0]
-    modal.innerHTML = [
-      '<span class="modal-exit"></span>',
-      '<h1>{name}</h1>',
-      '<div class="description">',
-        '<p>{description}</p>',
-      '</div>',
-      '<div class="data">',
-        '<h3>Data</h3>',
-        '<dl>',
-          '<dt>Downloads</dt>',
-          '<dd>{downloadCount}</dd>',
-        '</dl>',
+    var modal = [
+      '<div class="modal-overlay">',
+        '<div class="modal-content" id="modal">',
+          '<span class="modal-exit"></span>',
+          '<h1>{name}</h1>',
+          '<div class="description">',
+            '<p>{description}</p>',
+          '</div>',
+          '<div class="data">',
+            '<h3>Data</h3>',
+            '<dl>',
+              '<dt>Downloads</dt>',
+              '<dd>{downloadCount}</dd>',
+            '</dl>',
+          '</div>',
+        '<div>',
       '</div>'
     ].join('')
      .replace('{name}', image.name)
      .replace('{description}', image.description)
      .replace('{downloadCount}', image.downloadCount)
 
-    var overlay = document.querySelector('.modal-overlay')
-    overlay.style.display = 'block'
-    overlay.style.backgroundColor = "rgba(255, 255, 255, 0.8)"
+    document.body.innerHTML += modal
     modalIsOpen = true
 
     var exit = document.getElementsByClassName('modal-exit')[0]
@@ -84,8 +83,7 @@ category: images
   // Unrelated to coffin. Closes image info modal
   function closeImageModal () {
     var overlay = document.querySelector('.modal-overlay')
-    overlay.style.backgroundColor = "rgba(255, 255, 255, 0)";
-    overlay.style.display = 'none'
+    document.body.removeChild(overlay)
     modalIsOpen = false
     mixpanel.track("closed image modal")
   }
@@ -95,14 +93,17 @@ category: images
     return images.map(function (img) {
       if (!img.name) return ""
 
+      var num = Math.ceil(Math.random() * 12)
+
       return ['<li class="image-container">',
                  '<button class="btn image-btn" data-image="{id}">',
-                   '<img class="image-logo" src="/static/image-logo.png">',
+                   '<div class="image-logo" style="background-image: url(/static/image-logo-{num}.png);"></div>',
                    '<h4 class="image-title">{name}</h4>',
                    '<p class="image-description">{description}</p>',
                  '</button>',
                '</li>'].join('')
                        .replace('{id}', img.id)
+                       .replace('{num}', num)
                        .replace('{name}', img.name)
                        .replace('{description}', img.description)
     }).join('')

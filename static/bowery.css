@@ -105,6 +105,10 @@ p {
   margin: 0 auto;
   width: 112px;
   display: block;
+  height: 138px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
 }
 .image-container {
   width: 155px;
@@ -117,7 +121,7 @@ p {
   font-size: 16px;
   line-height: 34px;
   text-transform: none;
-  text-decoratoin: none;
+  text-decoration: none;
   letter-spacing: 0;
 }
 .image-description {
@@ -131,23 +135,25 @@ p {
 }
 
 .modal-overlay {
-  display: none;
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.8);
   z-index: 100;
 }
 .modal-content {
-  position: relative;
+  position: fixed;
   width: 50%;
-  margin: 200px auto;
   background: rgba(149, 95, 210, 1);
   padding: 40px 55px;
   opacity: 1 !important;
   color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .modal-content h1 {
   color: white;
