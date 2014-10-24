@@ -122,7 +122,7 @@ body {
   list-style: none;
   position: relative;
 }
-.coffin .nav-footer li a {
+.coffin .nav-footer li a[data-coffin="click"] {
   font-family:"Monosten A", Courier, monospace;
   text-transform: uppercase;
   color: #fff;

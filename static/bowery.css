@@ -347,6 +347,12 @@ p {
 .btn.download:hover {
   background: rgb(46, 152, 159) repeat;
 }
+.btn.link {
+  background: transparent;
+  border: 0;
+  width: auto;
+  text-transform: none;
+}
 
 .screenshot {
   width: 100%;
@@ -699,7 +705,8 @@ a.learn-more:hover {
 }
 .subscribe input[type="email"] {
   font-size: 15px;
-  line-height: 40px;
+  line-height: 20px;
+  padding-bottom: 10px;
   background: none;
   outline: none;
   border: none;
@@ -718,6 +725,17 @@ a.learn-more:hover {
   opacity: 0.7;
   vertical-align: bottom;
 }
+
+/**
+ * Social Icons
+ */
+.social {
+  margin-left: 25px;
+}
+.fa::before {
+  color: white;
+}
+
 
 /**
  * Ghetto Responsiveness
