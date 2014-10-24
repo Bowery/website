@@ -6,13 +6,13 @@ categories: posts
 description: "Step by step guide on setting up a Rails app using Bowery."
 ---
 
-One environment that really demonstrates the value of Bowery is Ruby on Rails. There are many instances where it is less-than-ideal to have a full-blown development environment setup, and I'm going to use myself as an example.
+One environment that really demonstrates the value of Bowery is [Ruby](https://www.ruby-lang.org/en/ "Click to visit the main Ruby language website") on [Rails](http://rubyonrails.org "Click for the main Ruby on Rails website"). There are many instances where it is less-than-ideal to have a full-blown development environment setup, and I'm going to use myself as an example.
 
 My main laptop had a logic board failure, which is a major deal for a MacBook Pro. I was told I'd live without my workhorse laptop for a week while the over-booked repair team took care of the work.
 
 My previous laptop hadn't seen my loving hands in more than three years. Needless to say the entire ruby environment on this laptop was a disaster. During that time, this laptop went from Lion to Mountain Lion, to Mavericks, and now to Yosemite.
 
-I ended up removing everything on the machine that was ruby related, starting with this excellent blog post about [how to install ruby properly](http://cbednarski.com/articles/installing-ruby/). There's a section at the bottom of that post explaining the easiest ways to rid yourself of stale local installs, and there are also great examples on Stack Overflow and other sites too.
+I ended up removing everything on the machine that was ruby related, starting with this excellent blog post about [how to install ruby properly](http://cbednarski.com/articles/installing-ruby/). There's a section at the bottom of that post explaining the easiest ways to rid yourself of stale local installs, and there are also great examples on [Stack Overflow](http://stackoverflow.com/questions/8095209/uninstall-all-installed-gems-in-osx "Great post on Stack Overflow for OSX") and other sites too.
 
 Once I had removed all gems and related cruft, I could setup rbenv with a nice clean ruby 1.9.3 install with rubygems 1.8.23 and rails 4.1.6.
 
