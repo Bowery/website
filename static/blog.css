@@ -64,7 +64,9 @@ strong {
 .coffin a, .coffin a:hover {
   text-decoration: none !important;
 }
-
+pre li, pre ul, pre ol {
+  line-height: 8px;
+}
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
   h1, h2, .post-meta, .blog-description {
     text-align: center;
