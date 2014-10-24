@@ -727,17 +727,6 @@ a.learn-more:hover {
 }
 
 /**
- * Social Icons
- */
-.social {
-  margin-left: 25px;
-}
-.fa::before {
-  color: white;
-}
-
-
-/**
  * Ghetto Responsiveness
  */
 @media screen and (max-width: 1100px), screen and (max-device-width: 1100px) {

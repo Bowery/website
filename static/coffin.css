@@ -164,6 +164,16 @@ body {
   background-color: #ddd;
 }
 
+/**
+ * Social Icons
+ */
+.social {
+  margin-left: 25px;
+}
+.fa::before {
+  color: white;
+}
+
 /* #Tablet (Portrait)
 ================================================== */
 
