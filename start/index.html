@@ -148,18 +148,26 @@ category: start
   }
 
   document.addEventListener('click', function (e) {
-    var l
+    var l = ''
     var v = "3.2.11"
     if (closest(e.target, '.btn.download')) {
-      var version = window.navigator.appVersion.toLowerCase()
-      if (~version.indexOf('mac')) {
-        l = v + "_darwin_amd64.zip"
-      } else if (~version.indexOf('windows')) {
-        l = v + "_windows_386.zip"
-      } else if (~version.indexOf('linux')) {
-        l = v + "_linux_amd64.zip"
-      } else {
-        l = v + "_SHA256SUMS"
+      var os = navigator.platform.toLowerCase().match(/(win|mac|linux)/)
+      var arch = '386'
+      if (navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
+        navigator.cpuClass === 'x64') {
+        arch = 'amd64'
+      }
+
+      switch (os && os[1]) {
+        case 'mac':
+          l = v + '_darwin_amd64.zip'
+          break
+        case 'win':
+          l = v + '_windows_386.zip'
+          break
+        case 'linux':
+          l = v + '_linux_' + arch + '.zip'
+          break
       }
 
       window.location = "http://desktop.bowery.io/" + l
