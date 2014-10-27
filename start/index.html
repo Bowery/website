@@ -163,9 +163,8 @@ category: start
       }
 
       window.location = "http://desktop.bowery.io/" + l
+      mixpanel.track("click download button", {"version": l})
     }
-
-    mixpanel.track("click download button", {"version": l})
   })
 
   mixpanel.track_links(".aws-link", "click aws link", {"referrer": document.referrer});
