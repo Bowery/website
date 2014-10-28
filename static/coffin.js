@@ -114,7 +114,7 @@
 
     // try a native matchesSelector on a selector with an element
     function matchesSelector(element, selector) {
-        var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector
+        var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector || element.msMatchesSelector
         return matcher && matcher.call(element, selector);
     }
 
