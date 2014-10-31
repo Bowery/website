@@ -23,14 +23,14 @@ Once you have that done, it's time to add your Amazon Web Services (AWS) credent
 
 If you don't have an AWS account you're going to be needing one. Likewise if you don't know your AWS keys then you can find them thanks to [this helpful post from Amazon](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html "Click to figure out where your AWS keys are").
 
-Now you're ready to fire up that Laravel app! From the app you can hit the `CREATE APP` button, which takes you to a `select image` form where you should search for `PHP 5.5 with Composer`. Once that image is selected, you can enter the information as shown below, with of course the correct path to your local Laravel folder for the `Local Path` setting.
+Now you're ready to fire up that Laravel app! From the Bowery desktop you can hit the `CREATE APP` button, which takes you to a `select image` form where you should search for `PHP 5.5 with Composer`. Once that image is selected, you can enter the information as shown below, with of course the correct path to your local Laravel folder for the `Local Path` setting.
 
 ![Bowery desktop app settings](http://bowery-blog.s3.amazonaws.com/desktop/laravel/app_screen.png)
 
 Here's a quick explanation for each of these fields:
 
 * *Name:* This can be whatever you want to call your app. Since Bowery supports multiple apps per account, you can have many apps all shown in a list, so a descriptive name is a good idea.
-* *Click to edit image.*  For this app, you should have selected the `PHP 5.5 with Composer` image. There are [many more images here](http://bowery.io/images/ "Click to see the Bowery supplied images, and search for anything in particular"), including Ruby on Rails, Node.js with Express, Joomla!, Drupal, Wordpress, and more. You can also create your own.
+* *Click to edit image:*  For this app, you should have selected the `PHP 5.5 with Composer` image. There are [many more images here](http://bowery.io/images/ "Click to see the Bowery supplied images, and search for anything in particular"), including Ruby on Rails, Node.js with Express, Joomla!, Drupal, Wordpress, and more. You can also create your own.
 * *Command That Runs App:* This is what runs your app on the server, and in the case of this particular app it should be `COMPOSER_HOME="/home/ubuntu/app" composer install && php artisan serve --port 3000 --host 0.0.0.0`. We explain what all this means later in this quickstart.
 * *Remote Path:* The default is `/home/ubuntu/app` which is perfectly find for this purpose. For other platforms you might need to change this to another location for support with nginx or some such.
 * *Local Path:* This is where your Laravel code was downloaded to on your computer. This is the directory that Bowery scans for changes.
@@ -46,7 +46,7 @@ So what exactly is that start command? We use some UNIX trickery and actually ru
 
 The first command, `composer install` needs to know where the `COMPOSER_HOME` is so we set that before running the command. This essentially fires up composer, which is an awesome tool for PHP developers to automate fetching and using additional PHP libraries and extensions. Consider it a PHP alternative to Node's `npm` or Ruby on Rails' `bundler`.
 
-Then we use two ampersands `&&` telling the shell that there's another command coming, and then issue `php artisan serve --port 3000 --host 0.0.0.0`. This requires PHP 5.4+, as it actually uses a built in server provided by the PHP core. We are telling it to listen on port 3000, and giving it a host of `0.0.0.0` tells it to listen on all network interfaces, not just localhost.
+Then we use two ampersands `&&` telling the shell that there's another command coming, and then issue `php artisan serve --port 3000 --host 0.0.0.0`. This requires PHP 5.4+, as it actually uses a built in server provided by the PHP core. We are telling it to listen on port 3000, and giving it a host of `0.0.0.0` tells it to listen on all network interfaces, and not just localhost.
 
 Now that the app is provisioning, you should see the app listing screen; and when you see an IP address under your app name (like below) you know where you can now find your app!
 
@@ -56,13 +56,17 @@ Now that the app is provisioning, you should see the app listing screen; and whe
 
 Now it is time to see the app in action: Fire up the browser of your choice, and go to your IP address, with port 3000. In my case, the IP address was 54.160.111.121, so my app was hosted at `http://54.160.111.121:3000/`.
 
-> NOTE: Remember your app will be firing up on port 3000, so your standard URL will not work. In an upcoming release you'll have your ports taken care of automatically for you by the desktop.
+> NOTE: Remember your app will be firing up on port 3000, so your standard URL will not work. In an upcoming release you'll have your ports taken care of automatically for you by the Bowery desktop.
 
 Now you can see the magic, by opening up your Laravel codebase in your favorite editor, and changing a file. For my example, I'm going to update the default view for a Laravel app, which happens to be the `hello` view.
 
+![Editing hello view in Sublime](http://bowery-blog.s3.amazonaws.com/desktop/laravel/view_hello.png)
+
+You can see the new text around line 39 where I add a link to the Bowery.io website.
+
 ![Laravel default hello view](http://bowery-blog.s3.amazonaws.com/desktop/laravel/welcome.png)
 
-I'm adding some additional text to the Laravel default greeting. Once I save that file, I can count to ten, do a small jig in front of my laptop, and *boom* there's my updated view on the server.
+Once I save that file, I can count to ten, do a small jig in front of my laptop, and *boom* there's my updated view on the server.
 
 ![Laravel hello view, with Bowery](http://bowery-blog.s3.amazonaws.com/desktop/laravel/welcome_bowery.png)
 
