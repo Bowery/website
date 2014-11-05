@@ -7,6 +7,9 @@ categories: posts
 
 Want to try out [Orchestrate.io's](http://orchestrate.io) amazing database without installing anything locally? We've added an Orchestrate image to make the process as simple as launching a new Bowery app.
 
+### Step 0: Download the Orchestrate Node.js example app
+[Orchestrate has an example Node.js app on Github](https://github.com/Bowery/orchestrate-bowery-userauth). [Click here to download it](https://github.com/Bowery/orchestrate-bowery-userauth/archive/master.zip).
+
 ### Step 1: Click "Add App"
 
 ![Imgur](http://i.imgur.com/gmziqM5.png)
@@ -15,10 +18,22 @@ Want to try out [Orchestrate.io's](http://orchestrate.io) amazing database witho
 
 ![Imgur](http://i.imgur.com/nEXhOwK.png)
 
-### Step 3: Point to a directory locally
+### Step 3: Set up your app
+Make `npm install && node index.js` your start step and point to the local folder that you downloaded in step 0 containing the app code.
 
-![Imgur](http://i.imgur.com/qKFbROX.png)
+![Imgur](http://i.imgur.com/R1gD4rp.png)
+
+### Step 4: Add your Orchestrate key to config.js
+
+<pre>
+// config.js/
+module.exports = {
+  "db": "INSERT-YOUR-ORCHESTRATE-KEY-HERE"
+}
+</pre>
+
+### Step 5: That's it!
 
 And that's it! Once the app is provisioned, you'll have a new machine with the [Orchestrate Node.js library](https://www.npmjs.org/package/orchestrate) installed.
 
-![Imgur](http://i.imgur.com/mkI206x.png)
+![Imgur](http://i.imgur.com/S7jbcmZ.png)
