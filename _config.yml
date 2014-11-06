@@ -6,3 +6,9 @@ blogbaseurl: "/blog"
 twitter_username: boweryio
 github_username:  Bowery
 markdown: kramdown
+asset_pipeline:
+  bundle: true
+  compress: true
+  output_path: static
+  display_path: static
+  gzip: true

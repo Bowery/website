@@ -27,13 +27,17 @@
     <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     <meta content="{{ site.url }}/about/" property="article:author">
     {% endif %}
-    <link rel="stylesheet" href="/static/coffin.css">
+    {% css_asset_tag global %}
+    - /static/coffin.css
+    - /static/out.css
+    {% endcss_asset_tag %}
+    <!-- <link rel="stylesheet" href="/static/coffin.css">
     {% if page.category == "blog" %}
     <link rel="stylesheet" href="/static/main.css">
     <link rel="stylesheet" href="/static/blog.css">
     {% else %}
     <link rel="stylesheet" href="/static/out.css">
-    {% endif %}
+    {% endif %} -->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//f.fontdeck.com/s/css/kMFVOQjPLDEdfKGqpfY/O4BdYig/bowery.io/48405.css" type="text/css" />
     <script type="text/javascript">

@@ -463,6 +463,7 @@ section.visible {
 
 .intro-step-inner-wrapper {
   position: relative;
+  height: 600px;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -845,6 +846,7 @@ a.learn-more:hover {
   }
 
   .intro-step-inner-wrapper {
+    height: auto;
     top: 55px;
     transform: none;
   }

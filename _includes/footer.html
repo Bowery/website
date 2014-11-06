@@ -6,7 +6,11 @@
 mixpanel.track_links(".learn_more", "click blog footer learn more link", {"referrer": document.referrer})
 </script>
 {% endif %}
-<script type="text/javascript" src="/static/coffin.js"></script>
+{% javascript_asset_tag global %}
+- /static/jquery.min.js
+- /static/home.js
+- /static/coffin.js
+{% endjavascript_asset_tag global %}
 <script>
 mixpanel.track_links(".home-link", "click nav home link", {"referrer": document.referrer});
 mixpanel.track_links(".images-link", "click nav images link", {"referrer": document.referrer});
