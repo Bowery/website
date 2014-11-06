@@ -227,6 +227,8 @@
 
     window.addEventListener('click', function (e) {
         // Toggling Window
+        if (closest(e.target, '.subscribe')) return direction = ''
+
         if (!direction && closest(e.target, '[data-coffin=toggle]')) toggleCoffin()
         else if (isOpen && closest(e.target, '.page')) toggleCoffin()
 

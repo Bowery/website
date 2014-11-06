@@ -499,12 +499,12 @@ section.visible {
   text-decoration: none;
   width: 100px;
   letter-spacing: 2px;
+  transition: color var(--short-transition-duration);
 }
 
 .intro-step-inner-wrapper > a:hover {
-  text-decoration: underline;
+  color: var(--red);
 }
-
 .intro-step-inner-wrapper .arrow-down {
   background-image: url(/static/arrow-down.png);
   width: 28px;
@@ -513,7 +513,11 @@ section.visible {
   background-size: contain;
   position: relative;
   left: calc(50% - 21px);
-  top: 10px;
+  top: 20px;
+  transition: var(--short-transition-duration);
+}
+.intro-step-inner-wrapper > a:hover .arrow-down {
+   transform: translate3d(0, 5px, 0);
 }
 
 .step-content {
@@ -602,7 +606,15 @@ aside {
   background: white;
   cursor: pointer;
 }
-
+.container-add .step-list li:hover {
+  color: var(--medium-blue);
+}
+.container-choose .step-list li:hover {
+  color: var(--medium-turquoise);
+}
+.container-share .step-list li:hover {
+  color: var(--light-blue);
+}
 .step-list > li.active {
   background: white;
 }
@@ -610,11 +622,9 @@ aside {
 li.active:first-child {
   color: var(--medium-blue);
 }
-
 li.active:nth-child(2) {
   color: var(--medium-turquoise);
 }
-
 li.active:last-child {
   color: var(--light-blue);
 }
@@ -696,34 +706,6 @@ a.learn-more {
 }
 a.learn-more:hover {
   text-decoration: underline;
-}
-
-.subscribe {
-  position: fixed;
-  bottom: 25px;
-  right: 100px;
-}
-.subscribe input[type="email"] {
-  font-size: 15px;
-  line-height: 20px;
-  padding-bottom: 10px;
-  background: none;
-  outline: none;
-  border: none;
-  border-bottom: 1px solid white;
-  color: white;
-}
-.subscribe input[type="email"]::placeholder {
-  color: white;
-}
-.subscribe input[type="submit"] {
-  cursor: pointer;
-  padding: 15px 15px;
-  background: #fff;
-  border: 0 none;
-  outline: none;
-  opacity: 0.7;
-  vertical-align: bottom;
 }
 
 /**
