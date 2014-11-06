@@ -606,7 +606,15 @@ aside {
   background: white;
   cursor: pointer;
 }
-
+.container-add .step-list li:hover {
+  color: var(--medium-blue);
+}
+.container-choose .step-list li:hover {
+  color: var(--medium-turquoise);
+}
+.container-share .step-list li:hover {
+  color: var(--light-blue);
+}
 .step-list > li.active {
   background: white;
 }
@@ -614,11 +622,9 @@ aside {
 li.active:first-child {
   color: var(--medium-blue);
 }
-
 li.active:nth-child(2) {
   color: var(--medium-turquoise);
 }
-
 li.active:last-child {
   color: var(--light-blue);
 }
