@@ -56,7 +56,7 @@ body {
   left: 0;
   width: 270px;
   margin-left: 0;
-  overflow: auto;
+  overflow: hidden;
   display: block;
 }
 .coffin-open,
@@ -116,7 +116,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 25px 0;
+  padding: 25px 0 0;
 }
 .coffin .nav-footer ul {
   list-style: none;
@@ -151,8 +151,61 @@ body {
      -o-transition: opacity .4s; /* Opera */
    -moz-transition: opacity .4s; /* Firefox 4 */
 -webkit-transition: opacity .4s; /* Safari and Chrome */
-
 }
+
+.subscribe {
+  margin-top: 20px;
+  position: relative;
+}
+.subscribe .cover {
+  vertical-align: top;
+  display: inline-block;
+  float: left;
+  height: 45px;
+  background: white;
+}
+.subscribe .email-cover {
+  width: 65%;
+  opacity: 0.1;
+}
+.subscribe .submit-cover {
+  width: 35%;
+  opacity: 0.2;
+}
+.subscribe input {
+  font-family: "Monosten E", Courier, monospace;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border: none;
+  outline: none;
+  position: absolute;
+  background: none;
+  color: white;
+}
+.subscribe input::-webkit-input-placeholder,
+.subscribe input::-moz-placeholder, 
+.subscribe input::-ms-input-placeholder,{
+  color: white;
+}
+.subscribe input[type="email"] {
+  line-height: 20px;
+  width: 65%;
+  padding: 13px 0 12px;
+  text-indent: 20px;
+  left: 0;
+}
+/*.subscribe input[type="email"]::-webkit-input-placeholder,
+.subscribe input[type="email"]::-moz-placeholder,
+.subscribe input[type="email"]::-ms-input-placeholder {
+  color: white;
+}*/
+.subscribe input[type="submit"] {
+  cursor: pointer;
+  padding: 15px 15px;
+  width: 35%;
+  left: 65%;
+}
+
 .coffin-remote:hover {
   opacity: .8;
 }
