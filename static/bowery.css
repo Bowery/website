@@ -499,12 +499,12 @@ section.visible {
   text-decoration: none;
   width: 100px;
   letter-spacing: 2px;
+  transition: color var(--short-transition-duration);
 }
 
 .intro-step-inner-wrapper > a:hover {
-  text-decoration: underline;
+  color: var(--red);
 }
-
 .intro-step-inner-wrapper .arrow-down {
   background-image: url(/static/arrow-down.png);
   width: 28px;
@@ -513,7 +513,11 @@ section.visible {
   background-size: contain;
   position: relative;
   left: calc(50% - 21px);
-  top: 10px;
+  top: 20px;
+  transition: var(--short-transition-duration);
+}
+.intro-step-inner-wrapper > a:hover .arrow-down {
+   transform: translate3d(0, 5px, 0);
 }
 
 .step-content {
