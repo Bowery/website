@@ -462,6 +462,7 @@ section.visible {
 }
 
 .intro-step-inner-wrapper {
+  height: 600px;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
