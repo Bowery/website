@@ -11,14 +11,6 @@ category: start
   </div>
   <div class="content">
     <p>Bowery is a limitless development environment. Run your application in seconds no matter the operating system, programming language, database, or other dependencies. We're dedicated to making every stack easy to use.</p>
-    <div class="subcontent">
-      <p>Before we get going, you'll need:</p>
-      <ol>
-        <li>Internet</li>
-        <li><a href="http://aws.amazon.com/" target="_blank" class="aws-link">AWS Account</a></li>
-        <li><a href="http://docs.aws.amazon.com/general/latest/gr/getting-aws-sec-creds.html" target="_blank" class="aws-sec-creds-link">AWS Security Credentials</a></li>
-      </ol>
-    </div>
   </div>
 </div>
 
@@ -36,8 +28,8 @@ category: start
       </ol>
     </div>
     <div class="subcontent">
-      <button class="btn download">Download Bowery <span class="accent">v3.2.11</span></button>
-    </div>
+      <button class="btn download">Download Bowery <span class="accent">v3.3.0</span></button>
+    </div> 
   </div>
 </div>
 <div class="content-container right">
@@ -48,12 +40,15 @@ category: start
 
 <div class="content-container left">
   <div class="content">
-    <h2>Connect AWS</h2>
+    <h2>Configure Hosting</h2>
     <div class="subcontent">
-      <p>You’ll be prompted for your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html" class="aws-sec-creds-link">AWS credentials</a>. You will need an AWS account to use Bowery, so you can sign up <a href="https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?nc1=h_ct" class="aws-register-link">here</a>.</p>
+      <p>Bowery apps currently run on AWS. Feel free to put in your <a href="http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html" class="aws-sec-creds-link" target="_blank">your own credentials</a> or just have us host it for you.</p>
     </div>
     <div class="subcontent">
-      <p>Bowery will run your applications on instances in your AWS account, so you’re the only one who has access to them. AWS will charge you for the machines you create at an m3.medium rate. Bowery is free for 30 days and 3 cents per hour after that.</p>
+      <p>Bowery is free for 30 days. If you have us host it, we'll start billing after that period. Bowery runs on m3.medium EC2 instances.</p>
+    </div>
+    <div class="subcontent">
+      <p><a href="http://bowery.io/blog/posts/2014/10/28/bowery-pricing.html" target="_blank">Click here</a> to learn more about Bowery's pricing.</p>
     </div>
   </div>
 </div>
@@ -67,10 +62,10 @@ category: start
   <div class="content">
     <h2>Add An App</h2>
     <div class="subcontent">
-      <p>The first step in creating an app is choose an image. You can search for various images both on the <a href="http://bowery.io/images">images page</a> and in the app.</p>
+      <p>The first step in creating an app is to choose an image. You can search for various images, or pick one of our awesome defaults, both on the <a href="http://bowery.io/images" target="_blank">images page</a> and within the app.</p>
     </div>
     <div class="subcontent">
-      <p>Once you click on an image, it will provision your app using that image. This may take a minute depending on how busy AWS is.</p>
+      <p>Once you select an image, it will provision your app using that image. This may take a minute depending on how busy AWS is.</p>
     </div>
   </div>
 </div>
@@ -101,7 +96,7 @@ category: start
   <div class="content">
     <h2>Execute Commands</h2>
     <div class="subcontent">
-      <p>You can run commands on the AWS instance directly from Bowery. At the bottom of the edit app page, click on the 'Run Commands' button.</p>
+      <p>You can run commands on the AWS instance directly from Bowery. Click on an app and select "Exec Commands."</p>
     </div>
   </div>
 </div>
@@ -149,7 +144,7 @@ category: start
 
   document.addEventListener('click', function (e) {
     var l = ''
-    var v = "3.2.11"
+    var v = "3.3.0"
     if (closest(e.target, '.btn.download')) {
       var os = navigator.platform.toLowerCase().match(/(win|mac|linux)/)
       var arch = '386'
