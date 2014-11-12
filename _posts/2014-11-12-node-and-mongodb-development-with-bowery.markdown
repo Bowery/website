@@ -17,11 +17,11 @@ Clone this project in a local directory on your machine. If you don't have git o
 
 For my system it looks like this:
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/app.png
+![Bowery app details](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/app.png)
 
 Once your app has been provisioned, you will see an IP address under your app's name:
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/app_provisioned.png
+![Bowery app with provisioned IP address](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/app_provisioned.png)
 
 > Each app will be issued a different IP adress, so make sure to use the one for your app!
 
@@ -29,19 +29,19 @@ Once your app has been provisioned, you will see an IP address under your app's 
 
 This example app already has everything configured to go, and should be running. Go to your IP address and port as listed in Bowery and you should be greeted with a welcome page.
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/welcome.png
+![Welcome page](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/welcome.png)
 
 You can register using the `Register` link at the top of the page, which will create an account for you and store that data in the MongoDB database.
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/register.png
+![Register form](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/register.png)
 
 Once you've registered, you'll need to login using the top right:
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/login.png
+![Login form](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/login.png)
 
 From this point you should see your email address on the top right, and the greeting page for the blog. By clicking on the caret after your email address, you should have a short menu that allows you to create a new blog post or logout.
 
-!http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/menu.png
+![Menu](http://bowery-blog.s3.amazonaws.com/desktop/node-and-mongodb/menu.png)
 
 ### Now What?
 
