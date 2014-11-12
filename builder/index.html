@@ -3,6 +3,7 @@ layout: default
 title: Bowery - Builder
 category: builder
 ---
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 <button href="#" class="logo" data-coffin="toggle"></button>
 <div class="outer-header">
@@ -21,5 +22,45 @@ category: builder
   </div>
 </div>
 <script>
-  
+
+  // var uploadFile
+  // var dropEl = document.querySelector('.file-drop')
+  // // Fallback to file input
+  // if (('WebkitAppearance' in document.documentElement.style)) {
+  //   dropEl.innerHTML = "<input onchange='uploadFile()' type='file' webkitdirectory>"
+  // }
+  //
+  //
+  // // Drag & Drop Swag
+  // window.addEventListener('dragenter', function (e) {
+  //   e.stopPropagation()
+  //   e.preventDefault()
+  // })
+  // window.addEventListener('dragover', function (e) {
+  //   e.stopPropagation()
+  //   e.preventDefault()
+  // })
+  //
+  // var showError = function (err) {
+  //   var oldHTML = dropEl.innerHTML
+  //   dropEl.innerHTML = '<p class="error">' + err + '</p>'
+  //   setTimeout(function () {
+  //     dropEl.innerHTML = oldHTML
+  //   }, 3000)
+  // }
+  //
+  // dropEl.addEventListener('drop', uploadFile = function (e) {
+  //   if (!e) {
+  //     console.log('using fallback folder selection')
+  //
+  //   }
+  //   e.preventDefault()
+  //   var entry = e.dataTransfer.items.length && e.dataTransfer.items[0].webkitGetAsEntry()
+  //   console.log('$$$$ entry', entry)
+  //   if (!entry || !entry.isDirectory)
+  //     return showError("Please Drop a directory!")
+  //
+  //   console.log('$$$$ its all good in the webkit hood.')
+  // })
+
 </script>

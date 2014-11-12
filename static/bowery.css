@@ -309,6 +309,10 @@ p {
   text-align: center;
   padding: 191px 0;
 }
+.error {
+  color: var(--red);
+}
+
 /**
  * Header? TODO (thebyrd) make these general
  */
