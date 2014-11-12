@@ -13,4 +13,50 @@ With Bowery 2, one of our biggest challenges was making a Windows keyboard behav
 
 Enter Bowery/prompt. (Pun intended.) Use it for any cross-platform command line tools you need to build. 
 
+As an example, here is a version that implements some of the features of the [Unix read utility](http://ss64.com/bash/read.html) using prompt.
+
+
+
+
+	package main
+
+	import (
+	  "flag"
+	  "github.com/Bowery/prompt"
+	  "os"
+	)
+
+	var (
+	  prefix string
+	  silent bool
+	)
+
+	func init() {
+	  flag.StringVar(&prefix, "p", "", "Display a prompt prefix.")
+	  flag.BoolVar(&silent, "s", false, "Silent mode, characters are not printed.")
+	}
+
+	func main() {
+	  flag.Parse()
+	  var (
+	    out string
+	    err error
+	  )
+
+	  if silent {
+	    out, err = prompt.Password(prefix)
+	  } else {
+	    out, err = prompt.Basic(prefix, false)
+	  }
+
+	  if err != nil {
+	    os.Stderr.Write([]byte(err.Error()))
+	    os.Exit(1)
+	  }
+
+	  os.Stdout.Write([]byte(out + "\n"))
+	}
+
+
+
 The repository is available on [Github](https://github.com/Bowery/prompt) and has [full Godoc documentation](https://godoc.org/github.com/Bowery/prompt).
