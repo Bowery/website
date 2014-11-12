@@ -114,12 +114,12 @@ p {
   width: 155px;
   margin: 42px;
   float: left;
-  min-height: 220px;
+  min-height: 230px;
 }
 .image-title {
   text-align: center;
   font-size: 16px;
-  line-height: 34px;
+  line-height: 18px;
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;

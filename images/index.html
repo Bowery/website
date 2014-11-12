@@ -110,6 +110,9 @@ category: images
   }
 
   function searchImages(query) {
+    if (query != 'default')
+      window.history.replaceState('', document.title, '?query=' + query)
+
     xhr.abort()
     xhr.onload = function () {
       list.innerHTML = ""
@@ -125,12 +128,19 @@ category: images
   }
 
   function loadDefault() {
-    searchImages('default')
+    var query = parseQuery('query')
+    if (query)
+      document.getElementById('search').value = parseQuery('query')
+    
+    searchImages(query || 'default')
   }
 
   document.getElementById('search').addEventListener('keyup', function (e) {
     var query = e.target.value
-    if (query == '') query = 'default'
+    if (query == '') {
+      window.history.replaceState('', document.title, '/images/')
+      query = 'default'
+    }
     searchImages(query)
   })
 
@@ -144,4 +154,13 @@ category: images
   })
 
   loadDefault()
+
+  function parseQuery(name) {
+    var queryString = {}
+    window.location.href.replace(
+      new RegExp("([^?=&]+)(=([^&]*))?", "g"),
+      function($0, $1, $2, $3) { queryString[$1] = $3 }
+    )
+    return name ? queryString[name] : queryString
+  }
 </script>
