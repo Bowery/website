@@ -9,7 +9,7 @@ In previous posts we've shown how quickly you can [get started with Node.js and 
 
 ### Getting Started
 
-There are many existing projects that use Node.js and MongoDB, and for simplicity we will use the [expressSimpleBlog](https://github.com/cubuzoa/expressSimpleBlog) project that uses Node.js, Express, MongoDB, and Mongoose for a quick and easy blogging platform that stores data in a MoongoDB database.
+There are many existing projects that use Node.js and MongoDB, and for simplicity we will use the [expressSimpleBlog](https://github.com/cubuzoa/expressSimpleBlog) project that uses [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), [MongoDB](https://www.mongodb.org/), and [Mongoose](http://mongoosejs.com/) for a quick and easy blogging platform that stores data in a MongoDB database.
 
 Clone this project in a local directory on your machine. If you don't have git on your system, you can always just download straight from the Github website. Once you have the project downloaded, you can fire up Bowery and create an app.
 
