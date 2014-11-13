@@ -59,4 +59,6 @@ As an example, here is a version that implements some of the features of the [Un
 
 
 
-The repository is available on [Github](https://github.com/Bowery/prompt) and has [full Godoc documentation](https://godoc.org/github.com/Bowery/prompt).
+The repository is available on [Github](https://github.com/Bowery/prompt) and has [full Godoc documentation](https://godoc.org/github.com/Bowery/prompt). And special thanks to Bowery team member [Larz Conwell](https://github.com/larzconwell) for all his help on this!
+
+Interested in Bowery? Learn more here at [bowery.io](http://bowery.io).
