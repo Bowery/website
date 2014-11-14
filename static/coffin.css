@@ -20,10 +20,12 @@ body {
   overflow-x: hidden;
   /*background: rgb(46, 152, 159) repeat;*/
 }
+
 .padding {
   height: 50%;
   margin-top: 0;
 }
+
 .page {
   position: relative;
   z-index: 10;
@@ -31,21 +33,26 @@ body {
   width: auto;
   overflow: hidden;
   -webkit-transform: translate3d(80px, 0, 0);
+  -ms-transform: translate3d(80px, 0, 0);
   transform: translate3d(80px, 0, 0);
 }
+
 .page > .logo {
   display: none;
 }
+
 .logo {
   width: 52px;
   height: 54px;
   background: url('/static/transparent-logo.png');
   display: block;
   margin: 13px;
+  -webkit-background-size: contain;
   background-size: contain;
   outline: none;
   border: 0;
 }
+
 .coffin {
   display: none;
   z-index: 5;
@@ -58,11 +65,15 @@ body {
   margin-left: 0;
   overflow: hidden;
   display: block;
+  cursor: pointer;
 }
+
 .coffin-open,
 .coffin-pulling {
+  cursor: initial;
   display: block;
 }
+
 .coffin .pillow {
   padding-left: 25px;
   font-size: 13px;
@@ -72,32 +83,39 @@ body {
   background: #111;
   border-bottom: 1px solid black;
 }
+
 .coffin .nav,
 .coffin .nav-footer {
   margin-top: -135px;
   opacity: 0;
-          transition: opacity .1s;
-       -o-transition: opacity .1s; /* Opera */
-     -moz-transition: opacity .1s; /* Firefox 4 */
-  -webkit-transition: opacity .1s; /* Safari and Chrome */
+  transition: opacity .1s;
+  /* Opera */
+  /* Firefox 4 */
+  -webkit-transition: opacity .1s;
+  /* Safari and Chrome */
 }
+
 .coffin .nav a,
 .coffin .nav-footer a {
   pointer-events: none;
 }
+
 .coffin-open .nav,
 .coffin-open .nav-footer {
   opacity: 1;
 }
+
 .coffin-open .nav a,
 .coffin-open .nav-footer a {
   pointer-events: auto;
 }
+
 .coffin .nav li {
   margin-bottom: 0;
 }
+
 .coffin .nav li a {
-  font-family:"Monosten A", Courier, monospace;
+  font-family: "Monosten A", Courier, monospace;
   text-transform: uppercase;
   letter-spacing: 5px;
   display: block;
@@ -108,22 +126,26 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
 .coffin .nav li a:hover,
 .coffin .nav li a.active {
   background: rgba(0, 0, 0, 0.1);
 }
+
 .coffin .nav-footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   padding: 25px 0 0;
 }
+
 .coffin .nav-footer ul {
   list-style: none;
   position: relative;
 }
+
 .coffin .nav-footer li a[data-coffin="click"] {
-  font-family:"Monosten A", Courier, monospace;
+  font-family: "Monosten A", Courier, monospace;
   text-transform: uppercase;
   color: #fff;
   text-decoration: none;
@@ -134,10 +156,12 @@ body {
   display: block;
   padding: 0 25px;
 }
+
 .coffin .nav-footer ul li:hover,
 .coffin .nav-footer ul li:hover a.active {
   background: rgba(0, 0, 0, 0.1);
 }
+
 .coffin-remote:hover,
 .coffin-remote {
   position: absolute;
@@ -147,16 +171,18 @@ body {
   padding: 7px 10px;
   background: #fff;
   opacity: 1;
-        transition: opacity .4s;
-     -o-transition: opacity .4s; /* Opera */
-   -moz-transition: opacity .4s; /* Firefox 4 */
--webkit-transition: opacity .4s; /* Safari and Chrome */
+  transition: opacity .4s;
+  /* Opera */
+  /* Firefox 4 */
+  -webkit-transition: opacity .4s;
+  /* Safari and Chrome */
 }
 
 .subscribe {
   margin-top: 20px;
   position: relative;
 }
+
 .subscribe .cover {
   vertical-align: top;
   display: inline-block;
@@ -164,16 +190,19 @@ body {
   height: 45px;
   background: white;
 }
+
 .subscribe .email-cover {
   width: 65%;
   opacity: 0.1;
 }
+
 .subscribe .submit-cover {
   width: 35%;
   opacity: 0.2;
 }
+
 .subscribe input {
-  font-family: "Monosten E", Courier, monospace;
+  font-family: "Monosten A", Courier, monospace;
   font-size: 12px;
   letter-spacing: 3px;
   border: none;
@@ -181,12 +210,30 @@ body {
   position: absolute;
   background: none;
   color: white;
+  -webkit-font-smoothing: antialiased;
 }
-.subscribe input::-webkit-input-placeholder,
-.subscribe input::-moz-placeholder, 
-.subscribe input::-ms-input-placeholder,{
+
+.email-submit::-webkit-input-placeholder,
+.email-submit::-moz-placeholder,
+.email-submit::-ms-input-placeholder,
+.email-submit::-webkit-input-placeholder {
   color: white;
 }
+
+.email-submit::-webkit-input-placeholder,
+.email-submit::-moz-placeholder,
+.email-submit::-ms-input-placeholder,
+.email-submit::-moz-placeholder {
+  color: white;
+}
+
+.email-submit::-webkit-input-placeholder,
+.email-submit::-moz-placeholder,
+.email-submit::-ms-input-placeholder,
+.email-submit:-ms-input-placeholder {
+  color: white;
+}
+
 .subscribe input[type="email"] {
   line-height: 20px;
   width: 65%;
@@ -194,11 +241,7 @@ body {
   text-indent: 20px;
   left: 0;
 }
-/*.subscribe input[type="email"]::-webkit-input-placeholder,
-.subscribe input[type="email"]::-moz-placeholder,
-.subscribe input[type="email"]::-ms-input-placeholder {
-  color: white;
-}*/
+
 .subscribe input[type="submit"] {
   cursor: pointer;
   padding: 15px 15px;
@@ -209,6 +252,7 @@ body {
 .coffin-remote:hover {
   opacity: .8;
 }
+
 .coffin-remote-bar {
   display: block;
   width: 18px;
@@ -220,9 +264,11 @@ body {
 /**
  * Social Icons
  */
+
 .social {
   margin-left: 25px;
 }
+
 .fa::before {
   color: white;
 }
@@ -252,9 +298,11 @@ body {
   .coffin .logo {
     display: none;
   }
+
   .coffin .padding {
     height: auto;
   }
+
   .coffin .nav {
     margin-top: 10px;
   }
@@ -267,6 +315,7 @@ body {
 
   .page {
     position: relative;
+    -ms-transform: none;
     transform: none;
     -webkit-transform: none;
   }
