@@ -16,9 +16,11 @@ category: images
   </div>
 </div>
 <div class="search-box">
-  <input type="text" class="search-input" id="search">
+  <input type="text" class="search-input" placeholder="search images" id="search">
+  <a href="#" class="search-clear"></a>
 </div>
 <div class="content-container">
+  <div class="empty-state">Hmm... We can't seem to find anything. Try something else!</div>
   <ul class="images-list"></ul>
 </div>
 <script>
@@ -26,6 +28,9 @@ category: images
   var xhr = new XMLHttpRequest()
   var list = document.querySelector('.images-list')
   var modal = document.getElementById('modal')
+  var searchInputEl = document.getElementsByClassName('search-input')[0]
+  var searchClearBtn = document.getElementsByClassName('search-clear')[0]
+  var emptyStateEl = document.getElementsByClassName('empty-state')[0]
   var modalIsOpen = false
   var environments
 
@@ -90,6 +95,12 @@ category: images
 
   // Renders images html
   function renderImages(images) {
+    if (images.length == 0) {
+      emptyStateEl.className = 'empty-state visible'
+    } else {
+      emptyStateEl.className = 'empty-state'
+    }
+    
     return images.map(function (img) {
       if (!img.name) return ""
 
@@ -110,8 +121,10 @@ category: images
   }
 
   function searchImages(query) {
-    if (query != 'default')
+    if (query != 'default') {
       window.history.replaceState('', document.title, '?query=' + query)
+      searchClearBtn.className = 'search-clear visible'
+    }
 
     xhr.abort()
     xhr.onload = function () {
@@ -130,19 +143,29 @@ category: images
   function loadDefault() {
     var query = parseQuery('query')
     if (query)
-      document.getElementById('search').value = parseQuery('query')
+      searchInputEl.value = parseQuery('query')
     
     searchImages(query || 'default')
   }
 
-  document.getElementById('search').addEventListener('keyup', function (e) {
+  searchInputEl.addEventListener('keyup', function (e) {
     var query = e.target.value
     if (query == '') {
+      searchClearBtn.className = 'search-clear'
       window.history.replaceState('', document.title, '/images/')
       query = 'default'
+    } else {
+      searchClearBtn.className = 'search-clear visible'
     }
     searchImages(query)
   })
+
+  searchClearBtn.onclick = function(e) {
+    e.preventDefault()
+    searchInputEl.value = ''
+    searchClearBtn.className = 'search-clear'
+    searchImages('default')
+  }
 
   document.addEventListener('click', function (e) {
     var el
