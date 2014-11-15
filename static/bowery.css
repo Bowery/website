@@ -381,7 +381,7 @@ p {
 .btn.download {
   color: white;
   background: var(--turquoise);
-  padding: 24px;
+  padding: 27px;
 }
 
 .btn .accent {
