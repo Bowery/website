@@ -215,26 +215,11 @@ body {
 
 .email-submit::-webkit-input-placeholder,
 .email-submit::-moz-placeholder,
-.email-submit::-ms-input-placeholder,
-.email-submit::-webkit-input-placeholder {
+.email-submit::-ms-input-placeholder {
   color: white;
 }
 
-.email-submit::-webkit-input-placeholder,
-.email-submit::-moz-placeholder,
-.email-submit::-ms-input-placeholder,
-.email-submit::-moz-placeholder {
-  color: white;
-}
-
-.email-submit::-webkit-input-placeholder,
-.email-submit::-moz-placeholder,
-.email-submit::-ms-input-placeholder,
-.email-submit:-ms-input-placeholder {
-  color: white;
-}
-
-.subscribe input[type="email"] {
+.subscribe .email-submit {
   line-height: 20px;
   width: 65%;
   padding: 13px 0 12px;
