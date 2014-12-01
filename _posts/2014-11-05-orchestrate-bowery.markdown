@@ -36,4 +36,6 @@ module.exports = {
 
 And that's it! Once the app is provisioned, you'll have a new machine with the [Orchestrate Node.js library](https://www.npmjs.org/package/orchestrate) installed.
 
+Check out Orchestrate's post on [their blog](http://orchestrate.io/blog/2014/11/17/the-quickest-way-to-get-a-node-app-with-user-login/) about running Node.js and Bowery
+
 ![Imgur](http://i.imgur.com/S7jbcmZ.png)
