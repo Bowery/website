@@ -6,3 +6,6 @@ blogbaseurl: "/blog"
 twitter_username: boweryio
 github_username:  Bowery
 markdown: kramdown
+exclude: ["vendor"]
+gems:
+  - jekyll-sitemap
