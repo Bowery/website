@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bowery 3.3.1 Release"
-date:   2014-11-24 07:20:00
+date:   2014-12-02 07:20:00
 categories: posts
 ---
 
@@ -9,7 +9,9 @@ categories: posts
 
 Hi everyone!
 
-In this pre-Thanksgiving update, we're including a couple of UI enchancements to make it easier to use Bowery. Specifically, we added a file system dialog so you can choose which folder to sync with Bowery without needing to type out the entire path. Also, we added more clear status updates when creating a new application so you know exactly what's going on at any given time.
+In this post-Thanksgiving update, we're including a couple of UI enchancements to make it easier to use Bowery. Specifically, we added a file system dialog so you can choose which folder to sync with Bowery without needing to type out the entire path. Also, we added more clear status updates when creating a new application so you know exactly what's going on at any given time.
+
+Windows users: we now implemented the auto-updater for Windows, so this should be the last version you'll have to manually update to.
 
 Hope you enjoy the new changes!
 
@@ -24,5 +26,5 @@ Hope you enjoy the new changes!
 ### Changelog
 - File dialog when choosing a local directory to sync with Bowery
 - Windows 64-bit support
-- More clear status messaging when creating a new application
+- Clear status messaging when creating a new application
 - Bug fixes and performance enhancements

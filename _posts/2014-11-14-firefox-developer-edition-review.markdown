@@ -9,7 +9,7 @@ categories: posts
 
 Last week Mozilla released Firefox Developer Edition, a custom version of Firefox built to make web development easier. 
 
-What's wrong with using normal Firefox—or Chrome, or Opera—for web development? They're the equvalent of using TextEdit vs. a full-featured text editor like Sublime, Emacs, or Vim. The Firefox team has put a lot of effort into making it easier to develop with Firefox.
+What's wrong with using normal Firefox—or Chrome, or Opera—for web development? They're the equivalent of using TextEdit vs. a full-featured text editor like Sublime, Emacs, or Vim. The Firefox team has put a lot of effort into making it easier to develop with Firefox.
 
 ![Developer tools submenu](http://i.imgur.com/NtpGaoP.png)
 
