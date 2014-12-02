@@ -7,7 +7,8 @@ deployment:
     commands:
       - npm install myth -g
       - myth static/bowery.css static/out.css
-      - bundle install
+      - gem install jekyll
+      - gem install jekyll-sitemap
       - jekyll build
       - mkdir -p _site/blog/posts
       - cp -rf _site/posts/* _site/blog/posts

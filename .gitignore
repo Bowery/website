@@ -5,4 +5,3 @@ node_modules/
 *.log
 static/out.css
 _site/
-Gemfile.lock
