@@ -22,7 +22,7 @@ At Bowery, we recognized this is a huge problem and set out to fix it. Our goal 
 
 Unless your company installs everything on your laptop before you get into the office, it’s likely you will spend 2-4 hours of your first day setting up your new laptop. What if you start a new side project? You’ll have to install everything manually. With the Bowery app you can configure your operating system, install programming languages, web frameworks and the CMS of your choice, all in a few clicks. 
 
-<img src =”http://bowery.io/static/images-screen.png” align = “center”>
+![Bowery Images Screen](http://bowery.io/static/images-screen.png” align = “center”)
 
 Then all of your code is hosted on AWS. You can write code in the same text editor you love to use and then sync all changes to your AWS server. You can even execute commands directly to the server from the Bowery app. Once that image is set up you can share it with others so they can get up and running fast.
 
