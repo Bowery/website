@@ -3,6 +3,10 @@ layout: post
 title:  "Try Orchestrate with Node + Bowery"
 date:   2014-11-5 07:00:54
 categories: posts
+tags:
+- tutorials
+- orchestrate.io
+- node.js
 ---
 
 Want to try out [Orchestrate.io's](http://orchestrate.io) amazing database without installing anything locally? We've added an Orchestrate image to make the process as simple as launching a new Bowery app.

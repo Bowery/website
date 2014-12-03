@@ -2,8 +2,11 @@
 layout: post
 title:  "Getting started with Wordpress and Bowery"
 date:   2014-10-21 23:25:16
-categories: posts
 description: "Step by step guide on setting up a Wordpress project using Bowery."
+categories: posts
+tags:
+- tutorials
+- wordpress
 ---
 
 Follow this guide for getting a Wordpress project up and running with Bowery.

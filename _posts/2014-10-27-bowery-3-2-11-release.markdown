@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery 3.2.11 Release"
 date:   2014-10-27 07:20:00
 categories: posts
+tags:
+- releases
 ---
 
 Thanks for all your feedback on the Bowery desktop application! We've heard your feature requests, bug reports, and general comments—and this is a first release to address those. Download links for this version and a changelog are below.

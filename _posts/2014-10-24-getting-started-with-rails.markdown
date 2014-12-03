@@ -4,6 +4,9 @@ title:  "Getting started with Rails and Bowery"
 date:   2014-10-24 15:11:54
 categories: posts
 description: "Step by step guide on setting up a Rails app using Bowery."
+tags:
+- tutorials
+- ruby on rails
 ---
 
 One environment that really demonstrates the value of Bowery is [Ruby](https://www.ruby-lang.org/en/ "Click to visit the main Ruby language website") on [Rails](http://rubyonrails.org "Click for the main Ruby on Rails website"). There are many instances where it is less-than-ideal to have a full-blown development environment setup, and I'm going to use myself as an example.

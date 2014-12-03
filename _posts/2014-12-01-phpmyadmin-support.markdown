@@ -3,6 +3,9 @@ layout: post
 title:  "PhpMyAdmin Support"
 date:   2014-12-01 14:10:00
 categories: posts
+tags:
+- tutorials
+- php
 ---
 
 We received a support request from someone wanting to know how they could get [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php) up and running on their Bowery-powered app. I set out to see how hard it would be, and was surprised that it was even easier than I'd expected (which was pretty easy). Here's how you do it.
