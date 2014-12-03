@@ -16,7 +16,7 @@ category: blog
             <h2>
               <a class="post-link" href="{{ post.url | prepend: site.blogbaseurl }}">{{ post.title }}</a>
             </h2>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags.size != 0 %} • {% for tag in post.tags %}<a href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a> {% endfor %}{% endif %}</span>
             <p>{{ post.content | strip_html | truncatewords:75 }}</p>
           </li>
         {% endif %}
