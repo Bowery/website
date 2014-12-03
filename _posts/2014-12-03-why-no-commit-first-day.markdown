@@ -20,9 +20,7 @@ But, if you need to focus on ramping up, why do you spend so much time on your f
 
 At Bowery, we recognized this is a huge problem and set out to fix it. Our goal is to make software developers more productive and we’re on our way starting at the top -- when you first install the software needed to build your application. Bowery enables you to get your development environment up and running in less than 30 seconds. 
 
-Unless your company installs everything on your laptop before you get into the office, it’s likely you will spend 2-4 hours of your first day setting up your new laptop. What if you start a new side project? You’ll have to install everything manually. With the Bowery app you can configure your operating system, install programming languages, web frameworks and the CMS of your choice, all in a few clicks. 
-
-![Bowery Images Screen](http://bowery.io/static/images-screen.png” align = “center”)
+Unless your company installs everything on your laptop before you get into the office, it’s likely you will spend 2-4 hours of your first day setting up your new laptop. What if you start a new side project? You’ll have to install everything manually. With the Bowery you can configure your operating system, install programming languages, web frameworks and the CMS of your choice, all in a few clicks. 
 
 Then all of your code is hosted on AWS. You can write code in the same text editor you love to use and then sync all changes to your AWS server. You can even execute commands directly to the server from the Bowery app. Once that image is set up you can share it with others so they can get up and running fast.
 
