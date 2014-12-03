@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery 3.2.7 Release"
 date:   2014-10-21 07:20:00
 categories: posts
+tags:
+- releases
 ---
 
 This is our first major release since Bowery 2. A full list of installers is listed below.

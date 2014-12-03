@@ -3,6 +3,8 @@ layout: post
 title:  "Open sourcing Bowery/prompt"
 date:   2014-11-12 13:00:54
 categories: posts
+tags:
+- open source
 ---
 
 ![Imgur](http://i.imgur.com/hC7KHOj.gif)

@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery 3.3.0 Release"
 date:   2014-11-11 07:20:00
 categories: posts
+tags:
+- releases
 ---
 
 ![Bowery 3.3.0](http://i.imgur.com/n4K9osk.png)

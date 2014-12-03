@@ -3,6 +3,8 @@ layout: post
 title:  "Announcing Bowery 3"
 date:   2014-10-21 07:30:00
 categories: posts
+tags:
+- releases
 ---
 
 ![Bowery screenshot](http://i.imgur.com/9n0YAhR.png)

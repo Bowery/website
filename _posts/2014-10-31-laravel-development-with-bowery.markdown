@@ -3,6 +3,10 @@ layout: post
 title:  "Laravel Development with Bowery"
 date:   2014-10-31 13:00:54
 categories: posts
+tags:
+- tutorials
+- php
+- laravel
 ---
 
 We have a shiny new image up for the PHP crowd, sporting a fresh PHP 5.5 with [Composer](https://getcomposer.org "Click to visit the Composer project home page") support. This post shows how you can get up and running with a [Laravel](http://laravel.com "Here is the main Laravel website") app using this ready-made image.

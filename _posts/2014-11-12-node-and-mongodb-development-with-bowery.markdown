@@ -3,6 +3,10 @@ layout: post
 title:  "MongoDB and Node.js Development With Bowery"
 date:   2014-11-12 14:10:00
 categories: posts
+tags:
+- tutorials
+- mongodb
+- node.js
 ---
 
 In previous posts we've shown how quickly you can [get started with Node.js and Bowery](http://bowery.io/blog/posts/2014/10/21/getting-started-with-node-and-bowery.html), and want to demonstrate how easy it is to start working with MongoDB as well.
