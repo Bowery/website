@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why you don’t commit code on your first day"
-date:   2014-12-03 13:00:00
+date:   2014-12-03 14:00:00
 categories: posts
 ---
 
