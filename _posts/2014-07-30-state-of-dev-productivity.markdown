@@ -3,6 +3,8 @@ layout: post
 title:  "Developer Productivity"
 date:   2014-07-30 13:00:54
 categories: posts
+tags:
+- productivity
 ---
 
 When measuring developer performance, it’s hard to find an appropriate metric to use that doesn’t rely too heavily on anecdotal evidence. That’s why we at Bowery were excited by [Rebel Labs’ Developer Productivity study](http://zeroturnaround.com/rebellabs/download/?token=80eb432c1d5edfc886f91ad2169c139196a99127&utm_medium=email), a 40-page report on what tools and practices developers employ in their daily life. In order to provide a report that gets at the gist of what “performance” really entails, Rebel Labs weighed the effect of different practices and tools on both the quality of the software and the predictability of its release.

@@ -3,6 +3,8 @@ layout: post
 title:  "Why you don’t commit code on your first day"
 date:   2014-12-03 14:00:00
 categories: posts
+tags: 
+- productivity
 ---
 
 How many of you have committed code on your first day of work? As you might know, it’s not a common practice. In fact, when you do commit code to production on your first day of work, [you’re a bit of a hero](http://www.bignerdranch.com/blog/deploy-code-your-first-day/)! Why is it so hard to make a meaningful impact during your first day of work? 

@@ -3,6 +3,8 @@ layout: post
 title:  "An Overview of Firefox Developer Edition"
 date:   2014-11-14 13:00:54
 categories: posts
+tags: 
+- productivity
 ---
 
 ![A screenshot of Firefox Developer Browser](http://i.imgur.com/3SIfFba.png)

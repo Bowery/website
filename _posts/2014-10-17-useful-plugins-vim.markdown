@@ -3,6 +3,8 @@ layout: post
 title:  "Vim Plugins"
 date:   2014-10-17 02:00:54
 categories: posts
+tags: 
+- productivity 
 ---
 Because [Bowery](http://bowery.io) allows you to use any text editor you want, we wanted to highlight some of the best plugins for our favorite text editors. Here's our second post, for Vim. You can view [our first post on Sublime Text 3 plugins here](http://bowery.io/blog/posts/2014/10/09/useful-plugins-sublime.html).
 

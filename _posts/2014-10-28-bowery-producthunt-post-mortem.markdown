@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery + Product Hunt Post-mortem"
 date:   2014-10-28 13:00:54
 categories: posts
+tags: 
+- bowery news
 ---
 
 Last Tuesday we announced Bowery 3, a desktop app that makes it easy to set up, manage, and share your development environment. We posted our redesign and app to Product Hunt, which has quickly become the go-to community for discovering the best new apps, tools, and sites.

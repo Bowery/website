@@ -3,6 +3,8 @@ layout: post
 title:  "Enterprise Design"
 date:   2014-03-12 13:00:54
 categories: posts
+tags: 
+- enterprise
 ---
 
 The evolution of UI/UX in enterprise companies, illustrated with GIFs.

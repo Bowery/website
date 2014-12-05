@@ -3,6 +3,8 @@ layout: post
 title:  "Sublime Plugins"
 date:   2014-10-09 13:00:54
 categories: posts
+tags:
+- productivity
 ---
 
 Because [Bowery](http://bowery.io) allows you to use any text editor you want, we wanted to highlight some of the best plugins for our favorite text editors. Here's our first post, for Sublime Text 3.
