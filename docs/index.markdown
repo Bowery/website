@@ -92,6 +92,8 @@ We have a [](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-wit
 
 [Getting started with Node.js and Bowery](http://bowery.io/blog/posts/2014/10/21/getting-started-with-node-and-bowery.html) is all about how to set up Node.js on Bowery.
 
+We also have screencasts showing you how to get started with [Node.js on Windows](https://www.youtube.com/watch?v=44gQc2fZOQg) and a similar [Node.js on OSX](https://www.youtube.com/watch?v=NWai4gy0EzE).
+
 #### PHP
 
 We demonstrate how to [work with MySQL and PHP](http://bowery.io/blog/posts/2014/12/04/working-with-mysql-and-php.html).
