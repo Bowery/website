@@ -18,6 +18,7 @@ Welcome to the Bowery docs! This page covers everything you need, want, and wish
 * [Languages](#languages)
   * [Node.js](#nodejs)
   * [PHP](#php)
+  * [Ruby on Rails](#ruby-on-rails-ror)
 * [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 
 ### Install
@@ -98,6 +99,10 @@ We demonstrate how to [work with MySQL and PHP](http://bowery.io/blog/posts/2014
 There's also an excellent article on [using Laravel with Bowery](http://bowery.io/blog/posts/2014/10/31/laravel-development-with-bowery.html). There is also an equally excellent screencast by [PHP Academy](http://phpacademy.org/) showing how easy it is to [set up Laravel on Bowery](https://www.youtube.com/watch?v=f131IP6V3Sw).
 
 Lastly some pointers on getting up and running with [phpMyAdmin](http://bowery.io/blog/posts/2014/12/01/phpmyadmin-support.html).
+
+### Ruby on Rails (RoR)
+
+It is easy to [setup Ruby on Rails with Bowery](http://bowery.io/blog/posts/2014/10/24/getting-started-with-rails.html).
 
 ### Frequently Asked Questions (FAQ)
 
