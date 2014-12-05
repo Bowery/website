@@ -82,7 +82,7 @@ We have a detailed blogpost about [how to set up Drupal on Bowery](http://bowery
 
 #### Joomla 
 
-We have a [](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-with-bowery.html) about how to set up Joomla on Bowery.
+Read about how you can [set up Joomla on Bowery](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-with-bowery.html).
 
 <!--<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/languages.png" id="languages" />-->
 
@@ -124,4 +124,4 @@ Once you download the appropriate zip file above for your system, unzip it into 
 
 #### How do I prevent certain files from syncing?
 
-By default all paths excluding common version control directories(`.git`, `.hg`, `.svn`, `.bzr`) are synced. To exclude other paths place a file named `.boweryignore` in the root of your project and place the paths you’d like to ignore, the format is similar to `.gitignore` and includes support for wildcards(`*`).
+By default all paths excluding common version control directories(`.git`, `.hg`, `.svn`, `.bzr`) are synced. To exclude other paths place a file named `.boweryignore` in the root of your project and place the paths you’d like to ignore, the format is similar to `.gitignore` (here is a [reference to .gitignore syntax](http://git-scm.com/docs/gitignore)) and includes support for wildcards (`*`).
