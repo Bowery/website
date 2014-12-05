@@ -3,6 +3,8 @@ layout: post
 title:  "Shared Libraries"
 date:   2014-09-30 16:00:54
 categories: posts
+tags:
+- engineering
 ---
 
 In the last eight months the language of choice at Bowery has transitioned from Node.js to Golang. And with that transition came the opportunity to think about how we structure our services as well as define our workflow.

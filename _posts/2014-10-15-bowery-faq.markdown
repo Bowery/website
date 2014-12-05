@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery FAQ"
 date:   2014-10-15 13:00:54
 categories: posts
+tags:
+- FAQ 
 ---
 
 Here's our list of common questions and issues reported by the developer community.

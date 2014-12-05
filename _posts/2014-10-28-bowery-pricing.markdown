@@ -3,6 +3,8 @@ layout: post
 title:  "Bowery Pricing"
 date:   2014-10-28 13:00:54
 categories: posts
+tags: 
+- bowery news
 ---
 
 Bowery 3 is a **free trial** for 30 days. Try all of Bowery's features without restriction. 

@@ -3,6 +3,9 @@ layout: post
 title:  "Productivity Ruby Gems"
 date:   2014-08-05 13:00:54
 categories: posts
+tags: 
+- productivity 
+- ruby on rails
 ---
 
 
