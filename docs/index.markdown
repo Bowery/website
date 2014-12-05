@@ -95,7 +95,7 @@ We have a [](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-wit
 
 We demonstrate how to [work with MySQL and PHP](http://bowery.io/blog/posts/2014/12/04/working-with-mysql-and-php.html).
 
-There's also an excellent article on [using Laravel with Bowery](http://bowery.io/blog/posts/2014/10/31/laravel-development-with-bowery.html). [PHP Academy](http://phpacademy.org/) has an equally excellent screencast on [setting up Laravel on Bowery](https://www.youtube.com/watch?v=f131IP6V3Sw).
+There's also an excellent article on [using Laravel with Bowery](http://bowery.io/blog/posts/2014/10/31/laravel-development-with-bowery.html). There is also an equally excellent screencast by [PHP Academy](http://phpacademy.org/) showing how easy it is to [set up Laravel on Bowery](https://www.youtube.com/watch?v=f131IP6V3Sw).
 
 Lastly some pointers on getting up and running with [phpMyAdmin](http://bowery.io/blog/posts/2014/12/01/phpmyadmin-support.html).
 
