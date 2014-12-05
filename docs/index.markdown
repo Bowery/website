@@ -11,12 +11,13 @@ Welcome to the Bowery docs! This page covers everything you need, want, and wish
 
 * [Download and Install Bowery](#install)
 * [Getting started](#getting-started)
-* [Content Management Systems (CMS)](#cms)
+* [Content Management Systems (CMS)](#content-management-systems-cms)
   * [Wordpress](#wordpress)
   * [Drupal](#drupal)
   * [Joomla](#joomla)
 * [Languages](#languages)
   * [Node.js](#nodejs)
+  * [PHP](#php)
 * [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 
 ### Install
@@ -66,29 +67,45 @@ If you click on your applications name on the applications page, you’re given 
 * Publish the image for your application, this includes commands you’ve executed.
 * Delete the application.
 
-<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/cms.png" id="cms" />
+<!--<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/cms.png" id="content-management-systems-cms" />-->
+
+### Content Management Systems (CMS)
 
 #### Wordpress
 
-We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/getting-started-with-wordpress-and-bowery.html) about how to set up Wordpress on Bowery.
+Here's a walkthrough of what it takes to [set up Wordpress on Bowery](http://bowery.io/blog/posts/2014/10/21/getting-started-with-wordpress-and-bowery.html).
 
 #### Drupal
 
-We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/getting-started-with-drupal-and-bowery.html) about how to set up Drupal on Bowery.
+We have a detailed blogpost about [how to set up Drupal on Bowery](http://bowery.io/blog/posts/2014/10/21/getting-started-with-drupal-and-bowery.html) .
 
 #### Joomla 
 
-We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-with-bowery.html) about how to set up Joomla on Bowery.
+We have a [](http://bowery.io/blog/posts/2014/10/21/powering-joomla-websites-with-bowery.html) about how to set up Joomla on Bowery.
 
-<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/languages.png" id="languages" />
+<!--<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/languages.png" id="languages" />-->
+
+### Languages
 
 #### Node.js
 
-We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/getting-started-with-node-and-bowery.html) about how to set up Node.js on Bowery.
+[Getting started with Node.js and Bowery](http://bowery.io/blog/posts/2014/10/21/getting-started-with-node-and-bowery.html) is all about how to set up Node.js on Bowery.
+
+#### PHP
+
+We demonstrate how to [work with MySQL and PHP](http://bowery.io/blog/posts/2014/12/04/working-with-mysql-and-php.html).
+
+There's also an excellent article on [using Laravel with Bowery](http://bowery.io/blog/posts/2014/10/31/laravel-development-with-bowery.html). [PHP Academy](http://phpacademy.org/) has an equally excellent screencast on [setting up Laravel on Bowery](https://www.youtube.com/watch?v=f131IP6V3Sw).
+
+Lastly some pointers on getting up and running with [phpMyAdmin](http://bowery.io/blog/posts/2014/12/01/phpmyadmin-support.html).
 
 ### Frequently Asked Questions (FAQ)
 
 #### How do I use Bowery with a database?
+
+We support [MySQL](http://dev.mysql.org), and show how to use [phpMyAdmin](http://bowery.io/blog/posts/2014/12/01/phpmyadmin-support.html), as well as [working with MySQL and PHP](http://bowery.io/blog/posts/2014/12/04/working-with-mysql-and-php.html).
+
+We also support [MongoDB](http://mongodb.org) out of the box, and show how you can [develop with Node.js and MongoDB](http://bowery.io/blog/posts/2014/11/12/node-and-mongodb-development-with-bowery.html)
 
 #### Can Bowery see my code?
 
