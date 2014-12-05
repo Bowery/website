@@ -10,16 +10,16 @@ Welcome to the Bowery docs! This page covers everything you need, want, and wish
 ### Table of contents
 
 * [Download and Install Bowery](#install)
-* [Getting started](#gettingstarted)
+* [Getting started](#getting-started)
 * [Content Management Systems (CMS)](#cms)
   * [Wordpress](#wordpress)
   * [Drupal](#drupal)
   * [Joomla](#joomla)
 * [Languages](#languages)
   * [Node.js](#nodejs)
-* [Frequently Asked Questions (FAQ)](#faq)
+* [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 
-<img src=”” id=”install” />
+### Install
 
 Download Bowery for Windows, Mac, or Linux:
 
@@ -34,7 +34,7 @@ Unzip the file, and on Windows and Mac simply double-click the installer to inst
 
 On Linux you’ll need to run the include script from the command line. Read the included README file for details(If you run into issues read the FAQ below).
 
-<img src=”” id=”gettingstarted” />
+### Getting Started
 
 #### Step 1: **Sign Up or Log In** 
 
@@ -86,7 +86,7 @@ We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/powering-jo
 
 We have a [detailed blogpost](http://bowery.io/blog/posts/2014/10/21/getting-started-with-node-and-bowery.html) about how to set up Node.js on Bowery.
 
-<img src=”” id=”faq” />
+### Frequently Asked Questions (FAQ)
 
 #### How do I use Bowery with a database?
 
