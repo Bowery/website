@@ -8,7 +8,7 @@ tags:
 ---
 Big new release today! We've changed the signup flow so you don't need to enter AWS keys to try Bowery. Plus, we've added an auto-updater so you won't need to re-download each time we add cool new features.
 
-*Please install this version manually. This is the last version you'll need to manually download and install.*
+Please install this version manually. This is the last version you'll need to manually download and install.
 
 ### Download
 - [Mac OS X](http://desktop.bowery.io/3.3.0_darwin_amd64.zip)

@@ -14,10 +14,17 @@ body {
   font-family: "Helvetica Neue", sans-serif;
   font-size: 18px;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: 400;
   color: #605f61;
   background-color: whitesmoke;
   -webkit-text-size-adjust: 100%; }
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -290,7 +297,7 @@ pre {
  * Posts
  */
 .post-header {
-  margin-bottom: 30px; }
+  margin-bottom: 80px; }
 
 .post-title {
   font-size: 42px;
