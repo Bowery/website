@@ -2,15 +2,35 @@
 layout: default
 category: blog
 ---
+<div class="back">
+  <a href="/blog" class="link">&larr; back</a>
+</div>
 <div class="post">
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}{% if page.tags.size != 0 %} • {% for tag in page.tags %}<a href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a> {% endfor %}{% endif %}</p>
   </header>
+
+  <ul class="side-nav">
+    <li class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</li>
+    {% if page.tags.size != 0 %}
+    <li>-</li>
+    {% for tag in page.tags %}
+    <li>
+      <a class="tag {{tag}}" href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a>
+    </li>
+
+    {% endfor %}
+    {% endif %}
+    <li>-</li>
+    <li class="tag">SHARE:</li>
+    <li><a class="social-link" href="">Twitter</a></li>
+    <li><a class="social-link" href="">Hackernews</a></li>
+  </ul>
 
   <article class="post-content">
     {{ content }}
-    <a href="/blog/">&larr; Back to Blog</a>
+    <img class="end-logo" src="/static/logo.png">
+    {% include comments.html %}
   </article>
 </div>

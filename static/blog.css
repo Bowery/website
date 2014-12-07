@@ -5,24 +5,40 @@ strong {
   font-weight: bold;
 }
 .coffin.blog {
-  background: rgb(184, 184, 184);
+  background: rgb(79, 99, 159);
+}
+.blog .back {
+  height: 80px;
+  width: 100%;
+  background: rgb(92, 129, 226);
+}
+.back .link {
+  display: block;
+  width: 100%;
+  padding: 30px 18px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-family: "Monosten E", Courier, monospace;
 }
 .post {
   max-width: 775px;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
 }
 .post-list li {
   max-width: 775px;
   margin: 0 auto;
 }
 .post-content, .post-list p {
-  max-width: 475px;
+  max-width: 570px;
   margin: 0 auto;
 }
 .post h1 {
   color: rgb(13, 0, 9);
-  font-size: 75px;
-  line-height: 100px;
+  font-size: 80px;
+  letter-spacing: 2px;
   font-family: "Monosten E", Courier, monospace;
   max-width: 475px;
 }
@@ -41,20 +57,20 @@ strong {
 .post-list li:last-child {
   border-bottom: 0;
 }
-.post-meta {
+.social-link {
   color: #FF6656;
-}
-.site-footer {
-  background: rgb(0, 218, 220);
-  color: white;
-  width: 100%;
-  padding: 68px;
-  margin-top: 54px;
-}
-.site-footer .learn-more {
-  color: white;
-  font-size: 54px;
   font-family: "Monosten E", Courier, monospace;
+}
+.post-meta {
+  color: rgb(13, 0, 9);
+  font-family: "Monosten A", Courier, monospace;
+}
+.learn-more {
+  margin: 100px;
+  display: block;
+  font-size: 54px;
+  color: grey;
+  font-family: "Monosten E", Courier, monosten;
 }
 .nav, .nav-footer ul {
   margin: 0;
@@ -63,11 +79,17 @@ strong {
 .coffin a, .coffin a:hover {
   text-decoration: none !important;
 }
+.end-logo {
+  width: 60px;
+  height: 60px;
+  margin: 60px auto;
+  display: block;
+}
 pre li, pre ul, pre ol {
   line-height: 8px;
 }
 @media screen and (max-width: 800px), screen and (max-device-width: 800px) {
-  h1, h2, .post-meta, .blog-description {
+  h1, h2, .blog-description {
     text-align: center;
   }
   .post-content {
@@ -99,40 +121,41 @@ pre li, pre ul, pre ol {
   .post-list li {
     padding: 48px 10px
   }
-  .site-footer {
-    padding: 24px;
-  }
-  .site-footer .learn-more {
-    line-height: 36px;
-    font-size: 24px;
-  }
-}body {
+}
+body {
   background: rgb(245, 245, 245);
 }
 strong {
   font-weight: bold;
 }
-.coffin.blog {
-  background: rgb(184, 184, 184);
-}
 .post {
   max-width: 775px;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
+}
+.blog .side-nav {
+  width: 120px;
+  list-style: none;
+  float: left;
+  margin: 0;
+}
+.blog .side-nav li {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+.tag {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Monosten E", Courier, monospace;
+  /* TODO (thebyrd) tag colored circle on :before */
 }
 .post-list li {
   max-width: 775px;
   margin: 0 auto;
 }
 .post-content, .post-list p {
-  max-width: 475px;
-  margin: 0 auto;
-}
-.post h1 {
-  color: rgb(13, 0, 9);
-  font-size: 75px;
-  line-height: 100px;
-  font-family: "Monosten E", Courier, monospace;
-  max-width: 475px;
+  max-width: 570px;
+  margin: 0 0 0 190px;
 }
 .post h2, .post-list h2, .post-link, .post-link:visited, .post-link:active, .post-link:hover {
   color: rgb(13, 0, 9);
@@ -149,20 +172,9 @@ strong {
 .post-list li:last-child {
   border-bottom: 0;
 }
-.post-meta {
+.social-link {
+  font-size: 14px;
   color: #FF6656;
-}
-.site-footer {
-  background: rgb(0, 218, 220);
-  color: white;
-  width: 100%;
-  padding: 68px;
-  margin-top: 54px;
-}
-.site-footer .learn-more {
-  color: white;
-  font-size: 54px;
-  font-family: "Monosten E", Courier, monospace;
 }
 .nav, .nav-footer ul {
   margin: 0;
@@ -180,6 +192,11 @@ strong {
     margin: 0;
     padding: 10px;
   }
+  .blog .side-nav {
+    float: none;
+    display: none;
+    margin: 0;
+  }
   .post-meta, .blog-description {
     display: block;
   }
@@ -204,12 +221,5 @@ strong {
   }
   .post-list li {
     padding: 48px 10px
-  }
-  .site-footer {
-    padding: 24px;
-  }
-  .site-footer .learn-more {
-    line-height: 36px;
-    font-size: 24px;
   }
 }
