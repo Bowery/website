@@ -21,7 +21,7 @@ Welcome to the Bowery docs! This page covers everything you need, want, and wish
   * [Ruby on Rails](#ruby-on-rails-ror)
 * [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
 
-### Install
+<img src="https://s3.amazonaws.com/bowery-blog/desktop/docs/download-header.png">
 
 Download Bowery for Windows, Mac, or Linux:
 
@@ -36,7 +36,7 @@ Unzip the file, and on Windows and Mac simply double-click the installer to inst
 
 On Linux you’ll need to run the include script from the command line. Read the included README file for details(If you run into issues read the FAQ below).
 
-### Getting Started
+<img src="https://s3.amazonaws.com/bowery-blog/desktop/docs/getting-started-header.png">
 
 #### Step 1: **Sign Up or Log In** 
 
@@ -70,7 +70,7 @@ If you click on your applications name on the applications page, you’re given 
 
 <!--<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/cms.png" id="content-management-systems-cms" />-->
 
-### Content Management Systems (CMS)
+<img src="https://s3.amazonaws.com/bowery-blog/desktop/docs/cms-header.png">
 
 #### Wordpress
 
@@ -86,7 +86,7 @@ Read about how you can [set up Joomla on Bowery](http://bowery.io/blog/posts/201
 
 <!--<img src="http://bowery-blog.s3.amazonaws.com/desktop/docs/languages.png" id="languages" />-->
 
-### Languages
+<img src="https://s3.amazonaws.com/bowery-blog/desktop/docs/languages-header.png">
 
 #### Node.js
 
@@ -106,7 +106,7 @@ Lastly some pointers on getting up and running with [phpMyAdmin](http://bowery.i
 
 It is easy to [setup Ruby on Rails with Bowery](http://bowery.io/blog/posts/2014/10/24/getting-started-with-rails.html).
 
-### Frequently Asked Questions (FAQ)
+<img src="https://s3.amazonaws.com/bowery-blog/desktop/docs/FAQ-header.png">
 
 #### How do I use Bowery with a database?
 
