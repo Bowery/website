@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Preparing for Your First Tech Interview Part I: "
-date:   2014-12-04 14:00:00
+date:   2014-12-09 14:00:00
 categories: posts
 tags:
 - tech
