@@ -1,0 +1,131 @@
+---
+layout: default
+title: Bowery - Start
+category: start
+---
+
+<button href="#" class="logo" data-coffin="toggle"></button>
+<div class="content-container header">
+  <div class="content">
+    <h1>Bowery <br/> Terminal</h1>
+  </div>
+  <div class="content">
+    <div class="subcontent">
+      <p>By keeping code, software and operating systems are all in-sync across your team and organization, Bowery helps you:</p>
+      <ul style="margin-left:2rem;margin-top:.5rem;list-style:initial;">
+        <li>Easily onboard new engineers</li>
+        <li>Improve software quality and delivery</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Getting Started</h2>
+    <div class="subcontent">
+      <p>Download the Bowery app by clicking on the button below.</p>
+      <p>Unzip and run the installer.</p>
+    </div>
+    <div class="subcontent">
+      <p>If you are on a Mac, it will save to your Applications folder. For Linux and Windows users it will save to your desktop.</p>
+    </div>
+    <div class="subcontent">
+      <button class="btn download">Download Bowery <span class="accent">v3.{BETA}</span></button>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/file-dialogue-beta.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Add An App</h2>
+    <div class="subcontent">
+      <p>When the file dialogue opens, pick your app directory. This is where you will save your app. Wait a couple seconds (loading screen will show).</p>
+    </div>
+    <div class="subcontent">
+      <p>Your new terminal environment will pop up on your screen.</p>
+    </div>    
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/terminal-screen-beta.png" class="screenshot">
+  </div>
+</div>
+
+<div class="content-container left">
+  <div class="content">
+    <h2>Start Coding</h2>
+    <div class="subcontent">
+      <p>Now you can start coding. A <span class="pre">.bowery</span> file will be added in your directory.</p>
+    </div>
+    <div class="subcontent">
+      <p>You can use Github or any code-collaboration system like Bitbucket you use to distribute with your team.</p>
+    </div>
+      <div class="subcontent">
+        <p>When another person on your team selects the directory, all the installation and setup will be instantly available to them through the Bowery app.</p>
+    </div>
+  </div>
+</div>
+<div class="content-container right">
+  <div class="content">
+    <img src="/static/app-screen-{BETA}.png" class="screenshot">
+  </div>
+</div>
+
+<div class="footer">
+  <h2>and you&rsquo;re setup!</h2>
+  <a href="/blog"><h3>Check out our blog &rarr;</h3></a>
+</div>
+<script>
+  // try a native matchesSelector on a selector with an element
+  function matchesSelector(element, selector) {
+      var matcher = element.matchesSelector || element.mozMatchesSelector || element.webkitMatchesSelector || element.oMatchesSelector || element.msMatchesSelector
+      return matcher && matcher.call(element, selector);
+  }
+
+  // detect the closest element based on a selector. For simple delegation.
+  function closest (element, selector) {
+    while (element && !matchesSelector(element, selector)) {
+        element = element.parentNode;
+    }
+    return element;
+  }
+
+  document.addEventListener('click', function (e) {
+    var l = ''
+    var v = "3.3.1"
+    if (closest(e.target, '.btn.download')) {
+      var os = navigator.platform.toLowerCase().match(/(win|mac|linux)/)
+      var arch = '386'
+      if (navigator.userAgent.match(/x86_64|Win64|WOW64/) ||
+        navigator.cpuClass === 'x64') {
+        arch = 'amd64'
+      }
+
+      switch (os && os[1]) {
+        case 'mac':
+          l = v + '_darwin_amd64.zip'
+          break
+        case 'win':
+          l = v + '_windows_386.zip'
+          break
+        case 'linux':
+          l = v + '_linux_' + arch + '.zip'
+          break
+      }
+
+      window.location = "http://desktop.bowery.io/" + l
+      mixpanel.track("click download button", {"version": l})
+    }
+  })
+
+  mixpanel.track_links(".aws-link", "click aws link", {"referrer": document.referrer});
+  mixpanel.track_links(".aws-sec-creds-link", "click aws security creds link", {"referrer": document.referrer});
+  mixpanel.track_links(".aws-register-link", "click aws register link", {"referrer": document.referrer});
+</script>
