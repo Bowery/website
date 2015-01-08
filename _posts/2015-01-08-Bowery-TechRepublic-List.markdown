@@ -14,11 +14,11 @@ At Bowery, we believe that collaboration is key to productivity. In 2015, we'll 
 
 Get updates on what's coming in 2015 by signing up for our newsletter.
 
-<form action="https://formkeep.com/f/a9d9bd96ce41" method="POST" class="subscribe">
-  <span class="cover email-cover"></span>
-  <input class="email-submit" type="email" name="email" placeholder="newsletter" required>
+<form action="https://formkeep.com/f/a9d9bd96ce41" method="POST" class="subscribe" style="overflow: hidden; margin-bottom: 20px;">
+  <span class="cover email-cover" style="background: rgb(191, 191, 191);"></span>
+  <input class="email-submit" type="email" name="email" placeholder="newsletter" required="" style="color: rgb(198, 198, 198)">
   <span class="cover submit-cover"></span>
-  <input type="submit" value="signup">
+  <input type="submit" value="signup" style="background: rgb(198, 198, 198);">
 </form>
 
 Follow Bowery on Twitter [@Boweryio](https://twitter.com/boweryio)
