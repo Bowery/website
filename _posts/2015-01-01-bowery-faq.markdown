@@ -1,0 +1,58 @@
+---
+layout: docs
+title:  "Bowery FAQ"
+categories: docs
+---
+
+Here's our list of common questions and issues as reported by our users.
+
+### Where do I host my Bowery app?
+
+Bowery runs code from your computer (PC, Mac, Linux) in a remote copy of your production environment. We host these remote copies on cloud instances, so you don't have to worry about running application environments locally. This lets you bypass version conflicts, operating system dependency issues, and a host of other operational problems. As a bonus your code can be previewed by others, for true collaborative development. Bowery uses Google Cloud for hosting. 
+
+If cloud-based environments are not ideal for your workflow, we can help you set up Bowery to work on-premise or with other cloud providers such as Amazon Web Services, Microsoft Azure and Rackspace. Just reach out to [Hello at Bowery.io](mailto:Hello@Bowery.io) and we'll help you get started. 
+
+### Where are my apps hosted? 
+
+All Bowery teams are hosted on Google Compute Engine in the US Central Availability Zone. If you would like to move your apps to a different availability zone for higher performance, just get in touch with us at [Hello at Bowery.io](mailto:hello@bowery.io). 
+
+### Can I Use My Own AWS Keys? 
+
+Bowery does not currently support 3rd party AWS access keys by default, but if you would like to host your Bowery apps in the cloud we would be happy to help you set that up. Just email us at [Hello at Bowery.io](mailto:hello@bowery.io) and we'll get you started. 
+
+### I don't use Ubuntu. Can I use a different operating system? 
+
+Bowery can support any Linux distribution, but runs the Ubuntu 14.04 LTS server image out of the box. If you would like to set up Bowery with another Linux distribution just get in touch with us at [Hello at Bowery.io](mailto:hello@bowery.io) and we'll help you get set up securely. 
+
+### Does Bowery use images? 
+
+Bowery no longer has pre-configured images available for use. Once you select your code, you can install all the dependencies you need to run your app like you would on any Ubuntu machine. This includes setting up your HTTP, Nginx or Apache Server. When you're done with your session and and want to close out of the Bowery terminal it will ask if you want to save your changes. Once you save, no one else on your team will have to install it again. In the same way, when you need to do a system-wide upgrade, only one person has to do it, saving you from repeating work. 
+
+Now once you've installed all those dependencies, you have a remote environment running on your Bowery instance. Treat it like you would any other machine and start coding. After that Bowery will be completely transparent to your application. It's just like any other terminal you would use. 
+
+### What languages do you support?
+
+Bowery runs on an Ubuntu 14.04 LTS server image and supports all languages available on this distribution. You can run whatever is supported on that platform including Ruby, Python, Node.js, PHP, Go, Java and many more.
+
+### Can I use a full-stack platform with Bowery, like Joomla, Wordpress or Drupal?
+
+You can use any full-stack platform supported by an Ubuntu 14.04 LTS server. For any of these platforms, you can follow the installation instructions for the Ubuntu distribution. 
+
+All commands executed in the Bowery terminal are run on a remote Ubuntu instance hosted on Google Compute Engine. You can execute commands in your Bowery terminal the same way you would on your default terminal or command line. 
+
+### Can I update the Ubuntu version on Bowery images? 
+
+Bowery ships with an Ubuntu 14.04 image preconfigured. If you would like to upgrade your version of Ubuntu, simply run ``apt-get update`` to update the version on your image. 
+
+### How does Bowery manage merge conflicts? 
+
+As you and your team work with Bowery, you will likely make changes to your environment, whether that’s installing new software, updating to the latest version of a depencency, or changing some configurations. Bowery merges changes to your environment, layering them on top of each other, giving preference to more recent changes. Learn more about how this works in the [Bowery collaboration](http://new.bowery.io/docs/collaboration/) overview. 
+
+### How do I migrate a Bowery container to a Server for Production use? 
+
+Deploying a Bowery Environment is as simple as exporting the environment as a tar file, and launching it via Docker or Chroot. See a detailed overview of [deployment options](http://new.bowery.io/docs/deployment/) in the [documentation](http://new.bowery.io/docs/deployment/). 
+
+### Can I integrate Bowery with my CI tool like CircleCI or Jenkins?
+
+Yes. You can easily integrate Bowery with any CI tool. You can use a simple curl statement to run the tests with chroot, systemd-nspawn, or Docker. Learn more about how different [Continuous Integration tools integrate with Bowery](http://new.bowery.io/docs/continuous-integration/) in the Bowery documentation. 
+
