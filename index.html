@@ -1,81 +1,146 @@
 ---
-layout: home
+layout: default
 title: Bowery
-category: home
+category: about
 ---
 
 <button href="#" class="logo" data-coffin="toggle"></button>
-<div class="container-inner">
-  <aside>
-    <ul class="step-list">
-      <li class="active scroll-to-add">1</li>
-      <li class="scroll-to-choose">2</li>
-      <li class="scroll-to-share">3</li>
+<section id="about">
+  <div class="content-wrapper">
+    <h1>Start writing code faster</h1>
+    <ul class="the-low-down">
+      <li>
+        <h3>Keep Development Environments In Sync</h3>
+        <!-- TODO (thebyrd) This paragraph needs some work -->
+        <p>Anything in your stack you want to share across your team happens on Bowery. One update is all your need to keep all of your databases, libraries and dependencies up-to-date across your team. <span class="red">Ship your code as a team in harmony</span>.</p>
+      </li>
+      <li>
+        <h3>Onboard New Team Members in an Instant</h3></h3>
+        <p>Share your environments with new team members without writing scripts or managing VMs. Teams can focus on building apps, <span class="red">not debugging their development environments</span>.</p>
+      </li>
+      <li>
+        <h3>Deploy Development Environments</h3>
+        <p>Bowery expoerts your enviornment to a deployable format so that your customers will see what your engineering team intended them to see. <span class="red">Eliminate environment parity bugs</span>.</p>
+      </li>
+      <li>
+        <h3>Keep Your Existing Workflow</h3>
+        <p>Use the same text editor and terminal as normal. Bowery watches for file changes and will sync your code to a development instance, so you <span class="red">get the same experience as developing locally</span>.</p>
+      </li>
     </ul>
-  </aside>
-  <section id="intro" class="wrapper visible">
-    <div class="step-content intro-step-content">
-      <div class="intro-step-inner-wrapper">
-        <h1>Set up your development environment in 30 seconds flat.</h1>
-        <ul>
-          <li>Start coding without installing or configuring software.</li>
-          <li>No more bloated VMs, staging servers, or local installations.</li>
-          <li>Keep your engineering workflow while making onboarding easy.</li>
-        </ul>
-        <a href="#add" class="scroll-to-add">how does it work?<div class="arrow-down"></div></a>
-      </div>
+  </div>
+</section>
+<section>
+  <div class="content-wrapper">
+    <h2 class="subtitle">Demo</h2>
+    <div class="centered-container">
+      <iframe class="video" width="640" height="480" src="//www.youtube-nocookie.com/embed/XEp-XptWgMc?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+      <a href="/download" class="btn skeleton">Download Now &rarr;</a>
     </div>
-  </section>
-  <section id="add" class="wrapper">
-    <div class="step-content add-step-content">
-      <span class="step-item step-description">
-        <h3>Add an Application</h3>
-        <p>Tell us where your code is now, and where you want your code to run. We'll take care of spinning up a server on AWS.</p>
-      </span>
-      <span class="step-item app-view"></span>
+  </div>
+</section>
+<section>
+  <div class="content-wrapper">
+    <h2 class="subtitle">FAQ</h2>
+    <div class="centered-container">
+    <dl class="faq-list">
+      <dt>How do I win at the game of life?</dt>
+      <dd>Use the same text editor and terminal as normal. Bowery watches for file changes and will automatically run your code at a remote URL, so you get the same experience as developing locally.</dd>
+      <dt>How did I not win at the game of life?</dt>
+      <dd>Use the same text editor and terminal as normal. Bowery watches for file changes and will automatically run your code at a remote URL, so you get the same experience as developing locally.</dd>
+      <dt>How do you resolve conflicts with your clone?</dt>
+      <dd>Use the same text editor and terminal as normal. Bowery watches for file changes and will automatically run your code at a remote URL, so you get the same experience as developing locally.</dd>
+      <dt>Who do you invite to your birthday party when in doubt?</dt>
+      <dd>Use the same text editor and terminal as normal. Bowery watches for file changes and will automatically run your code at a remote URL, so you get the same experience as developing locally.</dd>
+    </dl>
+    <a href="/download" class="btn skeleton">Go to Full Docs &rarr;</a>
     </div>
-  </section>
-  <section id="choose" class="wrapper">
-    <div class="step-content choose-step-content">
-      <span class="step-item step-description">
-        <h3>Choose your Software</h3>
-        <p>Choose what software you'll need for your code to run. Rails app w/ Mongo Backend w/ New Relic Monitoring? PHP with MySQL? One click and you're all set up.</p>
-        <ul>
-          <li>node.js</li>
-          <li>python</li>
-          <li>java</li>
-          <li>php</li>
-          <li>mysql</li>
-          <li>git</li>
-          <li>apache</li>
-          <li>ruby</li>
-          <li>rails</li>
-          <li>new relic</li>
-        </ul>
-        <a href="/images" class="see-all-images">see all &#8594;</a>
-      </span>
-      <span class="step-item app-view"></span>
-    </div>
-  </section>
-  <section id="share" class="wrapper">
-    <div class="step-content share-step-content">
-      <span class="step-item step-description">
-        <h3>Share &amp; Collaborate</h3>
-        <p>Once you've set up your perfect dev environment, share it with your team so they can get up and running with just an environment id.</p>
-      </span>
-      <span class="step-item app-view"></span>
-      <span class="step-item chat-window"></span>
-    </div>
-  </section>
-  <section id="try" class="wrapper">
-    <div class="step-content try-step-content">
-      <div class="get-started-wrapper">
-        <a href="/start">get started &#8594;</a>
-      </div>
-      <a href="/blog" class="learn-more">or visit our blog</a>
-    </div>
-  </section>
-</div>
-<script>
-mixpanel.track_links('.intro-step-inner-wrapper > .scroll-to-add', 'click home how does it work link')
-</script>
+  </div>
+</section>
+<section id="team">
+  <div class="content-wrapper">
+    <h2 class="subtitle">Team</h2>
+    <ul class="team-members">
+      <li>
+        <div class="team-member-pic" style="background-image: url(/static/david.png);"></div>
+        <div class="team-member-name">David Byrd</div>
+        <div class="team-member-title">Co-Founder &amp; CEO</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/thebyrd" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/thebyrd" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="team-member-pic" style="background-image: url(/static/steve.jpeg);"></div>
+        <div class="team-member-name">Steve Kaliski</div>
+        <div class="team-member-title">Co-Founder &amp; CTO</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/stevekaliski" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/sjkaliski" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </li>
+       <li>
+        <div class="team-member-pic" style="background-image: url(/static/francesca.jpg);"></div>
+        <div class="team-member-name">Francesca Krihely</div>
+        <div class="team-member-title">CMO</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/francium" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/FrancescaK" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>    
+      </li>
+      <li>
+        <div class="team-member-pic" style="background-image: url(/static/larz.png);"></div>
+        <div class="team-member-name">Larz Conwell</div>
+        <div class="team-member-title">Engineer</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/larzconwell" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/larzconwell" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="team-member-pic" style="background-image: url(/static/ricky.jpeg);"></div>
+        <div class="team-member-name">Ricky Medina</div>
+        <div class="team-member-title">Engineer</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/rickymdna" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/r-medina" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="team-member-pic" style="background-image: url(/static/rushir.png);"></div>
+        <div class="team-member-name">Rushir Parikh</div>
+        <div class="team-member-title">Design Intern</div>
+        <div class="team-member-links">
+          <a href="//twitter.com/rushikh" target="_blank">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="//github.com/rushir" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="get-started">
+  <a href="/start">get started &#8594;</a>
+</section>

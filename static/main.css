@@ -44,12 +44,6 @@ figure > img {
 figcaption {
   font-size: 14px; }
 
-/**
- * Lists
- */
-ul, ol {
-  margin-left: 30px; }
-
 li > ul,
 li > ol {
   margin-bottom: 0; }
@@ -69,7 +63,7 @@ a {
   text-decoration: underline; }
 
 a:hover {
-  text-decoration: underline !important; }
+  text-decoration: underline; }
 
 /**
  * Blockquotes
@@ -140,6 +134,7 @@ pre {
   vertical-align: middle; }
   .icon > svg path {
     fill: #828282; }
+
 
 /**
  * Site header

@@ -5,10 +5,21 @@ category: blog
 ---
 
 <div class="home">
-  <div class="post">
-    <h1>Building Bowery</h1>
-    <p class="blog-description">Thoughts, updates, and announcements about Bowery.</p>
-    <p class="RSS link"><a href="http://bowery.io/blog/feed.xml">Subscribe via RSS</a></p>
+  <header>
+    <div class="title-container">
+      <h1>Building Bowery</h1>
+      <p>Thoughts, updates, and announcements about Bowery.</p>
+      <div class="line"></div>
+    </div>
+    <aside class="blog-nav">
+      <div class="line"></div>
+      <h3>Current Release</h3>
+      <h1>3.5.0</h1>
+    </aside>
+  </header>
+  <div class="search">
+    <i class="search-icon"></i>
+    <input type="text" placeholder="search the blog">
   </div>
   <ul class="post-list">
     {% for post in site.posts %}
@@ -16,8 +27,8 @@ category: blog
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.blogbaseurl }}">{{ post.title }}</a>
         </h2>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags.size != 0 %} • {% for tag in post.tags %}<a href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a> {% endfor %}{% endif %}</span>
-        <p>{{ post.content | strip_html | truncatewords:75 }}</p>
+        <p>{{ post.content | strip_html | truncatewords:35 }}</p>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags.size != 0 %} - {% for tag in post.tags %}<a href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a> {% endfor %}{% endif %}</span>
       </li>
     {% endfor %}
   </ul>

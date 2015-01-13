@@ -6,10 +6,10 @@
       <a data-coffin="click" href="/" class="home-link">Home</a>
     </li>
     <li>
-      <a data-coffin="click" href="/images" class="images-link">Images</a>
+      <a data-coffin="click" href="/docs" class="start-link">Docs</a>
     </li>
     <li>
-      <a data-coffin="click" href="/start" class="start-link">Get Started</a>
+      <a data-coffin="click" href="/download" class="images-link">Downloads</a>
     </li>
   </ul>
   <div class="nav-footer">
@@ -32,9 +32,9 @@
     </ul>
     <form action="https://formkeep.com/f/a9d9bd96ce41" method="POST" class="subscribe">
       <span class="cover email-cover"></span>
-      <input class="email-submit" type="email" name="email" placeholder="newsletter" required="">
+      <input id="newsletter-input" class="email-submit" type="email" name="email" placeholder="newsletter" required="">
       <span class="cover submit-cover"></span>
-      <input type="submit" value="signup">
+      <input type="submit" value="signup" onclick="alert('here'); mixpanel.register({email: document.getElementByID('newsletter-input').value})">
     </form>
   </div>
 </div>
