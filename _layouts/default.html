@@ -5,9 +5,13 @@
 
   <body>
 
+  {% if page.category != "docs" %}
     {% include header.html %}
-
+  
     <div class="page {{ page.category }}">
+   {% else %}
+   	<div class="docs">
+   {% endif %}
       {{ content }}
       {% include footer.html %}
     </div>

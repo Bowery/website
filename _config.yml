@@ -2,10 +2,10 @@ title: Bowery
 email: support@bowery.io
 name: Bowery
 url: "http://bowery.io"
-blogbaseurl: "/blog"
 twitter_username: boweryio
 github_username:  Bowery
 markdown: kramdown
 exclude: ["vendor"]
+permalink: /:categories/:title
 gems:
   - jekyll-sitemap

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Productivity Hacks from Top Developers: Charity Majors of Parse at Facebook"
+title:  "Charity Majors of Parse at Facebook"
 date:   2014-12-16 14:00:00
 categories: posts
 tags:
