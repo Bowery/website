@@ -13,3 +13,4 @@ deployment:
       - mkdir -p _site/blog/posts
       - cp -rf _site/posts/* _site/blog/posts
       - cd deploy && npm install
+      - node deploy/index.js
