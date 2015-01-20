@@ -31,9 +31,14 @@ category: blog
         posts = data
       })
 
+      var initialPostList = $('.post-list').html()
       function searchBlog (e) {
-        $('.post-list').html('')
         var term = e.target ? e.target.value : e
+        if (!term.length) {
+          $('.post-list').html(initialPostList)
+          return
+        }
+        $('.post-list').html('')
         var results = []
         $.each(posts, function (i, p) {
           if (fuzzy_match(p.title.toLowerCase(), term.toLowerCase())) {
