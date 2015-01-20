@@ -1004,7 +1004,6 @@ a.learn-more:hover {
   height: 45px;
   float: left;
 }
-.docs aside .nav,
 .docs header .nav {
   float: right;
   list-style: none;
@@ -1030,11 +1029,16 @@ a.learn-more:hover {
   float: left;
 }
 .docs .container {
-  max-width: 570px;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 80px 5px;
+  padding: 80px 0;
+  margin-left: 300px;
+}
+.container * {
+  width: 570px;
+  margin: 0 0 0 120px;
+  overflow: hidden;
 }
 .docs .container h2 {
   margin-bottom: 40px;
@@ -1050,32 +1054,45 @@ a.learn-more:hover {
   font-size: 16px;
   line-height: 26px;
 }
-.docs .container code {
+.docs .container pre {
+  max-width: none;
   width: 100%;
   color: white;
   font-family: Courier;
   background: #414042;
-  padding: 80px 100px;
-  position: fixed;
-  left: 0;
-  font-weight: 500;
+  padding: 80px 120px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  margin: 0 0 80px 0;
 }
-.docs .container code pre {
+.docs .container pre code {
   max-width: 570px;
-  margin: 0 auto;
   font-size: 16px;
   line-height: 28px;
+  display: block;
+  margin: 0;
 }
-/*.docs aside {
-  float: left;
+.docs aside {
+  position: fixed;
+  top: 80px;
+  left: 0;
+  bottom: 0;
   width: 300px;
-  height: 100%;
   padding: 0;
   background: #f5f5f5;
 }
 .docs aside .nav a {
-
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: "Monosten A";
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 .docs aside .nav li {
-
-}*/
+  padding: 20px 30px;
+  border-bottom: 1px solid #d3d2d2;
+}
+.docs .wide.container {
+  max-width: 1200px;
+  padding: 0;
+}
