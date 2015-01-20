@@ -1,0 +1,15 @@
+---
+title: Search
+---
+[
+  {% for post in site.posts %}
+   {% if post.category != "docs" %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "tags"     : "{{ post.tags | array_to_sentence_string }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+    {% endif %}
+  {% endfor %}
+]
