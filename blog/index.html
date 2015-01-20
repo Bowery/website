@@ -19,7 +19,40 @@ category: blog
   </header>
   <div class="search">
     <i class="search-icon"></i>
-    <input type="text" placeholder="search the blog">
+    <input type="text" placeholder="search the blog" id="search-input">
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript">
+      function fuzzy_match(str,pattern){
+        pattern = pattern.split("").reduce(function(a,b){ return a+".*"+b })
+        return (new RegExp(pattern)).test(str)
+      }
+      var posts = []
+      $.getJSON('/search.json', function (data) {
+        posts = data
+      })
+
+      function searchBlog (e) {
+        $('.post-list').html('')
+        var term = e.target ? e.target.value : e
+        var results = []
+        $.each(posts, function (i, p) {
+          if (fuzzy_match(p.title.toLowerCase(), term.toLowerCase())) {
+            $('.post-list').append([
+            '<li>',
+              '<h2>',
+                '<a class="post-link" href="', p.url, '">', p.title, "</a>",
+              '</h2>',
+              '<span class="post-meta">', p.date, '</span>',
+            '</li>'
+            ].join(''))
+            results.push(p)
+          }
+        })
+        console.log('$$$$ results', results)
+      }
+      document.getElementById('search-input')
+              .addEventListener('keyup', searchBlog.bind(this))
+    </script>
   </div>
   <ul class="post-list">
     {% for post in site.posts %}
