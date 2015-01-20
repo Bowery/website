@@ -22,6 +22,7 @@ category: blog
     <input type="text" placeholder="search the blog" id="search-input">
     <script type="text/javascript" src="/static/jquery.min.js"></script>
     <script type="text/javascript">
+    $(document).ready(function () {
       function fuzzy_match(str,pattern){
         pattern = pattern.split("").reduce(function(a,b){ return a+".*"+b })
         return (new RegExp(pattern)).test(str)
@@ -33,9 +34,10 @@ category: blog
 
       var initialPostList = $('.post-list').html()
       function searchBlog (e) {
-        var term = e.target ? e.target.value : e
-        if (!term.length) {
+        var term = e.target ? e.target.value : e;
+        if (term.length < 1) {
           $('.post-list').html(initialPostList)
+          console.log(initialPostList)
           return
         }
         $('.post-list').html('')
@@ -53,10 +55,9 @@ category: blog
             results.push(p)
           }
         })
-        console.log('$$$$ results', results)
       }
-      document.getElementById('search-input')
-              .addEventListener('keyup', searchBlog.bind(this))
+      $('#search-input').keypress(searchBlog.bind(this))
+    })
     </script>
   </div>
   <ul class="post-list">
