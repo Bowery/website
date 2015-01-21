@@ -1,5 +1,0 @@
----
-layout: docs
-category: docs
-title: Pricing
----
