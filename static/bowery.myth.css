@@ -303,6 +303,9 @@ dl.faq-list {
  * Docs
  */
 .docs header {
+  position: fixed;
+  z-index: 10px;
+  background: white;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -377,7 +380,7 @@ dl.faq-list {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 80px 0;
+  padding: 160px 0;
   margin-left: 300px;
 }
 .container * {
@@ -400,7 +403,11 @@ dl.faq-list {
   line-height: 26px;
 }
 .docs .container code,
-.docs .container img {
+.docs .container img,
+.docs .container ol,
+.docs .container ul,
+.docs .container a,
+.docs .container span {
   margin: 0;
 }
 .docs .container pre {
