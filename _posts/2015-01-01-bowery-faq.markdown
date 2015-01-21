@@ -56,3 +56,19 @@ Deploying a Bowery Environment is as simple as exporting the environment as a ta
 
 Yes. You can easily integrate Bowery with any CI tool. You can use a simple curl statement to run the tests with chroot, systemd-nspawn, or Docker. Learn more about how different [Continuous Integration tools integrate with Bowery](http://new.bowery.io/docs/continuous-integration/) in the Bowery documentation. 
 
+### How does Bowery compare to Vagrant?
+
+Vagrant is a tool created in 2010 for building development environments. It requires users to write a `Vagrantfile` in Ruby that does all of the necessary installation and configuration.
+
+Every time you change your Vagrantfile everyone on your team will have to re-provision a local virtual machine which is very time consuming.
+
+Since Vagrant runs locally on virtual machines it is a very resource intensive application and will slow down your computer.
+
+Bowery runs your environment in the cloud so that it won’t slow down your computer and can update your environment as people on your team make changes enabling instant provisioning and eliminating the need for a special DSL or script.
+
+### How does Bowery compare to Docker?
+
+Docker is a linux container runtime. If you’d like to use Docker in production, you can export your Bowery environment as a Docker image.
+
+This is particularly helpful if you’d like to use Docker, but develop on Mac or Windows where Docker isn’t supported.
+
