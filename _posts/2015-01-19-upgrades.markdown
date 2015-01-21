@@ -1,0 +1,18 @@
+---
+layout: docs
+category: docs
+title: Upgrading
+---
+
+## Upgrading 
+
+### Mac OSX
+
+When a new Bowery updates is available simply download the app from our website at Bowery.io/downloads and run the installer. This will re-write the new version. 
+
+### Windows 
+
+When a new Bowery updates is available simply download the app from our website at Bowery.io/downloads and run the installer. This will re-write the new version. 
+
+### Linux 
+When a new Bowery updates is available simply run `apt-get upgrade bowery` or `yum upgrade bowery`. 
