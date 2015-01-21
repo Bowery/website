@@ -403,7 +403,11 @@ dl.faq-list {
   line-height: 26px;
 }
 .docs .container code,
-.docs .container img {
+.docs .container img,
+.docs .container ol,
+.docs .container ul,
+.docs .container a,
+.docs .container span {
   margin: 0;
 }
 .docs .container pre {
