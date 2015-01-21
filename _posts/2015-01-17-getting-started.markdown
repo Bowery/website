@@ -24,7 +24,7 @@ When your environment launches, enter the directory of your application (which i
 
 ## Chef Solo
 
-To start off, you'll need to install Chef in your Bowery Environment. You can do so by running:
+To start off, you'll need to install [Chef](https://www.chef.io/) in your Bowery Environment. You can do so by running:
 
 ~~~
 $ curl -L https://www.opscode.com/chef/install.sh | bash
@@ -40,7 +40,7 @@ Whenever you or your teammates launch a new Bowery Environment, all configuratio
 
 ## Puppet Apply
 
-First, you'll need to install Puppet in your Bowery Environment, you can do so by running:
+First, you'll need to install [Puppet](http://puppetlabs.com/) in your Bowery Environment, you can do so by running:
 
 ~~~
 $ wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
