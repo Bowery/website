@@ -130,6 +130,7 @@ body {
 
 .coffin .nav li a:hover,
 .coffin .nav li a.active {
+  cursor: pointer;
   background: rgba(0, 0, 0, 0.1);
 }
 
