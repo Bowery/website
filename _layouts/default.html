@@ -7,13 +7,14 @@
 
   {% if page.category != "docs" %}
     {% include header.html %}
-  
     <div class="page {{ page.category }}">
    {% else %}
    	<div class="docs">
    {% endif %}
       {{ content }}
-      {% include footer.html %}
     </div>
+    {% if page.category != "docs" %}
+    <script type="text/javascript" src="/static/coffin.js"></script>
+    {% endif %}
   </body>
 </html>

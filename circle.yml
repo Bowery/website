@@ -6,7 +6,7 @@ deployment:
     branch: master
     commands:
       - npm install myth -g
-      - myth static/bowery.myth.css static/out.css
+      - myth -c static/bowery.myth.css static/out.css
       - gem install jekyll
       - gem install jekyll-sitemap
       - jekyll build
