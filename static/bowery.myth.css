@@ -249,7 +249,7 @@ dl.faq-list {
   border-top: 1px solid var(--light-purple);
 }
 .faq-list dt {
-  height: 130px;
+  height: 145px;
   border-bottom: 1px solid var(--light-purple);
   font-size: 20px;
   font-family: "Monosten E";
@@ -258,8 +258,14 @@ dl.faq-list {
   float: left;
   padding: 40px 20px 40px 0;
 }
+.faq-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+}
 .faq-list dd {
-  height: 130px;
+  height: 145px;
   border-bottom: 1px solid var(--light-purple);
   padding: 40px 0 40px 0;
   width: 60%;
@@ -267,6 +273,7 @@ dl.faq-list {
   font-family: Helvetica;
   font-size: 13px;
   float: left;
+  font-weight: 500;
 }
 
 /**
