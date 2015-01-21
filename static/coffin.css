@@ -305,6 +305,7 @@ body {
     -ms-transform: none;
     transform: none;
     -webkit-transform: none;
+    width: 100% !important;
   }
 }
 
