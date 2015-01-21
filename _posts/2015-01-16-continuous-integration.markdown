@@ -10,7 +10,7 @@ A really powerful feature of Bowery is that it the environment you develop in ca
 
 ## CircleCI
 
-CircleCI provides support for Docker, allowing you to pick an image which you can run tests against. Here's a sample `circle.yml` file which downloads your environment as a tar, loads it into docker, and executes your tests. For more information on CirceCI configuration, check here.
+[CircleCI](https://circleci.com/) provides support for Docker, allowing you to pick an image which you can run tests against. Here's a sample `circle.yml` file which downloads your environment as a tar, loads it into docker, and executes your tests. For more information on CirceCI configuration, [check here](https://circleci.com/docs/configuration).
 
 ~~~
 machine:
