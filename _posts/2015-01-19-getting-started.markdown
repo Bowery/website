@@ -7,8 +7,6 @@ title: Getting Started
 
 ## Basic
 
-### Basic Install 
-
 The basis of any new Bowery Environment is a clean install of Ubuntu 14.04. You're free to install and run any software supported by this OS. Since Ubuntu comes with Python pre-installed, go ahead and try running a simple http server:
 
 ~~~
