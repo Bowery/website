@@ -589,11 +589,14 @@ dl.faq-list {
   font-family: "Monosten e";
   font-size: 13px;
   text-transform: uppercase;
+  margin-bottom: 12px;
   letter-spacing: 2px;
-  margin-bottom: 0;
 }
 .home .blog-nav .line {
   margin-top: 10px;
+}
+.blog h1 {
+  color: white;
 }
 .search {
   width: 100%;
