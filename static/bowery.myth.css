@@ -397,6 +397,7 @@ dl.faq-list {
 }
 .docs .container h2 {
   margin-bottom: 40px;
+  line-height: 30px;
 }
 .docs .container p,
 .docs .container ol {
