@@ -1,7 +1,7 @@
 ---
 layout: docs
+category: docs
 title:  "Bowery FAQ"
-categories: docs
 ---
 
 Here's our list of common questions and issues as reported by our users.
