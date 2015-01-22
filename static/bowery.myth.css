@@ -311,7 +311,7 @@ dl.faq-list {
  */
 .docs header {
   position: fixed;
-  z-index: 10px;
+  z-index: 10;
   background: white;
   width: 100%;
   margin: 0;
