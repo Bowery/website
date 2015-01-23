@@ -9,8 +9,9 @@ title: Collaboration
 After you launch a Bowery environment for the first time, you'll find a new file, `.bowery` located in the root of your application directory. It looks something like this:
 
 ~~~
-DO NOT DELETE THIS FILE. It is a key component of Bowery (http://bowery.io/start).
-For questions, email hello@bowery.io and include your id (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) in the email.
+DO NOT DELETE THIS FILE. It is a key component of Bowery.
+For questions, email hello@bowery.io and include your id
+(xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx) in the email.
 ~~~
 
 The unique identifier links your application to your environment. As a result, whenever your co-workers or teammates download or sync your repostiory/project, they'll be using the same environment as you.
