@@ -594,6 +594,9 @@ dl.faq-list {
   width: 360px;
   float: left;
 }
+.blog .title-container h1 {
+  color: white;
+}
 .home .blog-nav {
   width: 240px;
   float: right;
@@ -608,9 +611,6 @@ dl.faq-list {
 }
 .home .blog-nav .line {
   margin-top: 10px;
-}
-.blog h1 {
-  color: white;
 }
 .search {
   width: 100%;
