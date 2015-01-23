@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Bowery - Docs
 category: docs
 ---
 
@@ -25,10 +24,10 @@ category: docs
 </header>
 <aside>
 	<ul class="nav">
-	{% for post in site.posts %}
-		{% if post.layout == "docs" %}
+	{% for p in site.posts %}
+		{% if p.layout == "docs" %}
 		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
+			<a class="{% if p.title == page.title %}selected{% endif %}" href="{{ p.url }}">{{ p.title }}</a>
 		</li>
 		{% endif %}
 	{% endfor %}

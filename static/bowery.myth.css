@@ -99,7 +99,7 @@ p {
 }
 .about .subtitle {
   color: white;
-  font-size: 30px;
+  font-size: 42px;
   letter-spacing: 30px;
   font-family: "Monosten A";
 }
@@ -144,19 +144,23 @@ p {
   letter-spacing: 10px;
   color: white;
 }
-.page.about > #get-started {
-  text-align: center;
-}
-.page.about > #get-started > a {
+.page.about > a.get-started  {
   font-family: "Monosten E", Courier, monospace;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 25px;
   letter-spacing: 15px;
+  text-align: center;
+  padding: 50px;
+  border-bottom: 1px solid rgb(55, 27, 72);
+  width: 100%;
+  display: block;
+  transition: background-color 200ms ease-in;
 }
-.page.about > #get-started > a:hover {
-  text-decoration: underline;
+.page.about > a.get-started:hover {
+  text-decoration: none;
+  background-color: rgb(55, 27, 72);
 }
 
 ul.the-low-down {
@@ -195,18 +199,19 @@ ul.the-low-down > li > p {
 }
 
 ul.team-members > li {
-  margin: 50px;
+  margin: 40px;
   vertical-align: top;
   display: inline-block;
   color: white;
   font-family: "Monosten E", Courier, monospace;
-  width: 12.5%;
+  width: 150px;
 }
 .team-member-pic {
   background-size: contain;
   width: 150px;
   height: 150px;
   background-color: var(--light-purple);
+  border-radius: 50%;
 }
 .team-member-name,
 .team-member-title {
@@ -227,9 +232,11 @@ ul.team-members > li {
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid white;
+  transition: background-color 200ms ease-in;
 }
 .btn.skeleton:hover {
   color: white;
+  background-color: rgb(55, 27, 72);
 }
 .video {
   display: block;
@@ -257,6 +264,7 @@ dl.faq-list {
   width: 40%;
   float: left;
   padding: 40px 20px 40px 0;
+  line-height: 28px
 }
 .faq-list a {
   color: white;
@@ -271,7 +279,7 @@ dl.faq-list {
   width: 60%;
   color: white;
   font-family: Helvetica;
-  font-size: 13px;
+  font-size: 14px;
   float: left;
   font-weight: 500;
 }
@@ -309,6 +317,10 @@ dl.faq-list {
 /**
  * Docs
  */
+.docs a:hover,
+.docs a.selected {
+  color: rgb(55, 212, 213);
+}
 .docs header {
   position: fixed;
   z-index: 10;
@@ -724,6 +736,10 @@ dl.faq-list {
  * Responsibe Hacks
  */
 @media only screen and (max-width: 767px) {
+
+  .page.about > section#about h1 {
+    margin-top: 20px;
+  }
   /* Home/About Page */
   .page.about > section > .content-wrapper {
     width: 100%;
@@ -740,5 +756,24 @@ dl.faq-list {
     position: static !important;
     float: left;
     margin-bottom: 20px;
+  }
+  .faq-list dt,
+  dl.faq-list,
+  .faq-list dd {
+    width: 100%;
+    height: inherit;
+  }
+  .faq-list dt {
+    border-bottom: 0 !important;
+    padding-bottom: 0;
+    padding-right: 0;
+  }
+  .faq-list dd {
+    margin-top: 10px;
+    border-top: 0 !important;
+    padding-top: 0;
+  }
+  .page.about > section {
+    padding: 50px 20px;
   }
 }
