@@ -28,7 +28,7 @@ category: docs
 	{% for post in site.posts %}
 		{% if post.category == "docs" %}
 		<li>
-			<a href="{{ post.url }}">{{ post.title }}</a>
+			<a class='{%if post.title == "downloads" %}selected{% endif %}' href="{{ post.url }}">{{ post.title }}</a>
 		</li>
 		{% endif %}
 	{% endfor %}
