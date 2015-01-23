@@ -6,8 +6,11 @@ title: Getting Started
 
 
 ## Basic
+Open the Bowery app. This will take you to your finder to select a directory where you will be working on your code.
 
-The basis of any new Bowery Environment is a clean install of Ubuntu 14.04. You're free to install and run any software supported by this OS. Since Ubuntu comes with Python pre-installed, go ahead and try running a simple http server:
+Once you select the directory with your code, the Bowery Terminal will appear. Type `ls` and you will see that the code from the folder you selected on your computer is being synced to your development enviroment.
+
+The basis of any new Bowery Environment is a clean install of Ubuntu 14.04, but you can [contact us](mailto:hello@bowery.io) to customize this. You're free to install and run any software supported by this OS. Since Ubuntu comes with Python pre-installed, go ahead and try running a simple http server:
 
 ~~~
 $ cd myapp

@@ -399,7 +399,7 @@ dl.faq-list {
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
-  padding: 160px 0;
+  padding: 80px 0;
   margin-left: 300px;
 }
 .container * {
@@ -408,6 +408,7 @@ dl.faq-list {
   overflow: hidden;
 }
 .docs .container h2 {
+  margin-top: 80px;
   margin-bottom: 40px;
   line-height: 30px;
 }
