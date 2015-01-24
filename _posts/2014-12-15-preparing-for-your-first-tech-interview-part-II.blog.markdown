@@ -16,30 +16,30 @@ In your two-way interview process, having background knowledge about the company
 
 In our second post about technical interviews, we will put you through interview bootcamp to prepare you for your first phone screen. Your main prerogative: learn everything you need to know about the company to show them why you’re a great catch. 
 
-###Get to know your Future Employer
+## Get to know your Future Employer
 
 Since you know everything you need to ace the [technical portion](http://bowery.io/blog/posts/2014/12/09/preparing-for-your-first-tech-interview-part-i.html)--if not read [Part I](http://bowery.io/blog/posts/2014/12/09/preparing-for-your-first-tech-interview-part-i.html) -- of your interview based on your skill-building and years of studying computer science and math, now you need to fill your gaps in other areas. “Many college students underestimate how much they should actually prepare for an interview,” says Whatmoor. “A candidate may come across unprepared and unenthusiastic if they have little knowledge about the product and team, no specific company related questions, or opinions about the product.” This is a simple problem to avoid. Do your due diligence and learn everything you can about the company before you take an interview or phone screen. 
 
 
-#####Who They Are
+### Who They Are
 
 Kevin said it best “If possible, do some homework on the people you'll be interviewing with - not to get ammo for the interview, but to learn what unique knowledge they might have that you can ask them about. Even if you don't get the job, you will have learned something from the process.” Similarly, Jovena suggests researching the “company, product, team members, founding story, culture and visit company and individual team member blogs”
 
 This is great advice for two reasons. 1) It shows you have done your research and are putting in work to get the job and figure out if it’s right for you (remember, it’s a two-way street). 2) This will  flatter your interviewer, no matter who they are. Remember, your interviewer has a day job and most of the time, they are taken out of an entire day of work in order to interview you and other students (this prevents [context switching](http://www.joelonsoftware.com/articles/fog0000000022.html)). Show them that you know a little bit about what they work on; it will make you stand out among other candidates. 
 
 
-#####What They Value
+### What They Value
 
 If you’re joining a great company, they will have a very clear mission and vision for what they are working to accomplish. Airbnb is very clear about their mission, who they are and what they value. Not every company has a strong, externally facing brand like Airbnb, so it’s likely you will have to do some digging in each case in order to you understand what they think is useful and important not only for the company but in each employee’s life. I recommend reviewing [Glassdoor.com](http://www.glassdoor.com/), a site for crowdsourced company reviews and salaries, which will give you a better understanding of the working environment and culture. This helps with the two-way street: you can more clearly articulate why you’ll be a good fit at the company and you can determine whether or not the company is a good fit for you. 
 
 
-#####What they’re building
+### What they’re building
 
 You should try to use their product before you do an interview or phone screen. Having a user-facing perspective of the product will help you as you talk through the type of technical questions that come up during the interview. Take the extra step and see what active open source projects they maintain on Github. Take a look at the code base and see what types of problems they are trying to solve. This will give you a holistic view of what you will work on if you join and will better prepare you to solve the problem questions they’ll ask in the interviews. 
 
-###What Not to Do 
+## What Not to Do 
 
-#####Don’t overthink it
+### Don’t overthink it
 
 This is very important and something that everyone does so they feel prepared. You’ve learned everything you need to know through practical experience and years of studying math and computer science. You’re not going to become a better programmer or problem-solver by cramming in a ton of information from an O’Reilly Sysadmin book the night before your interview. Instead of feeling prepared you will instead feel tired, nervous and frustrated. 
 
@@ -47,13 +47,12 @@ Technical interviews are challenging for a reason-- hiring managers use them as 
 
 Great engineers are problem-solvers. They don’t have all the answers, but they can figure out the best way to find that answer if given a few variables. Show that you aren’t scared of what you don’t know, but rather that you thrive in areas of uncertainty and are excited about new problems. 
 
-###Next Steps
+## Next Steps
 
-To wrap up, here are your next steps
-
-* Look up all the companies you are interviewing with on [Glassdoor](http://www.glassdoor.com/index.htm)
-* If possible, find out who you are interviewing with and do some background research on who they are and what they do 
-* Read their company blogs and check out their Github to get insight into their mission and what problems they are trying to solve 
+To wrap up, here are your next steps:
+1. Look up all the companies you are interviewing with on [Glassdoor](http://www.glassdoor.com/index.htm)
+2. If possible, find out who you are interviewing with and do some background research on who they are and what they do 
+3. Read their company blogs and check out their Github to get insight into their mission and what problems they are trying to solve 
 
 Now you’re all set! Remember, don’t be nervous. It’s a two-way street and you’re doing your part to put your best self forward. Get some sleep and get excited! 
 

@@ -14,7 +14,10 @@ category: blog
 		-
 		{% if page.tags.size != 0 %} {% for tag in page.tags %}<p class="post-tag">{{tag}}</p> {% endfor %}{% endif %}
 	</aside>
-	<article>{{ content }}</article>
+	<article>
+		{{ content }}
+	</article>
+
 	<section class="comments">
 		<img class="logo-break" src="/static/logo.png"/>
 		<div id="disqus_thread"></div>

@@ -12,7 +12,7 @@ It’s a busy time for many computer science students: it’s interview season. 
 
 If you are a Computer Science or Math student, you’ve likely learned everything you need to know for the technical portion of the interview, but you might not have the practical expertise to solve basic programming problems. "In interviews, college students may fail if the company is evaluating problem solving and practical skills based upon experience, and the candidate simply has not had enough exposure." Says Jodi Jefferson, founder of recruiting agency [Clutch](http://www.clutchtalent.com/) based in New York City. "To do well, they may need to have done substantial internship work and personal projects. It’s difficult to gain this sort of knowledge just in the classroom."Don’t fret, there’s a few ways to get that experience even if you don’t have any work experience. In this first post in our series on preparing for your first tech interview, you’ll learn how you can build up the technical skills so you remain ahead of the pack during the interview process. 
 
-**From Theory to Practice**
+## From Theory to Practice
 
 As a student, it helps to take initiative and build your own project outside of class. “Don't wait for your school to teach you how to design and program they might never get around to it” advised [Dan Kegel](http://www.kegel.com/academy/getting-hired.html), “Most programming courses don't provide the kind of experience that real programming gives, and real employers look for real programming experience.” 
 
@@ -20,19 +20,20 @@ Getting a job as an engineer involves turning the theory you learned into practi
 
 Ok, fine, we’re not all [Linus](http://en.wikipedia.org/wiki/Linus_Torvalds), but it’s important to take the ideas you learn in school and work on real projects. Here are a four steps that will help you get there. 
 
-**Learn how to use Git**: [Git](http://git-scm.com/) is a version control system that allows you to collaborate with others and manage your project as you write and commit code. While you might not be required to learn Git in school, every employer will require that you learn to use Git--or another version control system like Subversion--once you’re on the job. According to research done by Rebel Labs, over 91% of organizations use version control for quality control and collaboration. Git is one of the most widely used and easily accessible version control systems right now, so it’s wise to become familiar with Git and the ecosystem. If you’re interested in using Subversion--this is the version control system of choice amongst Google developers--you can [try a tutorial](http://svnbook.red-bean.com/en/1.7/svn.intro.quickstart.html). 
+## Learn how to use Git
+[Git](http://git-scm.com/) is a version control system that allows you to collaborate with others and manage your project as you write and commit code. While you might not be required to learn Git in school, every employer will require that you learn to use Git--or another version control system like Subversion--once you’re on the job. According to research done by Rebel Labs, over 91% of organizations use version control for quality control and collaboration. Git is one of the most widely used and easily accessible version control systems right now, so it’s wise to become familiar with Git and the ecosystem. If you’re interested in using Subversion--this is the version control system of choice amongst Google developers--you can [try a tutorial](http://svnbook.red-bean.com/en/1.7/svn.intro.quickstart.html). 
 
 The first thing you should do is sign up for [Github](https://github.com/), a social sharing site for code which uses Git to manage the storage and versioning of your code. If you don’t have a Github account, go sign up and then download and get started with Git. Github has a very thorough overview of how to [set up](https://help.github.com/articles/set-up-git/) with Git on their website. If you want additional help, try taking a [Git course on Code School](https://www.codeschool.com/courses/try-git). Once you have everything running, sign up for Github's Student Developer Pack as well which offers students developer tools for free. 
 
-**Start a Project** 
+## Start a Project
 
 If you’re a computer science or math student, you need to put your skills to work. The best way to do this is to start a project. Try by building something you or someone you know might need. For example, do you find yourself doing the same mundane task over and over again? Try automating it by building a simple command-line script. If your friend needs a website for their next event, figure out how to build one. The opportunities are endless and you can use these projects on your resume and in your interview as proof of what you can build in the future. 
 
-**Hack, Hack, Hack**
+## Hack, Hack, Hack
 
 Hackathons are a fantastic way to try out new technology, build on your existing skills, work with a team and build a fun project. If you are at a large college or university, check out your computer science club to see if there are upcoming Hackathons open for competition. If not, check out the [Major League Hacking schedule](http://mlh.io/) for Hackathons coming up at other universities in your area. You’ll be giving up your weekend, but it’s a great way to make friends and win awesome prizes for your hacks! 
 
-**Participate in Open Source**
+## Participate in Open Source
 
 Participating in open source is very important in building up your engineering skills. When you are use open source software, you leverage the corpus of knowledge built by project maintainers and other users. Understanding how to ask questions and find answers to your issues through the web will make you a much stronger programmer over time. To start, start using an open source programming language, like Python, Ruby, Go or Node.js for your first project. Subscribe to the appropriate user forum and IRC and get involved in conversations. Ask questions and help others figure out answers. Believe it or not, these are the tactics that software engineers use every day to solve problems at work. You can do it from your dorm room and you’ll find it fun and rewarding! 
 

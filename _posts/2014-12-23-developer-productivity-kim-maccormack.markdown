@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "Kim MacCormack"
+title:  "Kim MacCormack on Developer Productivity"
 date:   2014-12-23 14:00:00
-img: https://unsplash.com/photos/_iVG4MsY2N0/download
 categories: posts
 tags:
 - tech

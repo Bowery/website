@@ -483,6 +483,20 @@ dl.faq-list {
 .blog.coffin {
   background: #4f639f;
 }
+.post h2 {
+  font: 30px/35px "Monosten E";
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.post h3 {
+  font: 18px/24px "Monosten A";
+  text-transform: none;
+  letter-spacing: 0;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
 .post header {
   width: 100%;
   max-width: 970px;
@@ -492,6 +506,9 @@ dl.faq-list {
   max-height: 635px;
   display: block;
   margin: 0;
+}
+.post img {
+  max-width: 570px;
 }
 .post h1 {
   margin: 0 0 52px 0;
@@ -510,10 +527,14 @@ dl.faq-list {
   float: left;
   font-family: Helvetica;
 }
+.post article p {
+  margin-bottom: 20px;
+}
 .post article a,
 .post article p,
 .post-list a,
-.post-list p {
+.post-list p,
+.post article li {
   font: 14px/22px Helvetica;
   text-decoration: none;
   color: #58595B;
@@ -522,8 +543,7 @@ dl.faq-list {
   display: block;
   overflow: hidden;
   width: 570px;
-  margin-left: 210px;
-  margin-bottom: 100px;
+  margin: 100px auto;
 }
 .comments .logo-break {
   display: block;
