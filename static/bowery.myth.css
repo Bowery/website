@@ -168,6 +168,10 @@ ul.the-low-down {
   position: relative;
   height: 935px;
 }
+ul.the-low-down > li {
+  position: relative;
+  list-style: none;
+}
 ul.the-low-down > li:nth-child(1) {
   top: 250px;
   left: 150px;
@@ -784,7 +788,6 @@ dl.faq-list {
     position: static !important;
     float: left;
     margin-bottom: 20px;
-    position: relative;
     list-style: none;
   }
   .faq-list dt,
