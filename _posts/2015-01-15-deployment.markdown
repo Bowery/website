@@ -45,7 +45,8 @@ curl -L -f http://kenmare.io/tar/ENV_ID | tar -xzvf -
 sudo mkdir -p /tmp/${mp}
 hash=$(ls -d */ | sed 's|/||g')
 sudo tar xvf ${hash}/layer.tar -C /tmp/${mp}
-sudo mkdir -p /tmp/${mp}/proc /tmp/${mp}/dev /tmp/${mp}/dev/pts /tmp/${mp}/sys /tmp/${mp}/etc
+sudo mkdir -p /tmp/${mp}/proc /tmp/${mp}/dev \
+	/tmp/${mp}/dev/pts /tmp/${mp}/sys /tmp/${mp}/etc
 sudo mount -o bind /proc /tmp/${mp}/proc
 sudo mount -o bind /dev /tmp/${mp}/dev
 sudo mount -o bind /dev/pts /tmp/${mp}/dev/pts
