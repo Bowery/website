@@ -477,66 +477,32 @@ dl.faq-list {
 /**
  * Blog
  */
-.post .back.btn {
-  width: 100%;
-  height: 80px;
-  color: white;
-  background: #5C82E2;
-  /*background: #4867DE;*/
-  display: block;
-  padding: 30px;
-  font-family: "Monosten A";
-  font-size: 14px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  line-height: 26px;
-  cursor: pointer;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
 .post {
-  padding: 140px 115px;
+  padding: 100px 115px;
 }
 .blog.coffin {
   background: #4f639f;
-}
-.arrow {
-  width: 22px;
-  height: 22px;
-  border-top: 2px solid white;
-  border-left: 2px solid white;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  float: left;
-}
-.arrow.right {
-  float: right;
-  -webkit-transform: rotate(-5deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
 }
 .post header {
   width: 100%;
   max-width: 970px;
 }
-.post img {
+.post-img {
   width: 100%;
   max-height: 635px;
   display: block;
   margin: 0;
 }
 .post h1 {
-  margin: 52px 0;
-  font-family: "Monosten E";
+  margin: 0 0 52px 0;
+  font: 80px/90px "Monosten E";
   font-size: 52px;
   color: rgb(25, 25, 25);
 }
 .post aside {
   width: 110px;
   float: left;
-  margin-right: 100px
+  margin-right: 100px;
 }
 .post article {
   width: 100%;
@@ -548,9 +514,9 @@ dl.faq-list {
 .post article p,
 .post-list a,
 .post-list p {
-  font-family: Helvetica;
+  font: 14px/22px Helvetica;
   text-decoration: none;
-  font-weight: 500;
+  color: #58595B;
 }
 .comments {
   display: block;
@@ -565,7 +531,9 @@ dl.faq-list {
   margin: 90px auto;
 }
 .home header {
-  background: #5c82e2;
+  background-color: #5c82e2;
+  background-image: url(/static/large-rock.png);
+  background-repeat: no-repeat;
   height: 480px;
   width: 100%;
   padding: 30px 60px;
@@ -594,7 +562,9 @@ dl.faq-list {
   width: 360px;
   float: left;
 }
-.blog .title-container h1 {
+.blog .title-container h1,
+.blog .blog-nav h1,
+.blog .blog-nav h3 {
   color: white;
 }
 .home .blog-nav {
@@ -620,7 +590,7 @@ dl.faq-list {
   position: relative;
 }
 .search-icon {
-  background: url(/static/search-icon.png) no-retpeat;
+  background: url(/static/search-icon.png) no-repeat;
   background-size: contain;
   position: absolute;
   left: 40px;
@@ -658,12 +628,20 @@ dl.faq-list {
   font-size: 14px;
   letter-spacing: 2px;
 }
-.post-list h2,
-.post-list a.post-link {
-  color: rgb(25, 25, 25);
-  font-family: "Monosten A";
-  font-size: 32px;
+
+/**
+ * List of posts and search results.
+ */
+.post-list h2 {
+  color: #000;
+  font: 30px/35px "Monosten E";
+  text-transform: none;
   text-decoration: none;
+  margin-bottom: 20px;
+  letter-spacing: 0;
+}
+.post-list .fullwidth h2 {
+  font: 40px/45px "Monosten E";
 }
 .post-list {
   list-style: none;
@@ -674,35 +652,58 @@ dl.faq-list {
   border: 1px solid rgb(245, 245, 245);
   float: left;
   margin: 0;
-  padding: 60px 40px;
-  width: 30%;
+  padding: 0;
+  width: 33.33333%;
   height: 380px;
+  position: relative;
 }
-.post-list li:first-child {
+.post-list .fullwidth {
   width: 100%;
   height: auto;
 }
-.post-list li:first-child h2,
-.post-list li:first-child p,
-.post-list li:first-child .post-meta {
+.post-list .fullwidth .post-thumbnail {
   max-width: 600px;
+  margin: 0 auto;
+  padding: 60px 0;
   margin-left: auto;
   margin-right: auto;
+}
+.post-list a.post-link {
+  padding: 60px 40px;
   display: block;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+}
+.post-list a.post-link:hover {
+  background-color: rgba(90, 127, 229, 0.05);
+}
+.post-list .fullwidth a.post-link p.post-meta {
+  position: static;
+  bottom: inherit;
 }
 .post-meta {
-  color: rgb(25, 25, 25);
-  font-family: "Monosten A";
+  color: #000;
+  font: 12px/22px "Monosten E";
   text-transform: uppercase;
+}
+.post-list  a.post-link p.post-meta {
   margin-top: 40px;
+  position: absolute;
+  bottom: 40px;
 }
-.post-meta a {
+.post-tag {
   text-transform: uppercase;
-  font-family: "Monosten E";
-  color: #828282;
+  font: 12px/22px "Monosten E";
+  color: #6D6E71;
 }
+
+/**
+ * Fix Nav for Blog
+ */
 .coffin.blog .nav li a:hover {
   text-decoration: none;
+  cursor: pointer;
 }
 
 /*!
@@ -736,6 +737,11 @@ dl.faq-list {
 /**
  * Responsibe Hacks
  */
+@media only screen and (max-width: 1100px) {
+  .post aside {
+    display: none;
+  }
+}
 @media only screen and (max-width: 767px) {
 
   .page.about > section#about h1 {
@@ -776,5 +782,13 @@ dl.faq-list {
   }
   .page.about > section {
     padding: 50px 20px;
+  }
+
+  /* Blog Post */
+  .post {
+    padding: 20px;
+  }
+  .post aside {
+    display: none;
   }
 }

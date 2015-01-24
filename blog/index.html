@@ -46,10 +46,12 @@ category: blog
           if (fuzzy_match(p.title.toLowerCase(), term.toLowerCase())) {
             $('.post-list').append([
             '<li>',
-              '<h2>',
-                '<a class="post-link" href="', p.url, '">', p.title, "</a>",
-              '</h2>',
-              '<span class="post-meta">', p.date, '</span>',
+              '<a class="post-link" href="', p.url,'">',
+                '<div class="post-thumbnail">',
+                  '<h2>', p.title,'</h2>',
+                '</div>',
+              '<p class="post-meta">', p.date, '</p>',
+              '</a>',
             '</li>'
             ].join(''))
             results.push(p)
@@ -61,16 +63,21 @@ category: blog
     </script>
   </div>
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.layout != "docs" %}
-        <li>
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.blogbaseurl }}">{{ post.title }}</a>
-          </h2>
-          <p>{{ post.content | strip_html | truncatewords:35 }}</p>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.tags.size != 0 %} - {% for tag in post.tags %}<a href="{{site.blogbaseurl}}/tag/{{tag}}">{{tag}}</a> {% endfor %}{% endif %}</span>
+    {% assign blogposts = (site.posts | where: "layout", "post") %}
+    {% for post in blogposts %}
+        <li class="{% if post.title == blogposts.first.title %}fullwidth{% endif %}">
+          <a class="post-link" href="{{ post.url | prepend: site.blogbaseurl }}">
+            <div class="post-thumbnail">
+              <h2>{{ post.title | truncatewords:7 }}</h2>
+              {% if post.title == blogposts.first.title %}
+                <p>{{ post.content | strip_html | truncatewords:35 }}</p>
+              {% else %}
+                <p>{{ post.content | strip_html | truncatewords:15 }}</p>
+              {% endif %}
+              <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }} - {% for tag in post.tags %} <span class="post-tag" href="/tag/{{ tag }}">{{ tag }}</span> {% endfor %}</p>
+            </div>
+          </a>
         </li>
-      {% endif %}
     {% endfor %}
   </ul>
 </div>
