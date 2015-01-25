@@ -25,7 +25,7 @@ choco install bowery
 
 ## Linux
 
-Download the [32-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_386.zip) or [64-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_amd66.zip). Unzip the downloaded files into your preferred directory. Then open a terminal and run
+Download the [32-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_386.zip) or [64-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_amd64.zip). Unzip the downloaded files into your preferred directory. Then open a terminal and run
 
 ~~~
 cd <path/to/unzipped/contents>
