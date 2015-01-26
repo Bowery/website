@@ -61,4 +61,4 @@ Once Puppet has installed, you can execute your existing Puppet manifest to conf
 $ puppet apply ~/myapp/path/to/manifests/file.pp
 ~~~
 
-Whenevery you are your teammates launch a new Bowery Environment, all configurations executed by Puppet will be present. you will only have to run Puppet again if you've made a change to the manifest.
+Whenever you or your teammates launch a new Bowery Environment, all configurations executed by Puppet will be present. You will only have to run Puppet if you've made a change to the manifest.
