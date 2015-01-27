@@ -11,7 +11,7 @@ tags:
 
 [Medicine](http://mentalfloss.com/article/58736/interview-dr-stanley-burns-knicks-medical-advisor) was very different in the early 1900’s. It was challenging to find cadavers, so Surgeons got all their practice on pigs before they ever touched a live human for surgery. This is where we are with development: we program on pigs and then deploy to humans. 
 
-Some of the biggest failures on the web today happens when your team deploys broken code. Everyone does it, from the smallest startups to large enterprise software companies. Regardless of whether or not you have DevOps resources there are ways to avoid it, chief of which is to take caution when testing and setting up your development environments. At [Bowery](http://bowery.io/start/), we recognized this as a huge problem in engineering organizations and want to make it easier for you and your team to deploy what you see in development.
+Some of the biggest failures on the web today happens when your team deploys broken code. Everyone does it, from the smallest startups to large enterprise software companies. Regardless of whether or not you have DevOps resources there are ways to avoid it, chief of which is to take caution when testing and setting up your development environments. At [Bowery](http://bowery.io/), we recognized this as a huge problem in engineering organizations and want to make it easier for you and your team to deploy what you see in development.
 
 ### It’s Cool, I’m Testing in Prod
 
@@ -20,6 +20,7 @@ Everyone who considers themselves a DevOps practitioner will encourage you to te
 * The time gap: A developer may work on code that takes days, weeks, or even months to go into production.
 * The personnel gap: Developers write code, ops engineers deploy it.
 * The tools gap: Developers may be using a stack like Nginx, SQLite, and OS X, while the production deploy uses Apache, MySQL, and Linux. 
+
 
 The perfect development environment is a replica of your production environment, maintaining equality through the development process. It’s a challenge for most engineering organizations and this mismanagement of development and production environments have caused a few very public failures. 
 
@@ -73,7 +74,7 @@ Yikes! Infinite loops. Although the team did run the update on a small subset of
 
 ### Stop coding on pigs.
 
-With [Bowery](http://bowery.io/start/), your code, software and operating systems are all in-sync across your team and organization leading to greater productivity and better development. When it comes time to upgrade a database or change versions of your language, the process is swift and painless. Bowery makes it easy to share new environments with other team members. 
+With [Bowery](http://bowery.io/), your code, software and operating systems are all in-sync across your team and organization leading to greater productivity and better development. When it comes time to upgrade a database or change versions of your language, the process is swift and painless. Bowery makes it easy to share new environments with other team members. 
 
 By staying in-sync you can keep the gap between your development, staging and production environments as small as possible. By keeping your team’s stack and versions up-to-date across all projects, you remove the small incompatibilities across your team that cause disruption in the software delivery process. Don’t worry about builds failing in production because of a tool gap. With Bowery your team can keep development and production parity across your team.
 
