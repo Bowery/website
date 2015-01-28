@@ -2,7 +2,7 @@
 layout: post
 title:  "Moving from Node.js to Go at Bowery"
 img: https://s3.amazonaws.com/www.bowery.io/static/img/Bowery_Gopher.png?X-Amz-Date=20150126T174853Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=d5e076a1361bffc2ef7db0cc4320b8263d24c895828be7145112c56e6366e93f&X-Amz-Credential=ASIAJIE7Z4IJVBXKDTOQ/20150126/us-east-1/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=AQoDYXdzEPP//////////wEa0AKAWaLTQfZwoMwPjW2GsEfqqEH7kp53xKlVkWfflbF0Jb%2Bg%2BGfvL6f3nhxvuur27eDrBrQjqF69MXvb1E1rc9em4EEW2lHMJEVsaEFytoZJG8vfAqy2n%2BU0Z8UnFfZ5VGjaIbM2r%2BZVIEoxyXBt1wMhmLGq0S4T07g8ocImJF5z17tnwSyblIFduHvf0XiqdykRomKUxV87AlihXWTAyg0kTEufgrUwnNfO0Qy7YFIyvvwdcHoZQA1Yt1LJbD3NpzEqt3jWc4B8%2B5/PMDEoeQKh0sUOjNJnCABvJXEiVsc8dkI8gG4hbNzECBRtx8thxP2rtUM5tDf/tz6UsiI63EdA1ilpvgmFTT8zp8BwdgVru4cJs/zIgDM1kXpPmh1PfQrxbVpmGlUmcFmPhL8/uCwfQ7804oJJNWxM2Ff7lc9OsYXzjUEQaYomaw/DoRDP7X8gtvqZpgU%3D
-date:   2015-28-01 10:00:00
+date:   2015-01-28 10:00:00
 categories: posts
 tags:
 - tech
