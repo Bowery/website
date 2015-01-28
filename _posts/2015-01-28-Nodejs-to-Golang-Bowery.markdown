@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Moving from Node.js to Go at Bowery"
-img:/static/img/Bowery_Gopher2.png
+img: /static/Bowery_Gopher.gif
 date:   2015-01-28 11:00:00
 categories: posts
 tags:
