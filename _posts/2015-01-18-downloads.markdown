@@ -16,10 +16,10 @@ Congrats! Your installation was successful. Now open the Bowery app that can be 
 
 You can also download the installer via [brew](http://brew.sh/).
 
-```
+~~~
 $ brew install caskroom/cask/brew-cask
 $ brew cask install bowery
-```
+~~~
 
 ## Windows
 <!-- ![apple](/static/windows.png) -->
