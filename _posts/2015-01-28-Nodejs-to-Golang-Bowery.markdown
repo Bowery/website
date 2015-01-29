@@ -56,7 +56,7 @@ If you’re just getting started with Go and want to learn more, here are some r
 * Brian McCallister has a great post on the [Go workspace and overall developer environment](http://skife.org/golang/2013/03/24/go_dev_env.html)  
 * For more on Go code organization, read Jared Carroll’s post on the [Pivotal Labs blog](http://pivotallabs.com/next-steps-in-go-code-organization/)
 
-To get started with your first Go project, set up your new environment to share with your team on [Bowery](http://bowery.io/start/). 
+To get started with your first Go project, set up your new environment to share with your team on [Bowery](http://bowery.io/docs/). 
 
 
 
