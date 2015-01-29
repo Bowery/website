@@ -23,6 +23,8 @@ $ python -m SimpleHTTPServer 80
 
 Select `File > Open in Browser` and see your site there.
 
+If for any reason you need to connect to your instance directly, you can get ssh information via `File > Info`.
+
 ## Bash
 
 Provisioning through the shell is an easy way to get your environment set up, especially if you aren't using an existing system like Chef or Puppet, or if the requirements of your environment aren't as demanding. You may even already have a script, whether it sits in the root of your application directory (`setup.sh`) or is bundled inside of a `Dockerfile` or `Vagrantfile` (in which case you can just pull at the individual steps).
