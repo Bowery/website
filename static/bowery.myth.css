@@ -772,6 +772,9 @@ dl.faq-list {
   .post aside {
     display: none;
   }
+  .post-list li {
+    width: 50%;
+  }
 }
 @media only screen and (max-width: 767px) {
 
@@ -822,5 +825,10 @@ dl.faq-list {
   }
   .post aside {
     display: none;
+  }
+
+  /* Blog Home */
+  .post-list li {
+    width: 100%;
   }
 }
