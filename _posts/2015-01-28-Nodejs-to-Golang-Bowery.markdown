@@ -11,7 +11,7 @@ tags:
 
 In looking back on the past year, the biggest difference we made in our tech stack was moving from Node.js to Go. Our co-founder, [Steve Kaliski](https://github.com/sjkaliski), made the switch from [Node.js to Go at Poptip](http://thenewstack.io/from-node-js-to-go-why-one-startup-made-the-switch/), but he didn’t learn his lesson there. After building the first iteration of Bowery in Node.js, we made the switch to Go in February 2014 and it’s helped us speed up development and deployment.
 
-Since then, our entire team have become dedicated Gophers. We’ve enjoyed using Go for its clear cut standards and simpler workflow. To give you a peek into our Gopher hole, here's 5 reasons we love working with Go.  
+Since then, our entire team have become dedicated Gophers. We’ve enjoyed using Go for its clear cut standards and simpler workflow. To give you a peek into our Gopher hole, here's a few reasons we love working with Go.  
 
 **Easy to write cross-platform code** 
 
