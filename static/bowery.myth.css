@@ -544,6 +544,12 @@ dl.faq-list {
   text-decoration: none;
   color: #58595B;
 }
+.post article a {
+  text-decoration: underline;
+}
+.post article a:hover {
+  color: #4f639f;
+}
 .comments {
   display: block;
   overflow: hidden;
