@@ -75,7 +75,7 @@ mixpanel.init("d5c191fd4468894be2824bf288879a18");
     }
     // Everywhere
     mixpanel.track("Viewed " + document.title)
-    mixpanel.track_forms(".subscribe", "Subscribed to Newsletter", {"referrer": document.referrer});
+    mixpanel.track_forms(".subscribe", "Subscribed to Newsletter", {"referrer": document.referrer})
     mixpanel.track_links(".track-download", "Downloaded Bowery", {"referrer": document.referrer})
 
     // Home
@@ -83,7 +83,7 @@ mixpanel.init("d5c191fd4468894be2824bf288879a18");
     mixpanel.track_links("#full-docs-btn", "Clicked Go to Full Docs Button", {"referrer": document.referrer})
 
     // Nav
-    mixpanel.track_links(".twitter-link", "Click Nav Twitter Link", {"referrer": document.referrer});
-    mixpanel.track_links(".github-link", "Click Nav Github Link", {"referrer": document.referrer});
+    mixpanel.track_links(".twitter-link", "Click Nav Twitter Link", {"referrer": document.referrer})
+    mixpanel.track_links(".github-link", "Click Nav Github Link", {"referrer": document.referrer})
     </script>
 </head>
