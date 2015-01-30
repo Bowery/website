@@ -9,7 +9,7 @@ Below are all available downloads for the lastest version of Bowery ({{ site.ver
 
 ## Mac OS X
 <!-- ![apple](/static/apple.png) -->
-Download the [64-bit installer](http://desktop.bowery.io/{{ site.version }}_darwin_amd64.zip). Extract it and run `bowery.pkg`.
+Download the [64-bit installer](http://desktop.bowery.io/{{ site.version }}_darwin_amd64.zip){: .track-download}. Extract it and run `bowery.pkg`.
 
 
 Congrats! Your installation was successful. Now open the Bowery app that can be found in `/Applications`. This will take you to your finder to select a directory where you will be working on your code.
@@ -31,7 +31,7 @@ choco install bowery
 
 ## Linux
 
-Download the [32-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_386.zip) or [64-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_amd64.zip). Unzip the downloaded files into your preferred directory. Then open a terminal and run
+Download the [32-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_386.zip){: .track-download} or [64-bit installer](http://desktop.bowery.io/{{ site.version }}_linux_amd64.zip){: .track-download}. Unzip the downloaded files into your preferred directory. Then open a terminal and run
 
 ~~~
 cd <path/to/unzipped/contents>
