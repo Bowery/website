@@ -137,8 +137,8 @@ p {
   line-height: 1.2em;
   text-transform: none;
   text-align: left;
-  width: 400px;
-  letter-spacing: 10px;
+  width: 300px;
+  letter-spacing: 0;
   color: white;
 }
 .page.about > a.get-started  {
@@ -164,6 +164,7 @@ ul.the-low-down {
   width: 260px;
   position: relative;
   height: 935px;
+  margin-top: 120px;
 }
 ul.the-low-down > li {
   position: relative;
