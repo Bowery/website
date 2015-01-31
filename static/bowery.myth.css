@@ -551,7 +551,7 @@ dl.faq-list {
 .comments {
   display: block;
   overflow: hidden;
-  width: 570px;
+  max-width: 570px;
   margin: 100px auto;
 }
 .comments .logo-break {
@@ -829,6 +829,11 @@ dl.faq-list {
   }
   .post aside {
     display: none;
+  }
+  .post h1 {
+    letter-spacing: 0;
+    font-size: 30px;
+    line-height: 40px
   }
 
   /* Blog Home */
