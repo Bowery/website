@@ -12,7 +12,9 @@ category: blog
 	<aside>
 		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
 		-
-		{% if page.tags.size != 0 %} {% for tag in page.tags %}
+		<p><a class="post-meta" href="/">What's Bowery?</a></p>
+
+		{% if page.tags.size != 0 %} - {% for tag in page.tags %}
 		<p class="post-tag">
 			<a href="/blog/tag/{{tag}}">{{tag}}</a>
 		</p>
