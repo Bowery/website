@@ -224,18 +224,27 @@ ul.team-members > li {
 }
 .btn.skeleton {
   color: white;
-  padding: 15px 55px;
+  padding: 17px 50px 15px;
   font-family: "Monosten E";
   font-size: 12px;
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid white;
-  transition: background-color 200ms ease-in;
+  transition: color 200ms ease-in, background-color 200ms ease-in;
 }
 .btn.skeleton:hover {
   color: white;
   background-color: rgb(55, 27, 72);
+}
+.docs .btn.skeleton {
+  overflow: visible;
+  color: #414042;
+  border: 2px solid #414042;
+}
+.docs .btn.skeleton:hover {
+  color: white;
+  background-color: #414042;
 }
 .video {
   display: block;
@@ -404,7 +413,7 @@ dl.faq-list {
 .container * {
   width: 570px;
   margin: 0 0 0 120px;
-  overflow: hidden;
+  overflow: visible;
 }
 .docs .container h2 {
   margin-top: 80px;
@@ -781,6 +790,10 @@ dl.faq-list {
   }
 }
 @media only screen and (max-width: 767px) {
+  .home header h1 {
+    font-size: 54px;
+    letter-spacing: 0;
+  }
 
   .page.about > section#about h1 {
     margin-top: 20px;
