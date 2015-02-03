@@ -22,6 +22,6 @@ dependencies:
     - curl -F -o http://kenmare.io/tar/ENV_ID | docker load
 
 test:
-  ovverride:
+  override:
     - docker run imagename make test
 ~~~
