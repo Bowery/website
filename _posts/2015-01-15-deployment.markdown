@@ -14,6 +14,8 @@ To start the export, select `File > Export` from the Bowery Menu. You'll be prom
 
 In either case, the steps will be copied directly to your clipboard.
 
+Note: when exporting, Bowery automatically removes your application code from the environment in order to avoid potential code conflicts.
+
 ## Docker
 
 After selecting Docker from the prompt, the following will be copied to your clipboard:
@@ -31,6 +33,8 @@ $ docker images
 CONTAINER ID            TAG     IMAGE ID
 quay.io/bowery/ubuntu   ENV_ID  xxxxxxxxxxxx
 ~~~
+
+You can mount your application code when creating the container by running `docker run -v`. To learn more about mounting volumes with Docker, [read here](https://docs.docker.com/userguide/dockervolumes/).
 
 
 ## Chroot + Tar
