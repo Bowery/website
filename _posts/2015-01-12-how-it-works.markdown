@@ -6,7 +6,7 @@ title:  How it Works
 
 ## How it works
 
-By seamlessly integrating into your existing workflow, the Bowery Terminal reduces the overhead of running and mainting other environment provisioners. Bowery Environments are easily exportable to various formats for easy deployment and integration. The Bowery Terminal reduces the overhead of running and maintaining other environment provisioners. Sharing your environments with a team is as simple as storing a unique identifier in your project. Bowery keeps your environment in sync and handles merges amongst team members. By keeping your team's environments in sync, you reduce the risk of deploying broken code due to versioning issues and you allow your team to code in a replica their production environment. When it's time to go into production, Bowery Environments are easily exportable to various formats for easy deployment and integration.
+By seamlessly integrating into your existing workflow, the Bowery Terminal reduces the overhead of running and maintaining other environment provisioners. Bowery Environments are easily exportable to various formats for easy deployment and integration. The Bowery Terminal reduces the overhead of running and maintaining other environment provisioners. Sharing your environments with a team is as simple as storing a unique identifier in your project. Bowery keeps your environment in sync and handles merges amongst team members. By keeping your team's environments in sync, you reduce the risk of deploying broken code due to versioning issues and you allow your team to code in a replica their production environment. When it's time to go into production, Bowery Environments are easily exportable to various formats for easy deployment and integration.
 
 ## Environments
 
