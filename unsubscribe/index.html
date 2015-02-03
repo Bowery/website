@@ -1,0 +1,25 @@
+---
+layout: docs
+title: Bowery
+---
+
+<h2 id="unsubscribe-title">Unsubscribe from Newsletter</h2>
+
+<input type="text" name="email" id="unsubscribe-input" placeholder="we+will+miss+you@bowery.io">
+<p>
+<a href="#unsubscribed" id="unsubscribe-btn" class="btn skeleton" onclick="unsubscribeMixpanelUser()">unsubscribe</a>
+</p>
+<script>
+function unsubscribeMixpanelUser() {
+  console.log('$$$$$ here', arguments)
+  var email = document.getElementById('unsubscribe-input').value
+  console.log('$$$$', email)
+  mixpanel.identify(email)
+  mixpanel.people.set({'$email': email, 'Subscribed To Newsletter': false})
+  document.getElementById('unsubscribe-input').value = ""
+  document.getElementById('unsubscribe-title').innerHTML = "we'll miss you :("
+
+  document.getElementById('unsubscribe-btn').innerHTML = "unsubscribed"
+  document.getElementById('unsubscribe-btn').className = "btn skeleton active"
+}
+</script>

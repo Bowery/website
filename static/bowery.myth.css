@@ -233,7 +233,8 @@ ul.team-members > li {
   border: 2px solid white;
   transition: color 200ms ease-in, background-color 200ms ease-in;
 }
-.btn.skeleton:hover {
+.btn.skeleton:hover,
+.btn.skeleton.active {
   color: white;
   background-color: rgb(55, 27, 72);
 }
@@ -242,9 +243,16 @@ ul.team-members > li {
   color: #414042;
   border: 2px solid #414042;
 }
-.docs .btn.skeleton:hover {
+.docs .btn.skeleton:hover,
+.docs .btn.skeleton.active {
   color: white;
   background-color: #414042;
+}
+.docs input {
+  padding: 17px 50px 15px;
+  max-width: 570px;
+  margin-bottom: 30px;
+  outline: none;
 }
 .video {
   display: block;
