@@ -68,9 +68,8 @@ mixpanel.init("d5c191fd4468894be2824bf288879a18");
     mixpanel.set_config({debug: true});
     function registerMixpanelUser (e) {
         var email = document.getElementById('newsletter-input').value
-        console.log(email, 'signed up')
         mixpanel.identify(email)
-        mixpanel.people.set({'$email': email})
+        mixpanel.people.set({'$email': email, 'Subscribed To Newsletter': true})
         return true
     }
     // Everywhere
