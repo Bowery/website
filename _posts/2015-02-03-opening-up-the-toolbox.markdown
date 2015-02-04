@@ -50,3 +50,10 @@ A Slack api client for posting messages to public channels. We use it internally
 We hope these libraries help you on your way to learning and using Go. When you're ready to get started, set up and share your development environment with [Bowery](http://bowery.io)
 
 For more info on our open source projects, productivity tips, and more, sign up below for our newsletter!
+
+<form action="https://formkeep.com/f/a9d9bd96ce41" method="POST" class="subscribe" style="overflow: hidden; margin-bottom: 20px;">
+  <span class="cover email-cover" style="background: rgb(191, 191, 191);"></span>
+  <input class="email-submit" type="email" name="email" placeholder="newsletter" required="" style="color: rgb(198, 198, 198)">
+  <span class="cover submit-cover"></span>
+  <input type="submit" value="signup" style="background: rgb(198, 198, 198);">
+</form>
