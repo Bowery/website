@@ -12,4 +12,5 @@ Docker Engine is a runtime and packaging tool, mainly used to manage infrastruct
   <input type="email" name="email" placeholder="Your Email">
   <input type="text" name="name" placeholder="Your Name">
   <input type="company" name="company name" placeholder="Company Name">
+  <input type ="submit" value="signup" onclick="registerMixpanelUser();">
 </form>
