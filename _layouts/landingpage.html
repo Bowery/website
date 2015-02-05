@@ -10,13 +10,21 @@ category: landingpage
 		<h1>{{ page.title }}</h1>
 	</header>
 	<aside>
+		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
+		-
 		<p><a class="post-meta" href="/">What's Bowery?</a></p>
 		<p><a class="post-meta" href="/docs/downloads/">Download</a></p>
-		<p><a href="https://www.youtube.com/watch?v=XEp-XptWgMc" target="_blank">Demo</a></p>
-		<p><a href="https://groups.google.com/forum/#!forum/bowery" target="_blank">Support</a></p>
-
+		<p><a class="post-meta" href="https://www.youtube.com/watch?v=XEp-XptWgMc" target="_blank">Demo</a></p>
+		<p><a class="post-meta" href="https://groups.google.com/forum/#!forum/bowery" target="_blank">Support</a></p>
+		
+		{% if page.tags.size != 0 %} - {% for tag in page.tags %}
+		<p class="post-tag">
+			<a href="/blog/tag/{{tag}}">{{tag}}</a>
+		</p>
+		{% endfor %}{% endif %}
 	</aside>
 	<article>
 		{{ content }}
+		
 	</article>
 </div>
