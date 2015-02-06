@@ -225,7 +225,8 @@ ul.team-members > li {
 .video-container {
   margin: 50px auto;
   position: relative;
-  padding-bottom: 65.25%;
+  /*padding-bottom: 65.25%;*/
+  padding-bottom: 50%;
   padding-top: 25px;
   height: 0;
   max-width: 640px;
@@ -809,6 +810,7 @@ dl.faq-list {
   }
 }
 @media only screen and (max-width: 767px) {
+
   .home header h1 {
     font-size: 54px;
     letter-spacing: 0;
@@ -878,5 +880,31 @@ dl.faq-list {
   /* Blog Home */
   .post-list li {
     width: 100%;
+  }
+
+  /* Docs */
+  .docs aside {
+    display: none;
+  }
+
+  .docs header .inner-header .nav {
+    display: none;
+  }
+  .docs .container {
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .docs .container * {
+    margin-left: 0;
+    width: 100%;
+  }
+  .docs .btn.skeleton {
+    padding: 17px 20px 15px;
+  }
+  .docs .container pre {
+    padding: 40px 40px;
+    overflow-x: auto;
   }
 }
