@@ -14,10 +14,14 @@ category: docs
 		<script type="text/javascript">
 		function toggleNav() {
 			var el = document.querySelector('.docs aside')
-			if (!el.style.display) el.style.display = 'none'
-			console.log(el.style.display, 'before')
-			el.style.display = el.style.display == 'none' ? 'block' : 'none'
-			console.log(el.style.display, 'after')
+			if (!el.style.display)
+				el.style.display = 'none'
+
+			el.style.display = el.style.display == 'block' ?
+				'none' : 'block'
+			
+			document.body.style.overflow = el.style.display == 'block' ?
+				 'hidden' : 'auto'
 		}
 		</script>
 		<ul class="nav">
