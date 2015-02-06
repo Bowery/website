@@ -9,6 +9,16 @@ category: docs
 			<img class="logo" src="/static/logo.png">
 			<h1>Docs</h1>
 		</a>
+		<button class="mobile-nav-btn" onclick="toggleNav()">Nav</button>
+		<script type="text/javascript">
+		function toggleNav() {
+			var el = document.querySelector('.docs aside')
+			if (!el.style.display) el.style.display = 'none'
+			console.log(el.style.display, 'before')
+			el.style.display = el.style.display == 'none' ? 'block' : 'none'
+			console.log(el.style.display, 'after')
+		}
+		</script>
 		<ul class="nav">
 			<li>
 				<a href="/docs/downloads/">Downloads</a>

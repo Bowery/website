@@ -270,6 +270,9 @@ ul.team-members > li {
   margin-bottom: 30px;
   outline: none;
 }
+.docs .mobile-nav-btn {
+  display: none;
+}
 
 dl.faq-list {
   list-style: none;
@@ -885,6 +888,8 @@ dl.faq-list {
   /* Docs */
   .docs aside {
     display: none;
+    width: 100%;
+    z-index: 4;
   }
 
   .docs header .inner-header .nav {
@@ -906,5 +911,23 @@ dl.faq-list {
   .docs .container pre {
     padding: 40px 40px;
     overflow-x: auto;
+  }
+  .docs .inner-header a.title {
+    width: 50%;
+  }
+  .mobile-nav-btn {
+    display: block !important;
+    width: 50%;
+    height: 100%;
+    background: right;
+    border: 0;
+    float: left;
+    font-family: "Monosten A";
+    font-size: 16px;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+  }
+  .mobile-nav-btn:hover {
+    cursor: pointer;
   }
 }
