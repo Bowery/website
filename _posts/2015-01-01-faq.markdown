@@ -42,9 +42,9 @@ All commands executed in the Bowery terminal are run on a remote Ubuntu instance
 
 As you and your team work with Bowery, you will likely make changes to your environment, whether that’s installing new software, updating to the latest version of a depencency, or changing some configurations. Bowery merges changes to your environment, layering them on top of each other, giving preference to more recent changes. Learn more about how this works in the [Bowery collaboration](http://new.bowery.io/docs/collaboration/) overview. 
 
-## How do I ignore files from being synced?
+## How do I ignore files from getting synced?
 
-Bowery can ignore files by adding a file named `.boweryignore` to the root of the directory being synced. It's format is similar to `.gitignore` and will match files and directories in the directory being synced, those matched will not be synced.
+Bowery can ignore files by adding a file named `.boweryignore` to the root of the directory being synced. Its format is similar to `.gitignore` and will pinpoint files to intentionally ignore during sync..
 
 ## How do I migrate a Bowery environment to a Server for Production use? 
 
