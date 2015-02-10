@@ -31,6 +31,21 @@ Provisioning through the shell is an easy way to get your environment set up, es
 
 When your environment launches, enter the directory of your application (which is located in the home directory). Execute your synced script. Once it has completed, you can simply save the environment (File > Save).
 
+## Ansible
+
+You won't need to change anything about your Bowery environment to provision it with Ansible. You'll just need to get your ssh info by clicking on `File > Info` in the menu.
+
+![info](/static/ansible-info.png)
+
+You will need to update your [Inventory](http://docs.ansible.com/intro_inventory.html) to include this info. For example:
+
+~~~
+[web]
+104.154.63.17	ansible_ssh_port=23
+~~~
+
+Then when you run `ansible-playbook` include the `--ask-pass` parameter and enter the password you see in the app after doing `File > Info`.
+
 ## Chef Solo
 
 To start off, you'll need to install [Chef](https://www.chef.io/) in your Bowery Environment. You can do so by running:
@@ -64,17 +79,3 @@ $ puppet apply ~/myapp/path/to/manifests/file.pp
 ~~~
 
 Whenever you or your teammates launch a new Bowery Environment, all configurations executed by Puppet will be present. You will only have to run Puppet if you've made a change to the manifest.
-
-## Ansible
-You won't need to change anything about your Bowery environment to provision it with Ansible. You'll just need to get your ssh info by clicking on `File > Info` in the menu.
-
-![info](/static/ansible-info.png)
-
-You will need to update your [Inventory](http://docs.ansible.com/intro_inventory.html) to include this info. For example:
-
-~~~
-[web]
-104.154.63.17	ansible_ssh_port=23
-~~~
-
-Then when you run `ansible-playbook` include the `--ask-pass` parameter and enter the password you see in the app after doing `File > Info`.
