@@ -1,0 +1,33 @@
+---
+layout: default
+category: events
+---
+<div class="container">
+  <div class="header">
+    <h1>{{page.title}}</h1>
+    <div class="info">
+      <h3 class="time">{{page.time}}</h3>
+      <p class="description">{{page.description}}</p>
+    </div>
+  </div>
+  <form class="form">
+    {% for f in page.fields %}
+      {% for field in f %}
+        <input class="field" type="text" placeholder="{{field[1]}}" name="{{field[0]}}">
+      {% endfor %}
+    {% endfor %}
+    <input type="submit" class="btn skeleton event-registration-btn" onclick="trackEventRegistration()" value="register &rarr;">
+  </form>
+</div>
+<a href="/docs" class="get-started">try bowery →</a>
+<script type="text/javascript">
+  var title = "{{page.title}}"
+  function trackEventRegistration() {
+    var emailEl = document.querySelector('input[name="email"]')
+    var email = emailEl && emailEl.value
+    mixpanel.identify(email)
+    mixpanel.track("registered for: " + title)
+  }
+
+</script>
+<!-- TODO (thebyrd) send event for 'registered for event: ' + page.title -->
