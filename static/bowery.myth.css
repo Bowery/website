@@ -474,7 +474,10 @@ dl.faq-list {
 .docs .container ol,
 .docs .container ul,
 .docs .container a,
-.docs .container span {
+.docs .container span,
+.docs .contianer b,
+.docs .container strong,
+.docs .container em {
   margin: 0;
 }
 .docs .container pre {
