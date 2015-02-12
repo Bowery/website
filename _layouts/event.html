@@ -16,11 +16,14 @@ category: events
         <input class="field" type="text" placeholder="{{field[1]}}" name="{{field[0]}}">
       {% endfor %}
     {% endfor %}
-    <input type="submit" class="btn skeleton event-registration-btn" onclick="trackEventRegistration()" value="register &rarr;">
+    <a class="btn skeleton event-registration-btn" href="https://attendee.gotowebinar.com/register/3411168119429103873">register &rarr;</a>
+
+ <!--    <input type="submit" class="btn skeleton event-registration-btn" onclick="trackEventRegistration()" value="register &rarr;">-->
   </form>
 </div>
+
 <a href="/docs" class="get-started">try bowery →</a>
-<script type="text/javascript">
+ <!--   <script type="text/javascript">
   var title = "{{page.title}}"
   function trackEventRegistration() {
     var emailEl = document.querySelector('input[name="email"]')
@@ -29,5 +32,5 @@ category: events
     mixpanel.track("registered for: " + title)
   }
 
-</script>
+</script> -->
 <!-- TODO (thebyrd) send event for 'registered for event: ' + page.title -->
