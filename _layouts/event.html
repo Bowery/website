@@ -33,4 +33,12 @@ category: events
   }
 
 </script> -->
-<!-- TODO (thebyrd) send event for 'registered for event: ' + page.title -->
+<script>
+var redraw
+  , listen = document.addEventListener
+listen('DOMContentLoaded', redraw = function () {
+  var el = document.querySelector('.page.events .container')
+  if (el) el.style.minHeight = (window.innerHeight - 285) + "px"
+})
+listen('resize', redraw)
+</script>
