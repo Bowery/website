@@ -46,6 +46,10 @@ You will need to update your [Inventory](http://docs.ansible.com/intro_inventory
 
 Then when you run `ansible-playbook` include the `--ask-pass` parameter and enter the password you see in the app after doing `File > Info`.
 
+## Dockerfile
+
+If you have a Dockerfile inside your application's directory you're ready to go! When you select your folder, Bowery will ask you if you want to build the environment using your Dockerfile or give you a clean install of Ubuntu 14.04 instead.
+
 ## Chef Solo
 
 To start off, you'll need to install [Chef](https://www.chef.io/) in your Bowery Environment. You can do so by running:
