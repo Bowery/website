@@ -22,4 +22,4 @@ You can now set write access permission to certain users in your project. After 
 
 ![Bowery 3.6.0 Permissions](/static/permissions-people.png)
 
-Grab the [3.6.0 here](http://bowery.io/docs/downloads).
+Grab the [3.6.0 release here](http://bowery.io/docs/downloads).
