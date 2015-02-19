@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Announcing Docker-Based Development Environments"
-date:   2015-02-18 10:00:00
+date:   2015-02-19 10:00:00
 categories: posts
 tags:
 - releases
