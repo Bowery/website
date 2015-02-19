@@ -8,9 +8,9 @@ tags:
 - tech
 ---
 
-[Bowery version 3.6.0](http://bowery.io/docs/downloads/) includes a deeper integration with Docker: the ability to provision a new, sharable development environment with a Dockerfile. Now you can have the power of containers without the infrastructure. You don't need to have Docker installed to launch a Docker container with Bowery. All you need is the Bowery app. 
+[Bowery version 3.6.0](http://bowery.io/docs/downloads/) includes a deeper integration with Docker: the ability to provision a new, sharable development environment with a Dockerfile.  Now you can have the power of containers without the infrastructure. You don't need to have Docker installed on your machine to launch a Docker container with Bowery. All you need is the Bowery app. 
 
-Bowery hosts your environment and helps you share it with others, and we wanted to make it simpler for Docker users to get up and running on Bowery. If you have an existing Docker configuration you'd like to develop with on your Windows or Mac machine, you can launch that with Bowery to create a shareable development environment. We're going to outline how to get started with Bowery by using your Dockerfile. You can learn more about Bowery on [the docs](http://bowery.io/docs/what-is-bowery/). 
+Bowery hosts your environment and helps you share it with others, and we wanted to make it simpler for Docker users to get up and running on Bowery. If you have an existing Docker configuration you'd like to develop with on your Windows or Mac machine, you can launch that with Bowery to create a shareable development environment, without disrupting your existing workflow. We're going to outline how to get started with Bowery by using your Dockerfile. You can learn more about Bowery on [the docs](http://bowery.io/docs/what-is-bowery/). 
 
 ### Setup with a Dockefile
 
