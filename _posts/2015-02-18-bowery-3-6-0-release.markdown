@@ -7,7 +7,7 @@ tags:
 - releases
 ---
 
-We're excited to announce our latest release, Bowery 3.6.0 which comes along with two pretty great features:
+We're excited to announce our latest release, [Bowery 3.6.0](http://bowery.io/docs/downloads) which comes along with two long-awaited features that simplify getting started with Bowery and Docker and help team collaboration:
 
 1. Launch from a Dockerfile
 2. Team permissions
@@ -22,4 +22,28 @@ You can now set write access permission to certain users in your project. After 
 
 ![Bowery 3.6.0 Permissions](/static/permissions-people.png)
 
-Grab the [3.6.0 release here](http://bowery.io/docs/downloads).
+<div>
+<form class="form">
+    {% for f in page.fields %}
+      {% for field in f %}
+        <input class="field" type="text" placeholder="{{field[1]}}" name="{{field[0]}}">
+      {% endfor %}
+    {% endfor %}
+    <a class="btn" href="http://bowery.io/docs/downloads">Download Bowery 3.6.0&rarr;</a>
+
+  </form>
+</div>
+<br/>
+Learn more about the new version and provisioning your development environments with Bowery and Docker at our free Webinar on February 25
+
+<div>
+<form class="form">
+    {% for f in page.fields %}
+      {% for field in f %}
+        <input class="field" type="text" placeholder="{{field[1]}}" name="{{field[0]}}">
+      {% endfor %}
+    {% endfor %}
+    <a class="btn" href="https://attendee.gotowebinar.com/register/3411168119429103873">register &rarr;</a>
+
+  </form>
+</div>
