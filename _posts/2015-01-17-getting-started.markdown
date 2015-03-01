@@ -51,9 +51,13 @@ Then when you run `ansible-playbook` include the `--ask-pass` parameter and ente
 If you have a Dockerfile inside your application's directory you're ready to go! When you select your folder, Bowery will ask you if you want to build the environment using your Dockerfile or give you a clean install of Ubuntu 14.04 instead.
 
 There are some limitations to using a Dockerfile with Bowery.
+
 - Local paths may not be used with `ADD` instructions, they must be URLs, make sure to include the protocol when including a url (e.g. http://).
+
 - You cannot change `/etc/sshd_config`, doing so could prevent the Bowery Terminal from establishing an ssh connection.
+
 - The following instructions are skipped and aren't included when building the image: `CMD`, `COPY`, `ENTRYPOINT`, `VOLUME`, `USER`, and `ONBUILD`.
+
 - The following are the only supported Linux distributions: Ubuntu, Debian, Fedora, CentOS, and Arch. Others may not have ssh installed and as a result Bowery Terminal may not be able to establish an ssh connection.
 
 ## Chef Solo
