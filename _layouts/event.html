@@ -16,23 +16,48 @@ category: events
         <input class="field" type="text" placeholder="{{field[1]}}" name="{{field[0]}}">
       {% endfor %}
     {% endfor %}
-    <a class="btn skeleton event-registration-btn" href="https://attendee.gotowebinar.com/register/3411168119429103873">register &rarr;</a>
 
- <!--    <input type="submit" class="btn skeleton event-registration-btn" onclick="trackEventRegistration()" value="register &rarr;">-->
+<input type="text" class="btn skeleton event-registration-btn" name="name" placeholder="Name">
+<input type="text" class="btn skeleton event-registration-btn" name="address1" placeholder="Address Line 1">
+<input type="text" class="btn skeleton event-registration-btn" name="address2" placeholder="Address Line 2">
+<input type="text" class="btn skeleton event-registration-btn" name="city" placeholder="City">
+<input type="text" class="btn skeleton event-registration-btn" name="zip" placeholder="Zip or Postal Code">
+<input type="text" class="btn skeleton event-registration-btn" name="country" placeholder="Country">
+<input type="text" class="btn skeleton event-registration-btn" name="email" placeholder="Email">
+
+<input type="submit" class="btn skeleton event-registration-btn" onclick="trackEventRegistration()" value="register &rarr;">
+
   </form>
 </div>
 
-<a href="/docs" class="get-started">try bowery →</a>
- <!--   <script type="text/javascript">
+<script type="text/javascript">
   var title = "{{page.title}}"
   function trackEventRegistration() {
     var emailEl = document.querySelector('input[name="email"]')
     var email = emailEl && emailEl.value
-    mixpanel.identify(email)
+    var nameEl = document.querySelector('input[name="name"]')
+    var name = nameEl && nameEl.value
+	var address1El = document.querySelector('input[name="address1"]')
+    var address1 = address1El && address1El.value
+	var address2El = document.querySelector('input[name="address2"]')
+    var address2 = address2El && address2El.value
+	var cityEl = document.querySelector('input[name="city"]')
+    var city = cityEl && cityEl.value
+	var zipEl = document.querySelector('input[name="zip"]')
+    var zip = zipEl && cityEl.value
+	var countryEl = document.querySelector('input[name="country"]')
+    var country = countryEl && countryEl.value
+    mixpanel.identify(email, {
+	$email: email,
+	$name: name,
+	address: {address1, address2, city, country,  zip},
+})
     mixpanel.track("registered for: " + title)
+	document.querySelector('input[type="submit”]’).value = “Thanks for your submission!"
+	
   }
 
-</script> -->
+</script>
 <script>
 var redraw
   , listen = document.addEventListener
