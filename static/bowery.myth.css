@@ -93,6 +93,7 @@ p {
  */
 #about {
   background: url(/static/large-rock.png) no-repeat center;
+  background-size: 50%;
 }
 .about .subtitle {
   color: white;
@@ -169,7 +170,7 @@ a.get-started  {
 ul.the-low-down {
   width: 260px;
   position: relative;
-  height: 935px;
+  height: 715px;
   margin-top: 120px;
 }
 ul.the-low-down > li {
