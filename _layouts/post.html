@@ -2,7 +2,7 @@
 layout: default
 category: blog
 ---
-{% if page.img %} 
+{% if page.img %}
 <img class="post-img" src="{{page.img}}">
 {% endif %}
 <div class="post">
@@ -11,9 +11,6 @@ category: blog
 	</header>
 	<aside>
 		<p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</p>
-		-
-		<p><a class="post-meta" href="/">What's Bowery?</a></p>
-		<p><a class="post-meta" href="/docs/downloads/">Download</a></p>
 
 		{% if page.tags.size != 0 %} - {% for tag in page.tags %}
 		<p class="post-tag">
