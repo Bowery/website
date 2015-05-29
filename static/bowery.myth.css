@@ -93,6 +93,7 @@ p {
  */
 #about {
   background: url(/static/large-rock.png) no-repeat center;
+  background-size: 50%;
 }
 .about .subtitle {
   color: white;
@@ -169,7 +170,7 @@ a.get-started  {
 ul.the-low-down {
   width: 260px;
   position: relative;
-  height: 935px;
+  height: 715px;
   margin-top: 120px;
 }
 ul.the-low-down > li {
@@ -358,173 +359,6 @@ dl.faq-list {
 
 .page {
   width: calc(100% - 80px);
-}
-
-/**
- * Docs
- */
-.docs a:hover,
-.docs a.selected {
-  color: rgb(55, 212, 213);
-}
-.docs header {
-  position: fixed;
-  z-index: 10;
-  background: white;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  height: 80px;
-  border-top: 1px solid #d3d2d2;
-  border-bottom: 1px solid #d3d2d2;
-}
-.docs .inner-header {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  border-left: 1px solid #d3d2d2;
-  border-right: 1px solid #d3d2d2;
-  height: 79px;
-}
-.docs .title,
-.docs .title:hover {
-  border-right: 1px solid #d3d2d2;
-  width: 200px;
-  height: 78px;
-  overflow: hidden;
-  padding-left: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  display: block;
-  float: left;
-}
-.docs .title h1 {
-  font-family: "Monosten A";
-  font-size: 16px;
-  letter-spacing: 12px;
-  text-transform: uppercase;
-  float: left;
-  margin-top: 32px;
-  margin-left: 10px;
-}
-.docs .title .logo {
-  width: 45px;
-  height: 45px;
-  float: left;
-  display: block;
-  margin: 13px;
-  background-size: contain;
-  outline: none;
-  border: 0;
-}
-.docs header .nav {
-  float: right;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.docs header .nav a {
-  text-decoration: none;
-  font-family: "Monosten A";
-  font-size: 12px;
-  line-height: 1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 33px 35px;
-  display: block;
-}
-.docs header .nav li {
-  height: 79px;
-  margin: 0;
-  font-family: "Monosten A";
-  font-size: 12px;
-  border-left: 1px solid #d3d2d2;
-  float: left;
-}
-.docs .container {
-  width: calc(100% - 300px);
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 80px 0;
-  margin-left: 300px;
-}
-.docs .container * {
-  width: 570px;
-  margin: 0 0 0 120px;
-  overflow: visible;
-}
-.docs .container h2 {
-  margin-top: 80px;
-  margin-bottom: 40px;
-  line-height: 30px;
-}
-.docs .container p,
-.docs .container ol {
-  font-family: Helvetica;
-  font-size: 16px;
-  line-height: 28px;
-  margin-bottom: 40px;
-}
-.docs .container li {
-  font-size: 16px;
-  line-height: 26px;
-}
-.docs .container code,
-.docs .container img,
-.docs .container ol,
-.docs .container ul,
-.docs .container a,
-.docs .container span,
-.docs .contianer b,
-.docs .container strong,
-.docs .container em {
-  margin: 0;
-}
-.docs .container pre {
-  max-width: none;
-  width: 100%;
-  color: white;
-  font-family: Courier;
-  background: #414042;
-  padding: 80px 120px;
-  margin-bottom: 40px;
-  font-weight: 600;
-  margin: 0 0 80px 0;
-}
-.docs .container pre code {
-  max-width: 570px;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
-  margin: 0;
-}
-.docs aside {
-  position: fixed;
-  top: 80px;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  padding: 0;
-  background: #f5f5f5;
-  overflow: auto;
-}
-.docs aside .nav a {
-  text-transform: uppercase;
-  font-size: 14px;
-  font-family: "Monosten A";
-  letter-spacing: 2px;
-  text-decoration: none;
-  padding: 20px 30px;
-  width: 100%;
-  display: block;
-}
-.docs aside .nav li {
-  padding: 0;
-  border-bottom: 1px solid #d3d2d2;
-}
-.docs .wide.container {
-  max-width: 1200px;
-  padding: 0;
 }
 
 /**
@@ -974,36 +808,6 @@ dl.faq-list {
     width: 100%;
   }
 
-  /* Docs */
-  .docs aside {
-    display: none;
-    width: 100%;
-    z-index: 4;
-  }
-
-  .docs header .inner-header .nav {
-    display: none;
-  }
-  .docs .container {
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-  }
-  .docs .container * {
-    margin-left: 0;
-    width: 100%;
-  }
-  .docs .btn.skeleton {
-    padding: 17px 20px 15px;
-  }
-  .docs .container pre {
-    padding: 40px 40px;
-    overflow-x: auto;
-  }
-  .docs .inner-header a.title {
-    width: 50%;
-  }
   .mobile-nav-btn {
     display: block !important;
     width: 50%;
